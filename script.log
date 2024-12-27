@@ -1,878 +1,116 @@
-// start file[1;33mScript Info: Instalando pacotes essenciais[0m
-Hit:1 http://archive.ubuntu.com/ubuntu noble InRelease
-Get:2 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
-Get:3 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
-Get:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
-Get:5 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [761 kB]
-Get:6 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Components [151 kB]
-Get:7 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Components [212 B]
-Get:8 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [310 kB]
-Get:9 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [940 B]
-Get:10 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [208 B]
-Get:11 http://archive.ubuntu.com/ubuntu noble-backports/restricted amd64 Components [216 B]
-Get:12 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [11.7 kB]
-Get:13 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Components [212 B]
-Get:14 http://security.ubuntu.com/ubuntu noble-security/main amd64 Components [7,220 B]
-Get:15 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Components [212 B]
-Get:16 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Components [52.0 kB]
-Get:17 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Components [212 B]
-Fetched 1,673 kB in 2s (761 kB/s)
+ 
+---- Script started at Fri Dec 27 12:54:37 AM UTC 2024 ----
+Starting script...
+[1;33mScript Info: Instalando pacotes essenciais[0m
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Hit:1 https://download.docker.com/linux/ubuntu noble InRelease
+Hit:2 http://archive.ubuntu.com/ubuntu noble InRelease
+Get:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Hit:4 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:5 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Fetched 126 kB in 1s (104 kB/s)
 Reading package lists...
 Building dependency tree...
 Reading state information...
-66 packages can be upgraded. Run 'apt list --upgradable' to see them.
+64 packages can be upgraded. Run 'apt list --upgradable' to see them.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
 Reading package lists...
 Building dependency tree...
 Reading state information...
 git is already the newest version (1:2.43.0-1ubuntu7.1).
-git set to manually installed.
+zlib1g-dev is already the newest version (1:1.3.dfsg-3.1ubuntu2.1).
+build-essential is already the newest version (12.10ubuntu1).
+libssl-dev is already the newest version (3.0.13-0ubuntu3.4).
+libreadline-dev is already the newest version (8.2-4build1).
+libyaml-dev is already the newest version (0.2.5-1build1).
+libsqlite3-dev is already the newest version (3.45.1-1ubuntu2).
+sqlite3 is already the newest version (3.45.1-1ubuntu2).
+libxml2-dev is already the newest version (2.9.14+dfsg-1.3ubuntu3).
+libxslt1-dev is already the newest version (1.1.39-0exp1build1).
+libcurl4-openssl-dev is already the newest version (8.5.0-2ubuntu10.6).
+software-properties-common is already the newest version (0.99.49.1).
+software-properties-common set to manually installed.
+libffi-dev is already the newest version (3.4.6-1build1).
+micro is already the newest version (2.0.13-1).
+libmysqlclient-dev is already the newest version (8.0.40-0ubuntu0.24.04.1).
+mysql-client-core-8.0 is already the newest version (8.0.40-0ubuntu0.24.04.1).
+libgtk2.0-0t64 is already the newest version (2.24.33-4ubuntu1.1).
 libgtk-3-0t64 is already the newest version (3.24.41-4ubuntu1.2).
-libgtk-3-0t64 set to manually installed.
+libgbm-dev is already the newest version (24.0.9-0ubuntu0.3).
+libnotify-dev is already the newest version (0.8.3-1build2).
 libnss3 is already the newest version (2:3.98-1build1).
-libnss3 set to manually installed.
+libxss1 is already the newest version (1:1.2.3-1build3).
 libxtst6 is already the newest version (2:1.2.3-1.1build1).
-libxtst6 set to manually installed.
 xauth is already the newest version (1:1.1.2-1build1).
-xauth set to manually installed.
+xvfb is already the newest version (2:21.1.12-1ubuntu1.1).
+libbz2-dev is already the newest version (1.0.8-5.1build0.1).
 curl is already the newest version (8.5.0-2ubuntu10.6).
-curl set to manually installed.
-The following additional packages will be installed:
-  binutils binutils-common binutils-x86-64-linux-gnu bzip2 bzip2-doc cpp
-  cpp-13 cpp-13-x86-64-linux-gnu cpp-x86-64-linux-gnu dpkg-dev fakeroot g++
-  g++-13 g++-13-x86-64-linux-gnu g++-x86-64-linux-gnu gcc gcc-13 gcc-13-base
-  gcc-13-x86-64-linux-gnu gcc-x86-64-linux-gnu gir1.2-gdkpixbuf-2.0
-  gir1.2-glib-2.0-dev gir1.2-notify-0.7 icu-devtools libalgorithm-diff-perl
-  libalgorithm-diff-xs-perl libalgorithm-merge-perl libasan8 libatomic1
-  libbinutils libblkid-dev libcc1-0 libctf-nobfd0 libctf0 libdeflate-dev
-  libdpkg-perl libfakeroot libfile-fcntllock-perl libfontenc1 libgail-common
-  libgail18t64 libgbm1 libgcc-13-dev libgdk-pixbuf-2.0-dev
-  libgirepository-2.0-0 libgl1 libgl1-amber-dri libgl1-mesa-dri libglapi-mesa
-  libglib2.0-dev libglib2.0-dev-bin libglvnd0 libglx-mesa0 libglx0 libgomp1
-  libgprofng0 libgtk2.0-bin libgtk2.0-common libhwasan0 libice6 libicu-dev
-  libisl23 libitm1 libjbig-dev libjpeg-dev libjpeg-turbo8-dev libjpeg8-dev
-  liblerc-dev liblsan0 liblzma-dev libmount-dev libmpc3 libmysqlclient21
-  libncurses-dev libnotify4 libpcre2-16-0 libpcre2-32-0 libpcre2-dev
-  libpcre2-posix3 libpkgconf3 libpng-dev libpng-tools libquadmath0
-  libselinux1-dev libsepol-dev libsframe1 libsharpyuv-dev libsm6
-  libstdc++-13-dev libtiff-dev libtiffxx6 libtsan2 libubsan1 libvulkan1
-  libwebp-dev libwebpdecoder3 libwebpdemux2 libwebpmux3 libxaw7 libxcb-glx0
-  libxcb-randr0 libxfont2 libxkbfile1 libxmu6 libxt6t64 libxxf86vm1
-  libzstd-dev lto-disabled-list make mesa-vulkan-drivers mysql-common pkgconf
-  pkgconf-bin python3-packaging python3-software-properties uuid-dev
-  x11-xkb-utils xclip xfonts-base xfonts-encodings xfonts-utils xserver-common
-Suggested packages:
-  binutils-doc gprofng-gui cpp-doc gcc-13-locales cpp-13-doc debian-keyring
-  g++-multilib g++-13-multilib gcc-13-doc gcc-multilib autoconf automake
-  libtool flex bison gdb gcc-doc gcc-13-multilib gdb-x86-64-linux-gnu
-  libcurl4-doc libidn-dev libkrb5-dev libldap2-dev librtmp-dev libssh2-1-dev
-  bzr libglib2.0-doc libxml2-utils gvfs icu-doc liblzma-doc ncurses-doc
-  notification-daemon readline-doc sqlite3-doc libssl-doc libstdc++-13-doc
-  libyaml-doc make-doc
-The following NEW packages will be installed:
-  binutils binutils-common binutils-x86-64-linux-gnu build-essential bzip2
-  bzip2-doc cpp cpp-13 cpp-13-x86-64-linux-gnu cpp-x86-64-linux-gnu dpkg-dev
-  fakeroot g++ g++-13 g++-13-x86-64-linux-gnu g++-x86-64-linux-gnu gcc gcc-13
-  gcc-13-base gcc-13-x86-64-linux-gnu gcc-x86-64-linux-gnu
-  gir1.2-gdkpixbuf-2.0 gir1.2-glib-2.0-dev gir1.2-notify-0.7 icu-devtools
-  libalgorithm-diff-perl libalgorithm-diff-xs-perl libalgorithm-merge-perl
-  libasan8 libatomic1 libbinutils libblkid-dev libbz2-dev libcc1-0
-  libctf-nobfd0 libctf0 libcurl4-openssl-dev libdeflate-dev libdpkg-perl
-  libfakeroot libffi-dev libfile-fcntllock-perl libfontenc1 libgail-common
-  libgail18t64 libgbm-dev libgbm1 libgcc-13-dev libgdk-pixbuf-2.0-dev
-  libgirepository-2.0-0 libgl1 libgl1-amber-dri libgl1-mesa-dri libglapi-mesa
-  libglib2.0-dev libglib2.0-dev-bin libglvnd0 libglx-mesa0 libglx0 libgomp1
-  libgprofng0 libgtk2.0-0t64 libgtk2.0-bin libgtk2.0-common libhwasan0 libice6
-  libicu-dev libisl23 libitm1 libjbig-dev libjpeg-dev libjpeg-turbo8-dev
-  libjpeg8-dev liblerc-dev liblsan0 liblzma-dev libmount-dev libmpc3
-  libmysqlclient-dev libmysqlclient21 libncurses-dev libnotify-dev libnotify4
-  libpcre2-16-0 libpcre2-32-0 libpcre2-dev libpcre2-posix3 libpkgconf3
-  libpng-dev libpng-tools libquadmath0 libreadline-dev libselinux1-dev
-  libsepol-dev libsframe1 libsharpyuv-dev libsm6 libsqlite3-dev libssl-dev
-  libstdc++-13-dev libtiff-dev libtiffxx6 libtsan2 libubsan1 libvulkan1
-  libwebp-dev libwebpdecoder3 libwebpdemux2 libwebpmux3 libxaw7 libxcb-glx0
-  libxcb-randr0 libxfont2 libxkbfile1 libxml2-dev libxmu6 libxslt1-dev libxss1
-  libxt6t64 libxxf86vm1 libyaml-dev libzstd-dev lto-disabled-list make
-  mesa-vulkan-drivers micro mysql-client-core-8.0 mysql-common pkgconf
-  pkgconf-bin python3-packaging sqlite3 uuid-dev x11-xkb-utils xclip
-  xfonts-base xfonts-encodings xfonts-utils xserver-common xvfb zlib1g-dev
-The following packages will be upgraded:
-  python3-software-properties software-properties-common
-2 upgraded, 141 newly installed, 0 to remove and 64 not upgraded.
-Need to get 139 MB of archives.
-After this operation, 566 MB of additional disk space will be used.
-Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 binutils-common amd64 2.42-4ubuntu2.3 [239 kB]
-Get:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libsframe1 amd64 2.42-4ubuntu2.3 [14.9 kB]
-Get:3 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libbinutils amd64 2.42-4ubuntu2.3 [575 kB]
-Get:4 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libctf-nobfd0 amd64 2.42-4ubuntu2.3 [97.1 kB]
-Get:5 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libctf0 amd64 2.42-4ubuntu2.3 [94.5 kB]
-Get:6 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgprofng0 amd64 2.42-4ubuntu2.3 [849 kB]
-Get:7 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 binutils-x86-64-linux-gnu amd64 2.42-4ubuntu2.3 [2,463 kB]
-Get:8 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 binutils amd64 2.42-4ubuntu2.3 [18.1 kB]
-Get:9 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gcc-13-base amd64 13.3.0-6ubuntu2~24.04 [51.5 kB]
-Get:10 http://archive.ubuntu.com/ubuntu noble/main amd64 libisl23 amd64 0.26-3build1 [680 kB]
-Get:11 http://archive.ubuntu.com/ubuntu noble/main amd64 libmpc3 amd64 1.3.1-1build1 [54.5 kB]
-Get:12 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 cpp-13-x86-64-linux-gnu amd64 13.3.0-6ubuntu2~24.04 [10.7 MB]
-Get:13 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 cpp-13 amd64 13.3.0-6ubuntu2~24.04 [1,038 B]
-Get:14 http://archive.ubuntu.com/ubuntu noble/main amd64 cpp-x86-64-linux-gnu amd64 4:13.2.0-7ubuntu1 [5,326 B]
-Get:15 http://archive.ubuntu.com/ubuntu noble/main amd64 cpp amd64 4:13.2.0-7ubuntu1 [22.4 kB]
-Get:16 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libcc1-0 amd64 14.2.0-4ubuntu2~24.04 [48.0 kB]
-Get:17 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgomp1 amd64 14.2.0-4ubuntu2~24.04 [148 kB]
-Get:18 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libitm1 amd64 14.2.0-4ubuntu2~24.04 [29.7 kB]
-Get:19 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libatomic1 amd64 14.2.0-4ubuntu2~24.04 [10.5 kB]
-Get:20 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libasan8 amd64 14.2.0-4ubuntu2~24.04 [3,031 kB]
-Get:21 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 liblsan0 amd64 14.2.0-4ubuntu2~24.04 [1,322 kB]
-Get:22 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libtsan2 amd64 14.2.0-4ubuntu2~24.04 [2,772 kB]
-Get:23 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libubsan1 amd64 14.2.0-4ubuntu2~24.04 [1,184 kB]
-Get:24 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libhwasan0 amd64 14.2.0-4ubuntu2~24.04 [1,641 kB]
-Get:25 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libquadmath0 amd64 14.2.0-4ubuntu2~24.04 [153 kB]
-Get:26 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgcc-13-dev amd64 13.3.0-6ubuntu2~24.04 [2,681 kB]
-Get:27 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gcc-13-x86-64-linux-gnu amd64 13.3.0-6ubuntu2~24.04 [21.1 MB]
-Get:28 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gcc-13 amd64 13.3.0-6ubuntu2~24.04 [494 kB]
-Get:29 http://archive.ubuntu.com/ubuntu noble/main amd64 gcc-x86-64-linux-gnu amd64 4:13.2.0-7ubuntu1 [1,212 B]
-Get:30 http://archive.ubuntu.com/ubuntu noble/main amd64 gcc amd64 4:13.2.0-7ubuntu1 [5,018 B]
-Get:31 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libstdc++-13-dev amd64 13.3.0-6ubuntu2~24.04 [2,420 kB]
-Get:32 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 g++-13-x86-64-linux-gnu amd64 13.3.0-6ubuntu2~24.04 [12.2 MB]
-Get:33 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 g++-13 amd64 13.3.0-6ubuntu2~24.04 [16.1 kB]
-Get:34 http://archive.ubuntu.com/ubuntu noble/main amd64 g++-x86-64-linux-gnu amd64 4:13.2.0-7ubuntu1 [964 B]
-Get:35 http://archive.ubuntu.com/ubuntu noble/main amd64 g++ amd64 4:13.2.0-7ubuntu1 [1,100 B]
-Get:36 http://archive.ubuntu.com/ubuntu noble/main amd64 make amd64 4.3-4.1build2 [180 kB]
-Get:37 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libdpkg-perl all 1.22.6ubuntu6.1 [269 kB]
-Get:38 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 bzip2 amd64 1.0.8-5.1build0.1 [34.5 kB]
-Get:39 http://archive.ubuntu.com/ubuntu noble/main amd64 lto-disabled-list all 47 [12.4 kB]
-Get:40 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 dpkg-dev all 1.22.6ubuntu6.1 [1,074 kB]
-Get:41 http://archive.ubuntu.com/ubuntu noble/main amd64 build-essential amd64 12.10ubuntu1 [4,928 B]
-Get:42 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 bzip2-doc all 1.0.8-5.1build0.1 [499 kB]
-Get:43 http://archive.ubuntu.com/ubuntu noble/main amd64 libfakeroot amd64 1.33-1 [32.4 kB]
-Get:44 http://archive.ubuntu.com/ubuntu noble/main amd64 fakeroot amd64 1.33-1 [67.2 kB]
-Get:45 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gir1.2-gdkpixbuf-2.0 amd64 2.42.10+dfsg-3ubuntu3.1 [9,486 B]
-Get:46 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gir1.2-glib-2.0-dev amd64 2.80.0-6ubuntu3.2 [848 kB]
-Get:47 http://archive.ubuntu.com/ubuntu noble/main amd64 libnotify4 amd64 0.8.3-1build2 [25.6 kB]
-Get:48 http://archive.ubuntu.com/ubuntu noble/main amd64 gir1.2-notify-0.7 amd64 0.8.3-1build2 [3,780 B]
-Get:49 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 icu-devtools amd64 74.2-1ubuntu3.1 [212 kB]
-Get:50 http://archive.ubuntu.com/ubuntu noble/main amd64 libalgorithm-diff-perl all 1.201-1 [41.8 kB]
-Get:51 http://archive.ubuntu.com/ubuntu noble/main amd64 libalgorithm-diff-xs-perl amd64 0.04-8build3 [11.2 kB]
-Get:52 http://archive.ubuntu.com/ubuntu noble/main amd64 libalgorithm-merge-perl all 0.08-5 [11.4 kB]
-Get:53 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libbz2-dev amd64 1.0.8-5.1build0.1 [33.6 kB]
-Get:54 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libcurl4-openssl-dev amd64 8.5.0-2ubuntu10.6 [446 kB]
-Get:55 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libdeflate-dev amd64 1.19-1build1.1 [50.9 kB]
-Get:56 http://archive.ubuntu.com/ubuntu noble/main amd64 libfile-fcntllock-perl amd64 0.22-4ubuntu5 [30.7 kB]
-Get:57 http://archive.ubuntu.com/ubuntu noble/main amd64 libfontenc1 amd64 1:1.1.8-1build1 [14.0 kB]
-Get:58 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgtk2.0-common all 2.24.33-4ubuntu1.1 [127 kB]
-Get:59 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgtk2.0-0t64 amd64 2.24.33-4ubuntu1.1 [2,006 kB]
-Get:60 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgail18t64 amd64 2.24.33-4ubuntu1.1 [15.9 kB]
-Get:61 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgail-common amd64 2.24.33-4ubuntu1.1 [126 kB]
-Get:62 http://archive.ubuntu.com/ubuntu noble/main amd64 libxcb-randr0 amd64 1.15-1ubuntu2 [17.9 kB]
-Get:63 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgbm1 amd64 24.0.9-0ubuntu0.3 [42.8 kB]
-Get:64 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgbm-dev amd64 24.0.9-0ubuntu0.3 [9,556 B]
-Get:65 http://archive.ubuntu.com/ubuntu noble/main amd64 libffi-dev amd64 3.4.6-1build1 [62.8 kB]
-Get:66 http://archive.ubuntu.com/ubuntu noble/main amd64 python3-packaging all 24.0-1 [41.1 kB]
-Get:67 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libglib2.0-dev-bin amd64 2.80.0-6ubuntu3.2 [138 kB]
-Get:68 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 uuid-dev amd64 2.39.3-9ubuntu6.1 [33.5 kB]
-Get:69 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libblkid-dev amd64 2.39.3-9ubuntu6.1 [204 kB]
-Get:70 http://archive.ubuntu.com/ubuntu noble/main amd64 libsepol-dev amd64 3.5-2build1 [384 kB]
-Get:71 http://archive.ubuntu.com/ubuntu noble/main amd64 libpcre2-16-0 amd64 10.42-4ubuntu2 [210 kB]
-Get:72 http://archive.ubuntu.com/ubuntu noble/main amd64 libpcre2-32-0 amd64 10.42-4ubuntu2 [197 kB]
-Get:73 http://archive.ubuntu.com/ubuntu noble/main amd64 libpcre2-posix3 amd64 10.42-4ubuntu2 [6,686 B]
-Get:74 http://archive.ubuntu.com/ubuntu noble/main amd64 libpcre2-dev amd64 10.42-4ubuntu2 [737 kB]
-Get:75 http://archive.ubuntu.com/ubuntu noble/main amd64 libselinux1-dev amd64 3.5-2ubuntu2 [164 kB]
-Get:76 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libmount-dev amd64 2.39.3-9ubuntu6.1 [14.9 kB]
-Get:77 http://archive.ubuntu.com/ubuntu noble/main amd64 libpkgconf3 amd64 1.8.1-2build1 [30.7 kB]
-Get:78 http://archive.ubuntu.com/ubuntu noble/main amd64 pkgconf-bin amd64 1.8.1-2build1 [20.7 kB]
-Get:79 http://archive.ubuntu.com/ubuntu noble/main amd64 pkgconf amd64 1.8.1-2build1 [16.8 kB]
-Get:80 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 zlib1g-dev amd64 1:1.3.dfsg-3.1ubuntu2.1 [894 kB]
-Get:81 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgirepository-2.0-0 amd64 2.80.0-6ubuntu3.2 [73.5 kB]
-Get:82 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libglib2.0-dev amd64 2.80.0-6ubuntu3.2 [1,859 kB]
-Get:83 http://archive.ubuntu.com/ubuntu noble/main amd64 libjpeg-turbo8-dev amd64 2.1.5-2ubuntu2 [295 kB]
-Get:84 http://archive.ubuntu.com/ubuntu noble/main amd64 libjpeg8-dev amd64 8c-2ubuntu11 [1,484 B]
-Get:85 http://archive.ubuntu.com/ubuntu noble/main amd64 libjpeg-dev amd64 8c-2ubuntu11 [1,482 B]
-Get:86 http://archive.ubuntu.com/ubuntu noble/main amd64 libpng-dev amd64 1.6.43-5build1 [264 kB]
-Get:87 http://archive.ubuntu.com/ubuntu noble/main amd64 libjbig-dev amd64 2.1-6.1ubuntu2 [27.9 kB]
-Get:88 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 liblzma-dev amd64 5.6.1+really5.4.5-1build0.1 [176 kB]
-Get:89 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libzstd-dev amd64 1.5.5+dfsg2-2build1.1 [364 kB]
-Get:90 http://archive.ubuntu.com/ubuntu noble/main amd64 libwebpdemux2 amd64 1.3.2-0.4build3 [12.4 kB]
-Get:91 http://archive.ubuntu.com/ubuntu noble/main amd64 libwebpmux3 amd64 1.3.2-0.4build3 [25.7 kB]
-Get:92 http://archive.ubuntu.com/ubuntu noble/main amd64 libwebpdecoder3 amd64 1.3.2-0.4build3 [114 kB]
-Get:93 http://archive.ubuntu.com/ubuntu noble/main amd64 libsharpyuv-dev amd64 1.3.2-0.4build3 [16.0 kB]
-Get:94 http://archive.ubuntu.com/ubuntu noble/main amd64 libwebp-dev amd64 1.3.2-0.4build3 [367 kB]
-Get:95 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libtiffxx6 amd64 4.5.1+git230720-4ubuntu2.2 [5,644 B]
-Get:96 http://archive.ubuntu.com/ubuntu noble/main amd64 liblerc-dev amd64 4.0.0+ds-4ubuntu2 [182 kB]
-Get:97 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libtiff-dev amd64 4.5.1+git230720-4ubuntu2.2 [338 kB]
-Get:98 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgdk-pixbuf-2.0-dev amd64 2.42.10+dfsg-3ubuntu3.1 [48.0 kB]
-Get:99 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libglapi-mesa amd64 24.0.9-0ubuntu0.3 [41.3 kB]
-Get:100 http://archive.ubuntu.com/ubuntu noble/main amd64 libgl1-amber-dri amd64 21.3.9-0ubuntu2 [4,212 kB]
-Get:101 http://archive.ubuntu.com/ubuntu noble/main amd64 libvulkan1 amd64 1.3.275.0-1build1 [142 kB]
-Get:102 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgl1-mesa-dri amd64 24.0.9-0ubuntu0.3 [8,950 kB]
-Get:103 http://archive.ubuntu.com/ubuntu noble/main amd64 libxcb-glx0 amd64 1.15-1ubuntu2 [24.8 kB]
-Get:104 http://archive.ubuntu.com/ubuntu noble/main amd64 libxxf86vm1 amd64 1:1.1.4-1build4 [9,282 B]
-Get:105 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libglx-mesa0 amd64 24.0.9-0ubuntu0.3 [154 kB]
-Get:106 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgtk2.0-bin amd64 2.24.33-4ubuntu1.1 [7,954 B]
-Get:107 http://archive.ubuntu.com/ubuntu noble/main amd64 libice6 amd64 2:1.0.10-1build3 [41.4 kB]
-Get:108 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libicu-dev amd64 74.2-1ubuntu3.1 [11.9 MB]
-Get:109 http://archive.ubuntu.com/ubuntu noble/main amd64 mysql-common all 5.8+1.1.0build1 [6,746 B]
-Get:110 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libmysqlclient21 amd64 8.0.40-0ubuntu0.24.04.1 [1,254 kB]
-Get:111 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libssl-dev amd64 3.0.13-0ubuntu3.4 [2,408 kB]
-Get:112 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libmysqlclient-dev amd64 8.0.40-0ubuntu0.24.04.1 [1,543 kB]
-Get:113 http://archive.ubuntu.com/ubuntu noble/main amd64 libncurses-dev amd64 6.4+20240113-1ubuntu2 [384 kB]
-Get:114 http://archive.ubuntu.com/ubuntu noble/universe amd64 libnotify-dev amd64 0.8.3-1build2 [9,898 B]
-Get:115 http://archive.ubuntu.com/ubuntu noble/main amd64 libpng-tools amd64 1.6.43-5build1 [28.5 kB]
-Get:116 http://archive.ubuntu.com/ubuntu noble/main amd64 libreadline-dev amd64 8.2-4build1 [167 kB]
-Get:117 http://archive.ubuntu.com/ubuntu noble/main amd64 libsm6 amd64 2:1.2.3-1build3 [15.7 kB]
-Get:118 http://archive.ubuntu.com/ubuntu noble/main amd64 libsqlite3-dev amd64 3.45.1-1ubuntu2 [911 kB]
-Get:119 http://archive.ubuntu.com/ubuntu noble/main amd64 libxt6t64 amd64 1:1.2.1-1.2build1 [171 kB]
-Get:120 http://archive.ubuntu.com/ubuntu noble/main amd64 libxmu6 amd64 2:1.1.3-3build2 [47.6 kB]
-Get:121 http://archive.ubuntu.com/ubuntu noble/main amd64 libxaw7 amd64 2:1.0.14-1build2 [187 kB]
-Get:122 http://archive.ubuntu.com/ubuntu noble/main amd64 libxfont2 amd64 1:2.0.6-1build1 [93.0 kB]
-Get:123 http://archive.ubuntu.com/ubuntu noble/main amd64 libxkbfile1 amd64 1:1.1.0-1build4 [70.0 kB]
-Get:124 http://archive.ubuntu.com/ubuntu noble/main amd64 libxml2-dev amd64 2.9.14+dfsg-1.3ubuntu3 [780 kB]
-Get:125 http://archive.ubuntu.com/ubuntu noble/main amd64 libxslt1-dev amd64 1.1.39-0exp1build1 [91.8 kB]
-Get:126 http://archive.ubuntu.com/ubuntu noble/main amd64 libxss1 amd64 1:1.2.3-1build3 [7,204 B]
-Get:127 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 mesa-vulkan-drivers amd64 24.0.9-0ubuntu0.3 [11.0 MB]
-Get:128 http://archive.ubuntu.com/ubuntu noble/universe amd64 micro amd64 2.0.13-1 [4,216 kB]
-Get:129 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 mysql-client-core-8.0 amd64 8.0.40-0ubuntu0.24.04.1 [2,765 kB]
-Get:130 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 software-properties-common all 0.99.49.1 [14.4 kB]
-Get:131 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3-software-properties all 0.99.49.1 [29.7 kB]
-Get:132 http://archive.ubuntu.com/ubuntu noble/main amd64 sqlite3 amd64 3.45.1-1ubuntu2 [144 kB]
-Get:133 http://archive.ubuntu.com/ubuntu noble/main amd64 x11-xkb-utils amd64 7.7+8build2 [170 kB]
-Get:134 http://archive.ubuntu.com/ubuntu noble/universe amd64 xclip amd64 0.13-3 [17.6 kB]
-Get:135 http://archive.ubuntu.com/ubuntu noble/main amd64 xfonts-encodings all 1:1.0.5-0ubuntu2 [578 kB]
-Get:136 http://archive.ubuntu.com/ubuntu noble/main amd64 xfonts-utils amd64 1:7.7+6build3 [94.4 kB]
-Get:137 http://archive.ubuntu.com/ubuntu noble/main amd64 xfonts-base all 1:1.0.5+nmu1 [5,941 kB]
-Get:138 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 xserver-common all 2:21.1.12-1ubuntu1.1 [33.4 kB]
-Get:139 http://archive.ubuntu.com/ubuntu noble/main amd64 libglvnd0 amd64 1.7.0-1build1 [69.6 kB]
-Get:140 http://archive.ubuntu.com/ubuntu noble/main amd64 libglx0 amd64 1.7.0-1build1 [38.6 kB]
-Get:141 http://archive.ubuntu.com/ubuntu noble/main amd64 libgl1 amd64 1.7.0-1build1 [102 kB]
-Get:142 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 xvfb amd64 2:21.1.12-1ubuntu1.1 [873 kB]
-Get:143 http://archive.ubuntu.com/ubuntu noble/main amd64 libyaml-dev amd64 0.2.5-1build1 [62.2 kB]
-Extracting templates from packages: 20%Extracting templates from packages: 41%Extracting templates from packages: 62%Extracting templates from packages: 83%Extracting templates from packages: 100%
-Fetched 139 MB in 17s (8,040 kB/s)
-Selecting previously unselected package binutils-common:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 94426 files and directories currently installed.)
-Preparing to unpack .../000-binutils-common_2.42-4ubuntu2.3_amd64.deb ...
-Unpacking binutils-common:amd64 (2.42-4ubuntu2.3) ...
-Selecting previously unselected package libsframe1:amd64.
-Preparing to unpack .../001-libsframe1_2.42-4ubuntu2.3_amd64.deb ...
-Unpacking libsframe1:amd64 (2.42-4ubuntu2.3) ...
-Selecting previously unselected package libbinutils:amd64.
-Preparing to unpack .../002-libbinutils_2.42-4ubuntu2.3_amd64.deb ...
-Unpacking libbinutils:amd64 (2.42-4ubuntu2.3) ...
-Selecting previously unselected package libctf-nobfd0:amd64.
-Preparing to unpack .../003-libctf-nobfd0_2.42-4ubuntu2.3_amd64.deb ...
-Unpacking libctf-nobfd0:amd64 (2.42-4ubuntu2.3) ...
-Selecting previously unselected package libctf0:amd64.
-Preparing to unpack .../004-libctf0_2.42-4ubuntu2.3_amd64.deb ...
-Unpacking libctf0:amd64 (2.42-4ubuntu2.3) ...
-Selecting previously unselected package libgprofng0:amd64.
-Preparing to unpack .../005-libgprofng0_2.42-4ubuntu2.3_amd64.deb ...
-Unpacking libgprofng0:amd64 (2.42-4ubuntu2.3) ...
-Selecting previously unselected package binutils-x86-64-linux-gnu.
-Preparing to unpack .../006-binutils-x86-64-linux-gnu_2.42-4ubuntu2.3_amd64.deb ...
-Unpacking binutils-x86-64-linux-gnu (2.42-4ubuntu2.3) ...
-Selecting previously unselected package binutils.
-Preparing to unpack .../007-binutils_2.42-4ubuntu2.3_amd64.deb ...
-Unpacking binutils (2.42-4ubuntu2.3) ...
-Selecting previously unselected package gcc-13-base:amd64.
-Preparing to unpack .../008-gcc-13-base_13.3.0-6ubuntu2~24.04_amd64.deb ...
-Unpacking gcc-13-base:amd64 (13.3.0-6ubuntu2~24.04) ...
-Selecting previously unselected package libisl23:amd64.
-Preparing to unpack .../009-libisl23_0.26-3build1_amd64.deb ...
-Unpacking libisl23:amd64 (0.26-3build1) ...
-Selecting previously unselected package libmpc3:amd64.
-Preparing to unpack .../010-libmpc3_1.3.1-1build1_amd64.deb ...
-Unpacking libmpc3:amd64 (1.3.1-1build1) ...
-Selecting previously unselected package cpp-13-x86-64-linux-gnu.
-Preparing to unpack .../011-cpp-13-x86-64-linux-gnu_13.3.0-6ubuntu2~24.04_amd64.deb ...
-Unpacking cpp-13-x86-64-linux-gnu (13.3.0-6ubuntu2~24.04) ...
-Selecting previously unselected package cpp-13.
-Preparing to unpack .../012-cpp-13_13.3.0-6ubuntu2~24.04_amd64.deb ...
-Unpacking cpp-13 (13.3.0-6ubuntu2~24.04) ...
-Selecting previously unselected package cpp-x86-64-linux-gnu.
-Preparing to unpack .../013-cpp-x86-64-linux-gnu_4%3a13.2.0-7ubuntu1_amd64.deb ...
-Unpacking cpp-x86-64-linux-gnu (4:13.2.0-7ubuntu1) ...
-Selecting previously unselected package cpp.
-Preparing to unpack .../014-cpp_4%3a13.2.0-7ubuntu1_amd64.deb ...
-Unpacking cpp (4:13.2.0-7ubuntu1) ...
-Selecting previously unselected package libcc1-0:amd64.
-Preparing to unpack .../015-libcc1-0_14.2.0-4ubuntu2~24.04_amd64.deb ...
-Unpacking libcc1-0:amd64 (14.2.0-4ubuntu2~24.04) ...
-Selecting previously unselected package libgomp1:amd64.
-Preparing to unpack .../016-libgomp1_14.2.0-4ubuntu2~24.04_amd64.deb ...
-Unpacking libgomp1:amd64 (14.2.0-4ubuntu2~24.04) ...
-Selecting previously unselected package libitm1:amd64.
-Preparing to unpack .../017-libitm1_14.2.0-4ubuntu2~24.04_amd64.deb ...
-Unpacking libitm1:amd64 (14.2.0-4ubuntu2~24.04) ...
-Selecting previously unselected package libatomic1:amd64.
-Preparing to unpack .../018-libatomic1_14.2.0-4ubuntu2~24.04_amd64.deb ...
-Unpacking libatomic1:amd64 (14.2.0-4ubuntu2~24.04) ...
-Selecting previously unselected package libasan8:amd64.
-Preparing to unpack .../019-libasan8_14.2.0-4ubuntu2~24.04_amd64.deb ...
-Unpacking libasan8:amd64 (14.2.0-4ubuntu2~24.04) ...
-Selecting previously unselected package liblsan0:amd64.
-Preparing to unpack .../020-liblsan0_14.2.0-4ubuntu2~24.04_amd64.deb ...
-Unpacking liblsan0:amd64 (14.2.0-4ubuntu2~24.04) ...
-Selecting previously unselected package libtsan2:amd64.
-Preparing to unpack .../021-libtsan2_14.2.0-4ubuntu2~24.04_amd64.deb ...
-Unpacking libtsan2:amd64 (14.2.0-4ubuntu2~24.04) ...
-Selecting previously unselected package libubsan1:amd64.
-Preparing to unpack .../022-libubsan1_14.2.0-4ubuntu2~24.04_amd64.deb ...
-Unpacking libubsan1:amd64 (14.2.0-4ubuntu2~24.04) ...
-Selecting previously unselected package libhwasan0:amd64.
-Preparing to unpack .../023-libhwasan0_14.2.0-4ubuntu2~24.04_amd64.deb ...
-Unpacking libhwasan0:amd64 (14.2.0-4ubuntu2~24.04) ...
-Selecting previously unselected package libquadmath0:amd64.
-Preparing to unpack .../024-libquadmath0_14.2.0-4ubuntu2~24.04_amd64.deb ...
-Unpacking libquadmath0:amd64 (14.2.0-4ubuntu2~24.04) ...
-Selecting previously unselected package libgcc-13-dev:amd64.
-Preparing to unpack .../025-libgcc-13-dev_13.3.0-6ubuntu2~24.04_amd64.deb ...
-Unpacking libgcc-13-dev:amd64 (13.3.0-6ubuntu2~24.04) ...
-Selecting previously unselected package gcc-13-x86-64-linux-gnu.
-Preparing to unpack .../026-gcc-13-x86-64-linux-gnu_13.3.0-6ubuntu2~24.04_amd64.deb ...
-Unpacking gcc-13-x86-64-linux-gnu (13.3.0-6ubuntu2~24.04) ...
-Selecting previously unselected package gcc-13.
-Preparing to unpack .../027-gcc-13_13.3.0-6ubuntu2~24.04_amd64.deb ...
-Unpacking gcc-13 (13.3.0-6ubuntu2~24.04) ...
-Selecting previously unselected package gcc-x86-64-linux-gnu.
-Preparing to unpack .../028-gcc-x86-64-linux-gnu_4%3a13.2.0-7ubuntu1_amd64.deb ...
-Unpacking gcc-x86-64-linux-gnu (4:13.2.0-7ubuntu1) ...
-Selecting previously unselected package gcc.
-Preparing to unpack .../029-gcc_4%3a13.2.0-7ubuntu1_amd64.deb ...
-Unpacking gcc (4:13.2.0-7ubuntu1) ...
-Selecting previously unselected package libstdc++-13-dev:amd64.
-Preparing to unpack .../030-libstdc++-13-dev_13.3.0-6ubuntu2~24.04_amd64.deb ...
-Unpacking libstdc++-13-dev:amd64 (13.3.0-6ubuntu2~24.04) ...
-Selecting previously unselected package g++-13-x86-64-linux-gnu.
-Preparing to unpack .../031-g++-13-x86-64-linux-gnu_13.3.0-6ubuntu2~24.04_amd64.deb ...
-Unpacking g++-13-x86-64-linux-gnu (13.3.0-6ubuntu2~24.04) ...
-Selecting previously unselected package g++-13.
-Preparing to unpack .../032-g++-13_13.3.0-6ubuntu2~24.04_amd64.deb ...
-Unpacking g++-13 (13.3.0-6ubuntu2~24.04) ...
-Selecting previously unselected package g++-x86-64-linux-gnu.
-Preparing to unpack .../033-g++-x86-64-linux-gnu_4%3a13.2.0-7ubuntu1_amd64.deb ...
-Unpacking g++-x86-64-linux-gnu (4:13.2.0-7ubuntu1) ...
-Selecting previously unselected package g++.
-Preparing to unpack .../034-g++_4%3a13.2.0-7ubuntu1_amd64.deb ...
-Unpacking g++ (4:13.2.0-7ubuntu1) ...
-Selecting previously unselected package make.
-Preparing to unpack .../035-make_4.3-4.1build2_amd64.deb ...
-Unpacking make (4.3-4.1build2) ...
-Selecting previously unselected package libdpkg-perl.
-Preparing to unpack .../036-libdpkg-perl_1.22.6ubuntu6.1_all.deb ...
-Unpacking libdpkg-perl (1.22.6ubuntu6.1) ...
-Selecting previously unselected package bzip2.
-Preparing to unpack .../037-bzip2_1.0.8-5.1build0.1_amd64.deb ...
-Unpacking bzip2 (1.0.8-5.1build0.1) ...
-Selecting previously unselected package lto-disabled-list.
-Preparing to unpack .../038-lto-disabled-list_47_all.deb ...
-Unpacking lto-disabled-list (47) ...
-Selecting previously unselected package dpkg-dev.
-Preparing to unpack .../039-dpkg-dev_1.22.6ubuntu6.1_all.deb ...
-Unpacking dpkg-dev (1.22.6ubuntu6.1) ...
-Selecting previously unselected package build-essential.
-Preparing to unpack .../040-build-essential_12.10ubuntu1_amd64.deb ...
-Unpacking build-essential (12.10ubuntu1) ...
-Selecting previously unselected package bzip2-doc.
-Preparing to unpack .../041-bzip2-doc_1.0.8-5.1build0.1_all.deb ...
-Unpacking bzip2-doc (1.0.8-5.1build0.1) ...
-Selecting previously unselected package libfakeroot:amd64.
-Preparing to unpack .../042-libfakeroot_1.33-1_amd64.deb ...
-Unpacking libfakeroot:amd64 (1.33-1) ...
-Selecting previously unselected package fakeroot.
-Preparing to unpack .../043-fakeroot_1.33-1_amd64.deb ...
-Unpacking fakeroot (1.33-1) ...
-Selecting previously unselected package gir1.2-gdkpixbuf-2.0:amd64.
-Preparing to unpack .../044-gir1.2-gdkpixbuf-2.0_2.42.10+dfsg-3ubuntu3.1_amd64.deb ...
-Unpacking gir1.2-gdkpixbuf-2.0:amd64 (2.42.10+dfsg-3ubuntu3.1) ...
-Selecting previously unselected package gir1.2-glib-2.0-dev:amd64.
-Preparing to unpack .../045-gir1.2-glib-2.0-dev_2.80.0-6ubuntu3.2_amd64.deb ...
-Unpacking gir1.2-glib-2.0-dev:amd64 (2.80.0-6ubuntu3.2) ...
-Selecting previously unselected package libnotify4:amd64.
-Preparing to unpack .../046-libnotify4_0.8.3-1build2_amd64.deb ...
-Unpacking libnotify4:amd64 (0.8.3-1build2) ...
-Selecting previously unselected package gir1.2-notify-0.7:amd64.
-Preparing to unpack .../047-gir1.2-notify-0.7_0.8.3-1build2_amd64.deb ...
-Unpacking gir1.2-notify-0.7:amd64 (0.8.3-1build2) ...
-Selecting previously unselected package icu-devtools.
-Preparing to unpack .../048-icu-devtools_74.2-1ubuntu3.1_amd64.deb ...
-Unpacking icu-devtools (74.2-1ubuntu3.1) ...
-Selecting previously unselected package libalgorithm-diff-perl.
-Preparing to unpack .../049-libalgorithm-diff-perl_1.201-1_all.deb ...
-Unpacking libalgorithm-diff-perl (1.201-1) ...
-Selecting previously unselected package libalgorithm-diff-xs-perl:amd64.
-Preparing to unpack .../050-libalgorithm-diff-xs-perl_0.04-8build3_amd64.deb ...
-Unpacking libalgorithm-diff-xs-perl:amd64 (0.04-8build3) ...
-Selecting previously unselected package libalgorithm-merge-perl.
-Preparing to unpack .../051-libalgorithm-merge-perl_0.08-5_all.deb ...
-Unpacking libalgorithm-merge-perl (0.08-5) ...
-Selecting previously unselected package libbz2-dev:amd64.
-Preparing to unpack .../052-libbz2-dev_1.0.8-5.1build0.1_amd64.deb ...
-Unpacking libbz2-dev:amd64 (1.0.8-5.1build0.1) ...
-Selecting previously unselected package libcurl4-openssl-dev:amd64.
-Preparing to unpack .../053-libcurl4-openssl-dev_8.5.0-2ubuntu10.6_amd64.deb ...
-Unpacking libcurl4-openssl-dev:amd64 (8.5.0-2ubuntu10.6) ...
-Selecting previously unselected package libdeflate-dev:amd64.
-Preparing to unpack .../054-libdeflate-dev_1.19-1build1.1_amd64.deb ...
-Unpacking libdeflate-dev:amd64 (1.19-1build1.1) ...
-Selecting previously unselected package libfile-fcntllock-perl.
-Preparing to unpack .../055-libfile-fcntllock-perl_0.22-4ubuntu5_amd64.deb ...
-Unpacking libfile-fcntllock-perl (0.22-4ubuntu5) ...
-Selecting previously unselected package libfontenc1:amd64.
-Preparing to unpack .../056-libfontenc1_1%3a1.1.8-1build1_amd64.deb ...
-Unpacking libfontenc1:amd64 (1:1.1.8-1build1) ...
-Selecting previously unselected package libgtk2.0-common.
-Preparing to unpack .../057-libgtk2.0-common_2.24.33-4ubuntu1.1_all.deb ...
-Unpacking libgtk2.0-common (2.24.33-4ubuntu1.1) ...
-Selecting previously unselected package libgtk2.0-0t64:amd64.
-Preparing to unpack .../058-libgtk2.0-0t64_2.24.33-4ubuntu1.1_amd64.deb ...
-Unpacking libgtk2.0-0t64:amd64 (2.24.33-4ubuntu1.1) ...
-Selecting previously unselected package libgail18t64:amd64.
-Preparing to unpack .../059-libgail18t64_2.24.33-4ubuntu1.1_amd64.deb ...
-Unpacking libgail18t64:amd64 (2.24.33-4ubuntu1.1) ...
-Selecting previously unselected package libgail-common:amd64.
-Preparing to unpack .../060-libgail-common_2.24.33-4ubuntu1.1_amd64.deb ...
-Unpacking libgail-common:amd64 (2.24.33-4ubuntu1.1) ...
-Selecting previously unselected package libxcb-randr0:amd64.
-Preparing to unpack .../061-libxcb-randr0_1.15-1ubuntu2_amd64.deb ...
-Unpacking libxcb-randr0:amd64 (1.15-1ubuntu2) ...
-Selecting previously unselected package libgbm1:amd64.
-Preparing to unpack .../062-libgbm1_24.0.9-0ubuntu0.3_amd64.deb ...
-Unpacking libgbm1:amd64 (24.0.9-0ubuntu0.3) ...
-Selecting previously unselected package libgbm-dev:amd64.
-Preparing to unpack .../063-libgbm-dev_24.0.9-0ubuntu0.3_amd64.deb ...
-Unpacking libgbm-dev:amd64 (24.0.9-0ubuntu0.3) ...
-Selecting previously unselected package libffi-dev:amd64.
-Preparing to unpack .../064-libffi-dev_3.4.6-1build1_amd64.deb ...
-Unpacking libffi-dev:amd64 (3.4.6-1build1) ...
-Selecting previously unselected package python3-packaging.
-Preparing to unpack .../065-python3-packaging_24.0-1_all.deb ...
-Unpacking python3-packaging (24.0-1) ...
-Selecting previously unselected package libglib2.0-dev-bin.
-Preparing to unpack .../066-libglib2.0-dev-bin_2.80.0-6ubuntu3.2_amd64.deb ...
-Unpacking libglib2.0-dev-bin (2.80.0-6ubuntu3.2) ...
-Selecting previously unselected package uuid-dev:amd64.
-Preparing to unpack .../067-uuid-dev_2.39.3-9ubuntu6.1_amd64.deb ...
-Unpacking uuid-dev:amd64 (2.39.3-9ubuntu6.1) ...
-Selecting previously unselected package libblkid-dev:amd64.
-Preparing to unpack .../068-libblkid-dev_2.39.3-9ubuntu6.1_amd64.deb ...
-Unpacking libblkid-dev:amd64 (2.39.3-9ubuntu6.1) ...
-Selecting previously unselected package libsepol-dev:amd64.
-Preparing to unpack .../069-libsepol-dev_3.5-2build1_amd64.deb ...
-Unpacking libsepol-dev:amd64 (3.5-2build1) ...
-Selecting previously unselected package libpcre2-16-0:amd64.
-Preparing to unpack .../070-libpcre2-16-0_10.42-4ubuntu2_amd64.deb ...
-Unpacking libpcre2-16-0:amd64 (10.42-4ubuntu2) ...
-Selecting previously unselected package libpcre2-32-0:amd64.
-Preparing to unpack .../071-libpcre2-32-0_10.42-4ubuntu2_amd64.deb ...
-Unpacking libpcre2-32-0:amd64 (10.42-4ubuntu2) ...
-Selecting previously unselected package libpcre2-posix3:amd64.
-Preparing to unpack .../072-libpcre2-posix3_10.42-4ubuntu2_amd64.deb ...
-Unpacking libpcre2-posix3:amd64 (10.42-4ubuntu2) ...
-Selecting previously unselected package libpcre2-dev:amd64.
-Preparing to unpack .../073-libpcre2-dev_10.42-4ubuntu2_amd64.deb ...
-Unpacking libpcre2-dev:amd64 (10.42-4ubuntu2) ...
-Selecting previously unselected package libselinux1-dev:amd64.
-Preparing to unpack .../074-libselinux1-dev_3.5-2ubuntu2_amd64.deb ...
-Unpacking libselinux1-dev:amd64 (3.5-2ubuntu2) ...
-Selecting previously unselected package libmount-dev:amd64.
-Preparing to unpack .../075-libmount-dev_2.39.3-9ubuntu6.1_amd64.deb ...
-Unpacking libmount-dev:amd64 (2.39.3-9ubuntu6.1) ...
-Selecting previously unselected package libpkgconf3:amd64.
-Preparing to unpack .../076-libpkgconf3_1.8.1-2build1_amd64.deb ...
-Unpacking libpkgconf3:amd64 (1.8.1-2build1) ...
-Selecting previously unselected package pkgconf-bin.
-Preparing to unpack .../077-pkgconf-bin_1.8.1-2build1_amd64.deb ...
-Unpacking pkgconf-bin (1.8.1-2build1) ...
-Selecting previously unselected package pkgconf:amd64.
-Preparing to unpack .../078-pkgconf_1.8.1-2build1_amd64.deb ...
-Unpacking pkgconf:amd64 (1.8.1-2build1) ...
-Selecting previously unselected package zlib1g-dev:amd64.
-Preparing to unpack .../079-zlib1g-dev_1%3a1.3.dfsg-3.1ubuntu2.1_amd64.deb ...
-Unpacking zlib1g-dev:amd64 (1:1.3.dfsg-3.1ubuntu2.1) ...
-Selecting previously unselected package libgirepository-2.0-0:amd64.
-Preparing to unpack .../080-libgirepository-2.0-0_2.80.0-6ubuntu3.2_amd64.deb ...
-Unpacking libgirepository-2.0-0:amd64 (2.80.0-6ubuntu3.2) ...
-Selecting previously unselected package libglib2.0-dev:amd64.
-Preparing to unpack .../081-libglib2.0-dev_2.80.0-6ubuntu3.2_amd64.deb ...
-Unpacking libglib2.0-dev:amd64 (2.80.0-6ubuntu3.2) ...
-Selecting previously unselected package libjpeg-turbo8-dev:amd64.
-Preparing to unpack .../082-libjpeg-turbo8-dev_2.1.5-2ubuntu2_amd64.deb ...
-Unpacking libjpeg-turbo8-dev:amd64 (2.1.5-2ubuntu2) ...
-Selecting previously unselected package libjpeg8-dev:amd64.
-Preparing to unpack .../083-libjpeg8-dev_8c-2ubuntu11_amd64.deb ...
-Unpacking libjpeg8-dev:amd64 (8c-2ubuntu11) ...
-Selecting previously unselected package libjpeg-dev:amd64.
-Preparing to unpack .../084-libjpeg-dev_8c-2ubuntu11_amd64.deb ...
-Unpacking libjpeg-dev:amd64 (8c-2ubuntu11) ...
-Selecting previously unselected package libpng-dev:amd64.
-Preparing to unpack .../085-libpng-dev_1.6.43-5build1_amd64.deb ...
-Unpacking libpng-dev:amd64 (1.6.43-5build1) ...
-Selecting previously unselected package libjbig-dev:amd64.
-Preparing to unpack .../086-libjbig-dev_2.1-6.1ubuntu2_amd64.deb ...
-Unpacking libjbig-dev:amd64 (2.1-6.1ubuntu2) ...
-Selecting previously unselected package liblzma-dev:amd64.
-Preparing to unpack .../087-liblzma-dev_5.6.1+really5.4.5-1build0.1_amd64.deb ...
-Unpacking liblzma-dev:amd64 (5.6.1+really5.4.5-1build0.1) ...
-Selecting previously unselected package libzstd-dev:amd64.
-Preparing to unpack .../088-libzstd-dev_1.5.5+dfsg2-2build1.1_amd64.deb ...
-Unpacking libzstd-dev:amd64 (1.5.5+dfsg2-2build1.1) ...
-Selecting previously unselected package libwebpdemux2:amd64.
-Preparing to unpack .../089-libwebpdemux2_1.3.2-0.4build3_amd64.deb ...
-Unpacking libwebpdemux2:amd64 (1.3.2-0.4build3) ...
-Selecting previously unselected package libwebpmux3:amd64.
-Preparing to unpack .../090-libwebpmux3_1.3.2-0.4build3_amd64.deb ...
-Unpacking libwebpmux3:amd64 (1.3.2-0.4build3) ...
-Selecting previously unselected package libwebpdecoder3:amd64.
-Preparing to unpack .../091-libwebpdecoder3_1.3.2-0.4build3_amd64.deb ...
-Unpacking libwebpdecoder3:amd64 (1.3.2-0.4build3) ...
-Selecting previously unselected package libsharpyuv-dev:amd64.
-Preparing to unpack .../092-libsharpyuv-dev_1.3.2-0.4build3_amd64.deb ...
-Unpacking libsharpyuv-dev:amd64 (1.3.2-0.4build3) ...
-Selecting previously unselected package libwebp-dev:amd64.
-Preparing to unpack .../093-libwebp-dev_1.3.2-0.4build3_amd64.deb ...
-Unpacking libwebp-dev:amd64 (1.3.2-0.4build3) ...
-Selecting previously unselected package libtiffxx6:amd64.
-Preparing to unpack .../094-libtiffxx6_4.5.1+git230720-4ubuntu2.2_amd64.deb ...
-Unpacking libtiffxx6:amd64 (4.5.1+git230720-4ubuntu2.2) ...
-Selecting previously unselected package liblerc-dev:amd64.
-Preparing to unpack .../095-liblerc-dev_4.0.0+ds-4ubuntu2_amd64.deb ...
-Unpacking liblerc-dev:amd64 (4.0.0+ds-4ubuntu2) ...
-Selecting previously unselected package libtiff-dev:amd64.
-Preparing to unpack .../096-libtiff-dev_4.5.1+git230720-4ubuntu2.2_amd64.deb ...
-Unpacking libtiff-dev:amd64 (4.5.1+git230720-4ubuntu2.2) ...
-Selecting previously unselected package libgdk-pixbuf-2.0-dev:amd64.
-Preparing to unpack .../097-libgdk-pixbuf-2.0-dev_2.42.10+dfsg-3ubuntu3.1_amd64.deb ...
-Unpacking libgdk-pixbuf-2.0-dev:amd64 (2.42.10+dfsg-3ubuntu3.1) ...
-Selecting previously unselected package libglapi-mesa:amd64.
-Preparing to unpack .../098-libglapi-mesa_24.0.9-0ubuntu0.3_amd64.deb ...
-Unpacking libglapi-mesa:amd64 (24.0.9-0ubuntu0.3) ...
-Selecting previously unselected package libgl1-amber-dri:amd64.
-Preparing to unpack .../099-libgl1-amber-dri_21.3.9-0ubuntu2_amd64.deb ...
-Unpacking libgl1-amber-dri:amd64 (21.3.9-0ubuntu2) ...
-Selecting previously unselected package libvulkan1:amd64.
-Preparing to unpack .../100-libvulkan1_1.3.275.0-1build1_amd64.deb ...
-Unpacking libvulkan1:amd64 (1.3.275.0-1build1) ...
-Selecting previously unselected package libgl1-mesa-dri:amd64.
-Preparing to unpack .../101-libgl1-mesa-dri_24.0.9-0ubuntu0.3_amd64.deb ...
-Unpacking libgl1-mesa-dri:amd64 (24.0.9-0ubuntu0.3) ...
-Selecting previously unselected package libxcb-glx0:amd64.
-Preparing to unpack .../102-libxcb-glx0_1.15-1ubuntu2_amd64.deb ...
-Unpacking libxcb-glx0:amd64 (1.15-1ubuntu2) ...
-Selecting previously unselected package libxxf86vm1:amd64.
-Preparing to unpack .../103-libxxf86vm1_1%3a1.1.4-1build4_amd64.deb ...
-Unpacking libxxf86vm1:amd64 (1:1.1.4-1build4) ...
-Selecting previously unselected package libglx-mesa0:amd64.
-Preparing to unpack .../104-libglx-mesa0_24.0.9-0ubuntu0.3_amd64.deb ...
-Unpacking libglx-mesa0:amd64 (24.0.9-0ubuntu0.3) ...
-Selecting previously unselected package libgtk2.0-bin.
-Preparing to unpack .../105-libgtk2.0-bin_2.24.33-4ubuntu1.1_amd64.deb ...
-Unpacking libgtk2.0-bin (2.24.33-4ubuntu1.1) ...
-Selecting previously unselected package libice6:amd64.
-Preparing to unpack .../106-libice6_2%3a1.0.10-1build3_amd64.deb ...
-Unpacking libice6:amd64 (2:1.0.10-1build3) ...
-Selecting previously unselected package libicu-dev:amd64.
-Preparing to unpack .../107-libicu-dev_74.2-1ubuntu3.1_amd64.deb ...
-Unpacking libicu-dev:amd64 (74.2-1ubuntu3.1) ...
-Selecting previously unselected package mysql-common.
-Preparing to unpack .../108-mysql-common_5.8+1.1.0build1_all.deb ...
-Unpacking mysql-common (5.8+1.1.0build1) ...
-Selecting previously unselected package libmysqlclient21:amd64.
-Preparing to unpack .../109-libmysqlclient21_8.0.40-0ubuntu0.24.04.1_amd64.deb ...
-Unpacking libmysqlclient21:amd64 (8.0.40-0ubuntu0.24.04.1) ...
-Selecting previously unselected package libssl-dev:amd64.
-Preparing to unpack .../110-libssl-dev_3.0.13-0ubuntu3.4_amd64.deb ...
-Unpacking libssl-dev:amd64 (3.0.13-0ubuntu3.4) ...
-Selecting previously unselected package libmysqlclient-dev.
-Preparing to unpack .../111-libmysqlclient-dev_8.0.40-0ubuntu0.24.04.1_amd64.deb ...
-Unpacking libmysqlclient-dev (8.0.40-0ubuntu0.24.04.1) ...
-Selecting previously unselected package libncurses-dev:amd64.
-Preparing to unpack .../112-libncurses-dev_6.4+20240113-1ubuntu2_amd64.deb ...
-Unpacking libncurses-dev:amd64 (6.4+20240113-1ubuntu2) ...
-Selecting previously unselected package libnotify-dev:amd64.
-Preparing to unpack .../113-libnotify-dev_0.8.3-1build2_amd64.deb ...
-Unpacking libnotify-dev:amd64 (0.8.3-1build2) ...
-Selecting previously unselected package libpng-tools.
-Preparing to unpack .../114-libpng-tools_1.6.43-5build1_amd64.deb ...
-Unpacking libpng-tools (1.6.43-5build1) ...
-Selecting previously unselected package libreadline-dev:amd64.
-Preparing to unpack .../115-libreadline-dev_8.2-4build1_amd64.deb ...
-Unpacking libreadline-dev:amd64 (8.2-4build1) ...
-Selecting previously unselected package libsm6:amd64.
-Preparing to unpack .../116-libsm6_2%3a1.2.3-1build3_amd64.deb ...
-Unpacking libsm6:amd64 (2:1.2.3-1build3) ...
-Selecting previously unselected package libsqlite3-dev:amd64.
-Preparing to unpack .../117-libsqlite3-dev_3.45.1-1ubuntu2_amd64.deb ...
-Unpacking libsqlite3-dev:amd64 (3.45.1-1ubuntu2) ...
-Selecting previously unselected package libxt6t64:amd64.
-Preparing to unpack .../118-libxt6t64_1%3a1.2.1-1.2build1_amd64.deb ...
-Unpacking libxt6t64:amd64 (1:1.2.1-1.2build1) ...
-Selecting previously unselected package libxmu6:amd64.
-Preparing to unpack .../119-libxmu6_2%3a1.1.3-3build2_amd64.deb ...
-Unpacking libxmu6:amd64 (2:1.1.3-3build2) ...
-Selecting previously unselected package libxaw7:amd64.
-Preparing to unpack .../120-libxaw7_2%3a1.0.14-1build2_amd64.deb ...
-Unpacking libxaw7:amd64 (2:1.0.14-1build2) ...
-Selecting previously unselected package libxfont2:amd64.
-Preparing to unpack .../121-libxfont2_1%3a2.0.6-1build1_amd64.deb ...
-Unpacking libxfont2:amd64 (1:2.0.6-1build1) ...
-Selecting previously unselected package libxkbfile1:amd64.
-Preparing to unpack .../122-libxkbfile1_1%3a1.1.0-1build4_amd64.deb ...
-Unpacking libxkbfile1:amd64 (1:1.1.0-1build4) ...
-Selecting previously unselected package libxml2-dev:amd64.
-Preparing to unpack .../123-libxml2-dev_2.9.14+dfsg-1.3ubuntu3_amd64.deb ...
-Unpacking libxml2-dev:amd64 (2.9.14+dfsg-1.3ubuntu3) ...
-Selecting previously unselected package libxslt1-dev:amd64.
-Preparing to unpack .../124-libxslt1-dev_1.1.39-0exp1build1_amd64.deb ...
-Unpacking libxslt1-dev:amd64 (1.1.39-0exp1build1) ...
-Selecting previously unselected package libxss1:amd64.
-Preparing to unpack .../125-libxss1_1%3a1.2.3-1build3_amd64.deb ...
-Unpacking libxss1:amd64 (1:1.2.3-1build3) ...
-Selecting previously unselected package mesa-vulkan-drivers:amd64.
-Preparing to unpack .../126-mesa-vulkan-drivers_24.0.9-0ubuntu0.3_amd64.deb ...
-Unpacking mesa-vulkan-drivers:amd64 (24.0.9-0ubuntu0.3) ...
-Selecting previously unselected package micro.
-Preparing to unpack .../127-micro_2.0.13-1_amd64.deb ...
-Unpacking micro (2.0.13-1) ...
-Selecting previously unselected package mysql-client-core-8.0.
-Preparing to unpack .../128-mysql-client-core-8.0_8.0.40-0ubuntu0.24.04.1_amd64.deb ...
-Unpacking mysql-client-core-8.0 (8.0.40-0ubuntu0.24.04.1) ...
-Preparing to unpack .../129-software-properties-common_0.99.49.1_all.deb ...
-Unpacking software-properties-common (0.99.49.1) over (0.99.48) ...
-Preparing to unpack .../130-python3-software-properties_0.99.49.1_all.deb ...
-Unpacking python3-software-properties (0.99.49.1) over (0.99.48) ...
-Selecting previously unselected package sqlite3.
-Preparing to unpack .../131-sqlite3_3.45.1-1ubuntu2_amd64.deb ...
-Unpacking sqlite3 (3.45.1-1ubuntu2) ...
-Selecting previously unselected package x11-xkb-utils.
-Preparing to unpack .../132-x11-xkb-utils_7.7+8build2_amd64.deb ...
-Unpacking x11-xkb-utils (7.7+8build2) ...
-Selecting previously unselected package xclip.
-Preparing to unpack .../133-xclip_0.13-3_amd64.deb ...
-Unpacking xclip (0.13-3) ...
-Selecting previously unselected package xfonts-encodings.
-Preparing to unpack .../134-xfonts-encodings_1%3a1.0.5-0ubuntu2_all.deb ...
-Unpacking xfonts-encodings (1:1.0.5-0ubuntu2) ...
-Selecting previously unselected package xfonts-utils.
-Preparing to unpack .../135-xfonts-utils_1%3a7.7+6build3_amd64.deb ...
-Unpacking xfonts-utils (1:7.7+6build3) ...
-Selecting previously unselected package xfonts-base.
-Preparing to unpack .../136-xfonts-base_1%3a1.0.5+nmu1_all.deb ...
-Unpacking xfonts-base (1:1.0.5+nmu1) ...
-Selecting previously unselected package xserver-common.
-Preparing to unpack .../137-xserver-common_2%3a21.1.12-1ubuntu1.1_all.deb ...
-Unpacking xserver-common (2:21.1.12-1ubuntu1.1) ...
-Selecting previously unselected package libglvnd0:amd64.
-Preparing to unpack .../138-libglvnd0_1.7.0-1build1_amd64.deb ...
-Unpacking libglvnd0:amd64 (1.7.0-1build1) ...
-Selecting previously unselected package libglx0:amd64.
-Preparing to unpack .../139-libglx0_1.7.0-1build1_amd64.deb ...
-Unpacking libglx0:amd64 (1.7.0-1build1) ...
-Selecting previously unselected package libgl1:amd64.
-Preparing to unpack .../140-libgl1_1.7.0-1build1_amd64.deb ...
-Unpacking libgl1:amd64 (1.7.0-1build1) ...
-Selecting previously unselected package xvfb.
-Preparing to unpack .../141-xvfb_2%3a21.1.12-1ubuntu1.1_amd64.deb ...
-Unpacking xvfb (2:21.1.12-1ubuntu1.1) ...
-Selecting previously unselected package libyaml-dev:amd64.
-Preparing to unpack .../142-libyaml-dev_0.2.5-1build1_amd64.deb ...
-Unpacking libyaml-dev:amd64 (0.2.5-1build1) ...
-Setting up bzip2-doc (1.0.8-5.1build0.1) ...
-Setting up micro (2.0.13-1) ...
-Setting up libice6:amd64 (2:1.0.10-1build3) ...
-Setting up mysql-common (5.8+1.1.0build1) ...
-update-alternatives: using /etc/mysql/my.cnf.fallback to provide /etc/mysql/my.cnf (my.cnf) in auto mode
-Setting up mysql-client-core-8.0 (8.0.40-0ubuntu0.24.04.1) ...
-Setting up libjpeg-turbo8-dev:amd64 (2.1.5-2ubuntu2) ...
-Setting up libmysqlclient21:amd64 (8.0.40-0ubuntu0.24.04.1) ...
-Setting up lto-disabled-list (47) ...
-Setting up libncurses-dev:amd64 (6.4+20240113-1ubuntu2) ...
-Setting up libzstd-dev:amd64 (1.5.5+dfsg2-2build1.1) ...
-Setting up gir1.2-gdkpixbuf-2.0:amd64 (2.42.10+dfsg-3ubuntu3.1) ...
-Setting up libyaml-dev:amd64 (0.2.5-1build1) ...
-Setting up libpng-tools (1.6.43-5build1) ...
-Setting up libfile-fcntllock-perl (0.22-4ubuntu5) ...
-Setting up libgirepository-2.0-0:amd64 (2.80.0-6ubuntu3.2) ...
-Setting up libalgorithm-diff-perl (1.201-1) ...
-Setting up libglvnd0:amd64 (1.7.0-1build1) ...
-Setting up libxcb-glx0:amd64 (1.15-1ubuntu2) ...
-Setting up libwebpdemux2:amd64 (1.3.2-0.4build3) ...
-Setting up binutils-common:amd64 (2.42-4ubuntu2.3) ...
-Setting up libjbig-dev:amd64 (2.1-6.1ubuntu2) ...
-Setting up libwebpdecoder3:amd64 (1.3.2-0.4build3) ...
-Setting up libctf-nobfd0:amd64 (2.42-4ubuntu2.3) ...
-Setting up libreadline-dev:amd64 (8.2-4build1) ...
-Setting up libgomp1:amd64 (14.2.0-4ubuntu2~24.04) ...
-Setting up bzip2 (1.0.8-5.1build0.1) ...
-Setting up libffi-dev:amd64 (3.4.6-1build1) ...
-Setting up libpcre2-16-0:amd64 (10.42-4ubuntu2) ...
-Setting up libsframe1:amd64 (2.42-4ubuntu2.3) ...
-Setting up libfakeroot:amd64 (1.33-1) ...
-Setting up libxxf86vm1:amd64 (1:1.1.4-1build4) ...
-Setting up fakeroot (1.33-1) ...
-update-alternatives: using /usr/bin/fakeroot-sysv to provide /usr/bin/fakeroot (fakeroot) in auto mode
-Setting up libfontenc1:amd64 (1:1.1.8-1build1) ...
-Setting up libpcre2-32-0:amd64 (10.42-4ubuntu2) ...
-Setting up python3-packaging (24.0-1) ...
-Setting up libpkgconf3:amd64 (1.8.1-2build1) ...
-Setting up gcc-13-base:amd64 (13.3.0-6ubuntu2~24.04) ...
-Setting up libsqlite3-dev:amd64 (3.45.1-1ubuntu2) ...
-Setting up python3-software-properties (0.99.49.1) ...
-Setting up make (4.3-4.1build2) ...
-Setting up libcurl4-openssl-dev:amd64 (8.5.0-2ubuntu10.6) ...
-Setting up uuid-dev:amd64 (2.39.3-9ubuntu6.1) ...
-Setting up libnotify4:amd64 (0.8.3-1build2) ...
-Setting up xfonts-encodings (1:1.0.5-0ubuntu2) ...
-Setting up libquadmath0:amd64 (14.2.0-4ubuntu2~24.04) ...
-Setting up libssl-dev:amd64 (3.0.13-0ubuntu3.4) ...
-Setting up libmpc3:amd64 (1.3.1-1build1) ...
-Setting up libatomic1:amd64 (14.2.0-4ubuntu2~24.04) ...
-Setting up icu-devtools (74.2-1ubuntu3.1) ...
-Setting up libsepol-dev:amd64 (3.5-2build1) ...
-Setting up pkgconf-bin (1.8.1-2build1) ...
-Setting up liblerc-dev:amd64 (4.0.0+ds-4ubuntu2) ...
-Setting up libglapi-mesa:amd64 (24.0.9-0ubuntu0.3) ...
-Setting up libdpkg-perl (1.22.6ubuntu6.1) ...
-Setting up libvulkan1:amd64 (1.3.275.0-1build1) ...
-Setting up liblzma-dev:amd64 (5.6.1+really5.4.5-1build0.1) ...
-Setting up libubsan1:amd64 (14.2.0-4ubuntu2~24.04) ...
-Setting up zlib1g-dev:amd64 (1:1.3.dfsg-3.1ubuntu2.1) ...
-Setting up libpcre2-posix3:amd64 (10.42-4ubuntu2) ...
-Setting up gir1.2-notify-0.7:amd64 (0.8.3-1build2) ...
-Setting up gir1.2-glib-2.0-dev:amd64 (2.80.0-6ubuntu3.2) ...
-Setting up libhwasan0:amd64 (14.2.0-4ubuntu2~24.04) ...
-Setting up libxcb-randr0:amd64 (1.15-1ubuntu2) ...
-Setting up libasan8:amd64 (14.2.0-4ubuntu2~24.04) ...
-Setting up libgtk2.0-common (2.24.33-4ubuntu1.1) ...
-Setting up libxss1:amd64 (1:1.2.3-1build3) ...
-Setting up libxkbfile1:amd64 (1:1.1.0-1build4) ...
-Setting up libtsan2:amd64 (14.2.0-4ubuntu2~24.04) ...
-Setting up libbinutils:amd64 (2.42-4ubuntu2.3) ...
-Setting up libjpeg8-dev:amd64 (8c-2ubuntu11) ...
-Setting up libisl23:amd64 (0.26-3build1) ...
-Setting up libsharpyuv-dev:amd64 (1.3.2-0.4build3) ...
-Setting up libwebpmux3:amd64 (1.3.2-0.4build3) ...
-Setting up libtiffxx6:amd64 (4.5.1+git230720-4ubuntu2.2) ...
-Setting up libdeflate-dev:amd64 (1.19-1build1.1) ...
-Setting up libsm6:amd64 (2:1.2.3-1build3) ...
-Setting up libxfont2:amd64 (1:2.0.6-1build1) ...
-Setting up libalgorithm-diff-xs-perl:amd64 (0.04-8build3) ...
-Setting up libicu-dev:amd64 (74.2-1ubuntu3.1) ...
-Setting up libcc1-0:amd64 (14.2.0-4ubuntu2~24.04) ...
-Setting up sqlite3 (3.45.1-1ubuntu2) ...
-Setting up liblsan0:amd64 (14.2.0-4ubuntu2~24.04) ...
-Setting up libitm1:amd64 (14.2.0-4ubuntu2~24.04) ...
-Setting up libmysqlclient-dev (8.0.40-0ubuntu0.24.04.1) ...
-Setting up libalgorithm-merge-perl (0.08-5) ...
-Setting up libbz2-dev:amd64 (1.0.8-5.1build0.1) ...
-Setting up libctf0:amd64 (2.42-4ubuntu2.3) ...
-Setting up libglib2.0-dev-bin (2.80.0-6ubuntu3.2) ...
-Setting up libgl1-amber-dri:amd64 (21.3.9-0ubuntu2) ...
-Setting up mesa-vulkan-drivers:amd64 (24.0.9-0ubuntu0.3) ...
-Setting up libblkid-dev:amd64 (2.39.3-9ubuntu6.1) ...
-Setting up libpcre2-dev:amd64 (10.42-4ubuntu2) ...
-Setting up libgbm1:amd64 (24.0.9-0ubuntu0.3) ...
-Setting up cpp-13-x86-64-linux-gnu (13.3.0-6ubuntu2~24.04) ...
-Setting up libselinux1-dev:amd64 (3.5-2ubuntu2) ...
-Setting up libgl1-mesa-dri:amd64 (24.0.9-0ubuntu0.3) ...
-Setting up libpng-dev:amd64 (1.6.43-5build1) ...
-Setting up libjpeg-dev:amd64 (8c-2ubuntu11) ...
-Setting up xfonts-utils (1:7.7+6build3) ...
-Setting up libgbm-dev:amd64 (24.0.9-0ubuntu0.3) ...
-Setting up software-properties-common (0.99.49.1) ...
-Setting up pkgconf:amd64 (1.8.1-2build1) ...
-Setting up libxml2-dev:amd64 (2.9.14+dfsg-1.3ubuntu3) ...
-Setting up xfonts-base (1:1.0.5+nmu1) ...
-Setting up libgprofng0:amd64 (2.42-4ubuntu2.3) ...
-Setting up libwebp-dev:amd64 (1.3.2-0.4build3) ...
-Setting up libtiff-dev:amd64 (4.5.1+git230720-4ubuntu2.2) ...
-Setting up libxt6t64:amd64 (1:1.2.1-1.2build1) ...
-Setting up libgtk2.0-0t64:amd64 (2.24.33-4ubuntu1.1) ...
-Setting up libgail18t64:amd64 (2.24.33-4ubuntu1.1) ...
-Setting up libgcc-13-dev:amd64 (13.3.0-6ubuntu2~24.04) ...
-Setting up libgtk2.0-bin (2.24.33-4ubuntu1.1) ...
-Setting up libmount-dev:amd64 (2.39.3-9ubuntu6.1) ...
-Setting up libstdc++-13-dev:amd64 (13.3.0-6ubuntu2~24.04) ...
-Setting up binutils-x86-64-linux-gnu (2.42-4ubuntu2.3) ...
-Setting up cpp-x86-64-linux-gnu (4:13.2.0-7ubuntu1) ...
-Setting up libxmu6:amd64 (2:1.1.3-3build2) ...
-Setting up libglx-mesa0:amd64 (24.0.9-0ubuntu0.3) ...
-Setting up libxslt1-dev:amd64 (1.1.39-0exp1build1) ...
-Setting up libglx0:amd64 (1.7.0-1build1) ...
-Setting up cpp-13 (13.3.0-6ubuntu2~24.04) ...
-Setting up libgail-common:amd64 (2.24.33-4ubuntu1.1) ...
-Setting up gcc-13-x86-64-linux-gnu (13.3.0-6ubuntu2~24.04) ...
-Setting up binutils (2.42-4ubuntu2.3) ...
-Setting up libxaw7:amd64 (2:1.0.14-1build2) ...
-Setting up dpkg-dev (1.22.6ubuntu6.1) ...
-Setting up libgl1:amd64 (1.7.0-1build1) ...
-Setting up libglib2.0-dev:amd64 (2.80.0-6ubuntu3.2) ...
-Setting up gcc-13 (13.3.0-6ubuntu2~24.04) ...
-Setting up xclip (0.13-3) ...
-Setting up cpp (4:13.2.0-7ubuntu1) ...
-Setting up g++-13-x86-64-linux-gnu (13.3.0-6ubuntu2~24.04) ...
-Setting up gcc-x86-64-linux-gnu (4:13.2.0-7ubuntu1) ...
-Setting up x11-xkb-utils (7.7+8build2) ...
-Setting up gcc (4:13.2.0-7ubuntu1) ...
-Setting up g++-x86-64-linux-gnu (4:13.2.0-7ubuntu1) ...
-Setting up xserver-common (2:21.1.12-1ubuntu1.1) ...
-Setting up g++-13 (13.3.0-6ubuntu2~24.04) ...
-Setting up xvfb (2:21.1.12-1ubuntu1.1) ...
-Setting up g++ (4:13.2.0-7ubuntu1) ...
-update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
-Setting up build-essential (12.10ubuntu1) ...
-Processing triggers for fontconfig (2.15.0-1.1ubuntu2) ...
-Processing triggers for libc-bin (2.39-0ubuntu8.3) ...
-Processing triggers for man-db (2.12.0-4build2) ...
-Processing triggers for libglib2.0-0t64:amd64 (2.80.0-6ubuntu3.2) ...
-Processing triggers for dbus (1.14.10-4ubuntu4.1) ...
-Processing triggers for install-info (7.1-3build2) ...
-Setting up libgdk-pixbuf-2.0-dev:amd64 (2.42.10+dfsg-3ubuntu3.1) ...
-Setting up libnotify-dev:amd64 (0.8.3-1build2) ...
-
-Running kernel seems to be up-to-date.
-
-No services need to be restarted.
-
-No containers need to be restarted.
-
-No user sessions are running outdated binaries.
-
-No VM guests are running outdated hypervisor (qemu) binaries on this host.
+0 upgraded, 0 newly installed, 0 to remove and 64 not upgraded.
 [1;33mScript Info: Verificando a instalação do compilador C[0m
 [1;32mCompilador C encontrado: gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0[0m
 [1;33mScript Info: Instalando ASDF - package manager[0m
+fatal: destination path '/home/mercado-paulo/.asdf' already exists and is not an empty directory.
 PATH: /home/mercado-paulo/.asdf/shims:/home/mercado-paulo/.asdf/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 [1;32mASDF foi instalado e carregado com sucesso[0m
 [1;33mScript Info: Instalando plugin Ruby[0m
-initializing plugin repository...[1;33mScript Info: Instalando Ruby[0m
-==> Downloading ruby-3.1.4.tar.gz...
--> curl -q -fL -o ruby-3.1.4.tar.gz https://cache.ruby-lang.org/pub/ruby/3.1/ruby-3.1.4.tar.gz
-==> Installing ruby-3.1.4...
--> ./configure "--prefix=$HOME/.asdf/installs/ruby/3.1.4" --enable-shared --with-ext=openssl,psych,+
--> make -j 2
--> make install
-==> Installed ruby-3.1.4 to /home/mercado-paulo/.asdf/installs/ruby/3.1.4
+updating plugin repository...HEAD is now at 00af419 feat: adding plugin for avalanchego (#1058)
+Plugin named ruby already added
+[1;33mScript Info: Instalando Ruby[0m
+ruby 3.1.4 is already installed
 [1;33mScript Info: Confirmando a versão do Ruby:[0m
 /home/mercado-paulo/.asdf/shims/ruby
 ruby 3.1.4p223 (2023-03-30 revision 957bb7cb81) [x86_64-linux]
 [1;33mScript Info: Instalando plugin Node[0m
+Plugin named nodejs already added
 [1;33mScript Info: Instalando NodeJs[0m
-Cloning node-build...
+nodejs 20.9.0 is already installed
 [1;33mScript Info: Confirmando a versão do NodeJS:[0m
 /home/mercado-paulo/.asdf/shims/node
 v20.9.0
 
-removed 52 packages, and changed 71 packages in 3s
+changed 14 packages in 5s
 
 24 packages are looking for funding
   run `npm fund` for details
+Reshimming asdf nodejs...
 
-added 1 package in 2s
+changed 1 package in 1s
+Reshimming asdf nodejs...
 [1;33mScript Info: Instalando plugin Python[0m
+Plugin named python already added
 [1;33mScript Info: Instalando Python [0m
-python-build 3.11.0 /home/mercado-paulo/.asdf/installs/python/3.11.0
+python 3.11.0 is already installed
 [1;33mScript Info: Confirmando a versão do Python:[0m
 /home/mercado-paulo/.asdf/shims/python
 Python 3.11.0
 [1;33mScript Info: Instalando Docker[0m
 # Executing docker install script, commit: 4c94a56999e10efcf48c5b8e3f6afea464f9108e
+Warning: the "docker" command appears to already exist on this system.
+
+If you already have Docker installed, this script can cause trouble, which is
+why we're displaying this warning and provide the opportunity to cancel the
+installation.
+
+If you installed the current Docker package using this script and are using it
+again to update Docker, you can ignore this message, but be aware that the
+script resets any custom changes in the deb and rpm repo configuration
+files to match the parameters passed to the script.
+
+You may press Ctrl+C now to abort this script.
++ sleep 20
++ sh -c apt-get -qq update >/dev/null
++ sh -c DEBIAN_FRONTEND=noninteractive apt-get -y -qq install ca-certificates curl >/dev/null
++ sh -c install -m 0755 -d /etc/apt/keyrings
++ sh -c curl -fsSL "https://download.docker.com/linux/ubuntu/gpg" -o /etc/apt/keyrings/docker.asc
++ sh -c chmod a+r /etc/apt/keyrings/docker.asc
++ sh -c echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu noble stable" > /etc/apt/sources.list.d/docker.list
++ sh -c apt-get -qq update >/dev/null
++ sh -c DEBIAN_FRONTEND=noninteractive apt-get -y -qq install docker-ce docker-ce-cli containerd.io docker-compose-plugin docker-ce-rootless-extras docker-buildx-plugin >/dev/null
++ sh -c docker version
 Client: Docker Engine - Community
  Version:           27.4.1
  API version:       1.47
@@ -922,44 +160,47 @@ WARNING: Access to the remote API on a privileged Docker daemon is equivalent
 
 [1;33mScript Info: Removendo Script de instalação[0m
 [1;33mScript Info: Clonando repositório Mercado Topográfico[0m
+fatal: destination path 'sistema-mercado-topografico' already exists and is not an empty directory.
+cp: cannot stat '/home/mercado/projetos/prepare-environment/application.yml': No such file or directory
 [1;33mScript Info: Instalando as Gems[0m
+./prepareEnvironment.sh: line 130: cd: ~/simbiose/code/sistema-mercado-topografico: No such file or directory
 Fetching gem metadata from https://rubygems.org/........
-Resolving dependencies...............
+Resolving dependencies...................
 Fetching rake 13.2.1
 Installing rake 13.2.1
 Fetching base64 0.2.0
 Fetching benchmark 0.4.0
-Installing benchmark 0.4.0
-Installing base64 0.2.0
 Fetching concurrent-ruby 1.3.4
 Fetching bigdecimal 3.1.9
-Installing bigdecimal 3.1.9 with native extensions
-Installing concurrent-ruby 1.3.4
+Installing base64 0.2.0
 Fetching connection_pool 2.4.1
-Installing connection_pool 2.4.1
+Installing benchmark 0.4.0
+Installing bigdecimal 3.1.9 with native extensions
 Fetching drb 2.2.1
-Installing drb 2.2.1
+Installing connection_pool 2.4.1
 Fetching logger 1.6.4
+Installing concurrent-ruby 1.3.4
+Installing drb 2.2.1
 Installing logger 1.6.4
 Fetching minitest 5.25.4
-Installing minitest 5.25.4
 Fetching securerandom 0.4.1
+Installing minitest 5.25.4
 Installing securerandom 0.4.1
 Fetching builder 3.3.0
-Installing builder 3.3.0
 Fetching erubi 1.13.1
-Installing erubi 1.13.1
 Fetching racc 1.8.1
-Installing racc 1.8.1 with native extensions
+Installing erubi 1.13.1
+Installing builder 3.3.0
 Fetching crass 1.0.6
-Installing crass 1.0.6
+Installing racc 1.8.1 with native extensions
 Fetching rack 2.2.10
-Installing rack 2.2.10
+Installing crass 1.0.6
 Fetching useragent 0.16.11
+Installing rack 2.2.10
 Installing useragent 0.16.11
 Fetching nio4r 2.7.4
-Installing nio4r 2.7.4 with native extensions
 Fetching websocket-extensions 0.1.5
+Installing nio4r 2.7.4 with native extensions
 Installing websocket-extensions 0.1.5
 Fetching zeitwerk 2.6.18
 Installing zeitwerk 2.6.18
@@ -968,10 +209,10 @@ Installing timeout 0.4.3
 Fetching marcel 1.0.4
 Installing marcel 1.0.4
 Fetching mini_mime 1.1.5
-Installing mini_mime 1.1.5
 Fetching date 3.4.1
-Installing date 3.4.1 with native extensions
+Installing mini_mime 1.1.5
 Fetching jsonapi-renderer 0.2.2
+Installing date 3.4.1 with native extensions
 Installing jsonapi-renderer 0.2.2
 Fetching public_suffix 6.0.1
 Installing public_suffix 6.0.1
@@ -987,8 +228,8 @@ Fetching encryptor 3.0.0
 Installing encryptor 3.0.0
 Fetching aws-eventstream 1.3.0
 Installing aws-eventstream 1.3.0
-Fetching aws-partitions 1.1028.0
-Installing aws-partitions 1.1028.0
+Fetching aws-partitions 1.1029.0
+Installing aws-partitions 1.1029.0
 Fetching jmespath 1.6.2
 Installing jmespath 1.6.2
 Fetching bcrypt 3.1.20
@@ -1076,58 +317,58 @@ Installing trailblazer-option 0.1.2
 Fetching uber 0.1.0
 Installing uber 0.1.0
 Fetching retriable 2.1.0
-Installing retriable 2.1.0
 Fetching hurley 0.2
-Installing hurley 0.2
+Installing retriable 2.1.0
 Using ruby2_keywords 0.0.5
 Fetching ostruct 0.6.1
-Installing ostruct 0.6.1
+Installing hurley 0.2
 Fetching gritter 1.2.0
-Installing gritter 1.2.0
+Installing ostruct 0.6.1
 Fetching rb-fsevent 0.11.2
 Installing rb-fsevent 0.11.2
 Fetching lumberjack 1.2.10
-Installing lumberjack 1.2.10
+Installing gritter 1.2.0
 Fetching nenv 0.3.0
-Installing nenv 0.3.0
+Installing lumberjack 1.2.10
 Fetching shellany 0.0.1
 Installing shellany 0.0.1
-Fetching method_source 1.1.0
-Installing method_source 1.1.0
+Installing nenv 0.3.0
 Fetching guard-compat 1.2.1
-Installing guard-compat 1.2.1
+Fetching method_source 1.1.0
 Fetching rspec-support 3.13.2
-Installing rspec-support 3.13.2
+Installing method_source 1.1.0
 Fetching hashdiff 1.1.2
-Installing hashdiff 1.1.2
+Installing rspec-support 3.13.2
+Installing guard-compat 1.2.1
 Fetching hashie 5.0.0
-Installing hashie 5.0.0
+Installing hashdiff 1.1.2
 Fetching http-accept 1.7.0
-Installing http-accept 1.7.0
 Fetching hub 1.12.4
-Installing hub 1.12.4
+Installing hashie 5.0.0
+Installing http-accept 1.7.0
 Fetching iconv 1.1.0
-Installing iconv 1.1.0 with native extensions
 Fetching mini_magick 4.13.2
+Installing iconv 1.1.0 with native extensions
 Installing mini_magick 4.13.2
 Fetching interception 0.5
-Installing interception 0.5 with native extensions
+Installing hub 1.12.4
 Fetching kaminari-core 1.2.2
 Installing kaminari-core 1.2.2
 Fetching language_filter 0.3.01
+Installing interception 0.5 with native extensions
 Fetching language_server-protocol 3.17.0.3
-Installing language_server-protocol 3.17.0.3
 Installing language_filter 0.3.01
 Fetching memory_profiler 1.1.0
-Fetching mime-types-data 3.2024.1203
+Installing language_server-protocol 3.17.0.3
 Installing memory_profiler 1.1.0
-Fetching netrc 0.11.0
+Fetching mime-types-data 3.2024.1203
 Installing mime-types-data 3.2024.1203
-Installing netrc 0.11.0
+Fetching netrc 0.11.0
 Fetching mysql2 0.5.6
+Installing netrc 0.11.0
 Fetching opentelemetry-api 1.4.0
-Installing opentelemetry-api 1.4.0
 Installing mysql2 0.5.6 with native extensions
+Installing opentelemetry-api 1.4.0
 Fetching parallel 1.26.3
 Installing parallel 1.26.3
 Fetching pdf-core 0.10.0
@@ -1166,62 +407,54 @@ Fetching statsd-instrument 3.9.8
 Installing statsd-instrument 3.9.8
 Fetching url_regex 0.0.4
 Installing url_regex 0.0.4
-Fetching jwt 2.10.0
-Installing jwt 2.10.0
+Fetching jwt 2.10.1
+Installing jwt 2.10.1
+Fetching redis-client 0.23.0
+Installing redis-client 0.23.0
 Fetching i18n 1.14.6
 Installing i18n 1.14.6
 Fetching tzinfo 2.0.6
 Installing tzinfo 2.0.6
-Fetching redis-client 0.23.0
-Installing redis-client 0.23.0
-Fetching nokogiri 1.18.0 (x86_64-linux-gnu)
 Fetching rack-session 1.0.2
 Installing rack-session 1.0.2
 Fetching rack-test 2.2.0
-Installing nokogiri 1.18.0 (x86_64-linux-gnu)
 Installing rack-test 2.2.0
 Fetching rack-attack 6.7.0
-Installing rack-attack 6.7.0
 Fetching rack-cors 2.0.2
+Installing rack-attack 6.7.0
 Installing rack-cors 2.0.2
 Fetching rack-mini-profiler 3.3.1
 Fetching sprockets 4.2.1
 Installing sprockets 4.2.1
 Installing rack-mini-profiler 3.3.1
-Fetching puma 6.5.0
 Fetching websocket-driver 0.7.6
-Installing websocket-driver 0.7.6 with native extensions
-Installing puma 6.5.0 with native extensions
 Fetching dry-core 1.0.2
 Installing dry-core 1.0.2
 Fetching net-protocol 0.2.2
+Installing websocket-driver 0.7.6 with native extensions
 Installing net-protocol 0.2.2
-Fetching multi_xml 0.7.1
-Installing multi_xml 0.7.1
-Fetching ttfunk 1.8.0
-Installing ttfunk 1.8.0
+Fetching nokogiri 1.18.0 (x86_64-linux-gnu)
 Fetching addressable 2.8.7
+Installing nokogiri 1.18.0 (x86_64-linux-gnu)
 Installing addressable 2.8.7
 Fetching anyway_config 2.6.4
 Installing anyway_config 2.6.4
 Fetching googleapis-common-protos-types 1.16.0
 Installing googleapis-common-protos-types 1.16.0
 Fetching parser 3.3.6.0
-Installing parser 3.3.6.0
 Fetching attr_encrypted 4.1.1
 Installing attr_encrypted 4.1.1
 Fetching aws-sigv4 1.10.1
+Installing parser 3.3.6.0
 Installing aws-sigv4 1.10.1
 Fetching better_errors 2.10.1
 Installing better_errors 2.10.1
 Fetching binding_of_caller 1.0.1
+Fetching puma 6.5.0
 Installing binding_of_caller 1.0.1
 Fetching cpf_faker 1.3.0
+Installing puma 6.5.0 with native extensions
 Installing cpf_faker 1.3.0
-Fetching crack 1.0.0
-Installing crack 1.0.0
-Fetching bootsnap 1.18.4
-Installing bootsnap 1.18.4 with native extensions
 Fetching psych 5.2.2
 Installing psych 5.2.2 with native extensions
 Fetching rackup 1.0.1
@@ -1230,12 +463,20 @@ Fetching figaro 1.2.0
 Installing figaro 1.2.0
 Fetching http-cookie 1.0.8
 Installing http-cookie 1.0.8
-Fetching reline 0.6.0
-Installing reline 0.6.0
+Fetching crack 1.0.0
+Installing crack 1.0.0
+Fetching multi_xml 0.7.1
+Installing multi_xml 0.7.1
+Fetching ttfunk 1.8.0
+Installing ttfunk 1.8.0
+Fetching bootsnap 1.18.4
+Installing bootsnap 1.18.4 with native extensions
 Fetching terser 1.2.4
 Installing terser 1.2.4
 Fetching net-http 0.6.0
 Installing net-http 0.6.0
+Fetching reline 0.6.0
+Installing reline 0.6.0
 Fetching ruby_parser 3.21.1
 Installing ruby_parser 3.21.1
 Fetching rb-inotify 0.11.1
@@ -1243,360 +484,360 @@ Installing rb-inotify 0.11.1
 Fetching ruby-vips 2.2.2
 Installing ruby-vips 2.2.2
 Fetching rb-fchange 0.0.6
-Fetching sassc 2.4.0
 Installing rb-fchange 0.0.6
-Fetching representable 3.2.0
+Fetching sassc 2.4.0
 Installing sassc 2.4.0 with native extensions
+Fetching representable 3.2.0
 Installing representable 3.2.0
-Fetching google_maps_service 0.4.2
-Installing google_maps_service 0.4.2
 Fetching mustermann 3.0.3
 Installing mustermann 3.0.3
+Fetching google_maps_service 0.4.2
+Installing google_maps_service 0.4.2
 Fetching notiffany 0.1.3
 Installing notiffany 0.1.3
 Fetching pry 0.15.2
-Installing pry 0.15.2
 Fetching rspec-core 3.13.2
-Installing rspec-core 3.13.2
+Installing pry 0.15.2
 Fetching rspec-expectations 3.13.3
-Installing rspec-expectations 3.13.3
+Installing rspec-core 3.13.2
 Fetching rspec-mocks 3.13.2
-Installing rspec-mocks 3.13.2
+Installing rspec-expectations 3.13.3
 Fetching omniauth 1.9.2
+Installing rspec-mocks 3.13.2
 Installing omniauth 1.9.2
-Fetching em-hiredis 0.3.1
-Installing em-hiredis 0.3.1
 Fetching mime-types 3.6.0
-Installing mime-types 3.6.0
 Fetching opentelemetry-common 0.21.0
 Installing opentelemetry-common 0.21.0
+Installing mime-types 3.6.0
 Fetching opentelemetry-registry 0.3.1
-Installing opentelemetry-registry 0.3.1
 Fetching opentelemetry-semantic_conventions 1.10.1
+Installing opentelemetry-registry 0.3.1
+Fetching unicode-display_width 3.1.3
 Installing opentelemetry-semantic_conventions 1.10.1
-Fetching unicode-display_width 3.1.2
-Installing unicode-display_width 3.1.2
 Fetching spreadsheet 1.3.3
-Installing spreadsheet 1.3.3
+Installing unicode-display_width 3.1.3
 Fetching sendgrid-ruby 6.7.0
+Installing spreadsheet 1.3.3
 Installing sendgrid-ruby 6.7.0
 Fetching selenium-webdriver 4.10.0
-Installing selenium-webdriver 4.10.0
 Fetching spring-commands-rspec 1.0.4
 Installing spring-commands-rspec 1.0.4
 Fetching statsd-rack-instrument 0.1.0
 Installing statsd-rack-instrument 0.1.0
+Fetching sidekiq 7.3.7
 Fetching validates_email_format_of 1.8.2
 Installing validates_email_format_of 1.8.2
+Installing sidekiq 7.3.7
 Fetching activesupport 7.2.2.1
 Installing activesupport 7.2.2.1
 Fetching et-orbi 1.2.11
 Installing et-orbi 1.2.11
-Fetching sidekiq 7.3.7
-Installing sidekiq 7.3.7
-Fetching loofah 2.23.1
-Installing loofah 2.23.1
-Fetching xpath 3.2.0
-Installing xpath 3.2.0
-Fetching roo 2.10.1
-Installing roo 2.10.1
 Fetching dry-logic 1.5.0
 Installing dry-logic 1.5.0
 Fetching net-imap 0.5.4
-Installing net-imap 0.5.4
 Fetching net-pop 0.1.2
+Installing selenium-webdriver 4.10.0
+Installing net-imap 0.5.4
 Installing net-pop 0.1.2
 Fetching net-smtp 0.5.0
-Installing net-smtp 0.5.0
-Fetching prawn 2.5.0
-Installing prawn 2.5.0
 Fetching anycable-core 1.5.1
+Installing net-smtp 0.5.0
+Fetching loofah 2.23.1
+Installing loofah 2.23.1
 Installing anycable-core 1.5.1
+Fetching xpath 3.2.0
+Fetching roo 2.10.1
+Installing xpath 3.2.0
 Fetching grpc 1.68.1 (x86_64-linux)
-Installing grpc 1.68.1 (x86_64-linux)
-Fetching rubocop-ast 1.37.0
-Installing rubocop-ast 1.37.0
 Fetching aws-sdk-core 3.214.0
+Installing roo 2.10.1
+Fetching rubocop-ast 1.37.0
 Installing aws-sdk-core 3.214.0
+Installing rubocop-ast 1.37.0
 Fetching webmock 3.24.0
+Fetching prawn 2.5.0
 Installing webmock 3.24.0
+Fetching rdoc 6.10.0
+Installing prawn 2.5.0
+Installing rdoc 6.10.0
+Installing grpc 1.68.1 (x86_64-linux)
 Fetching faraday-net_http 3.4.0
 Installing faraday-net_http 3.4.0
 Fetching fasterer 0.11.0
-Installing fasterer 0.11.0
 Fetching listen 3.9.0
+Installing fasterer 0.11.0
 Installing listen 3.9.0
 Fetching image_processing 1.13.0
+Fetching em-hiredis 0.3.1
 Installing image_processing 1.13.0
-Fetching rdoc 6.10.0
-Installing rdoc 6.10.0
 Fetching mustermann-grape 1.1.0
 Installing mustermann-grape 1.1.0
 Fetching pry-rails 0.3.11
-Installing pry-rails 0.3.11
+Installing em-hiredis 0.3.1
 Fetching pry-rescue 1.6.0
-Installing pry-rescue 1.6.0
+Installing pry-rails 0.3.11
 Fetching rspec 3.13.0
-Installing rspec 3.13.0
-Fetching rest-client 2.1.0
-Installing rest-client 2.1.0
+Installing pry-rescue 1.6.0
 Fetching opentelemetry-helpers-mysql 0.1.2
-Installing opentelemetry-helpers-mysql 0.1.2
+Installing rspec 3.13.0
 Fetching opentelemetry-helpers-sql-obfuscation 0.2.1
+Installing opentelemetry-helpers-mysql 0.1.2
+Fetching rest-client 2.1.0
 Installing opentelemetry-helpers-sql-obfuscation 0.2.1
 Fetching opentelemetry-instrumentation-base 0.22.6
 Installing opentelemetry-instrumentation-base 0.22.6
+Installing rest-client 2.1.0
 Fetching opentelemetry-sdk 1.6.0
+Fetching fugit 1.11.1
 Installing opentelemetry-sdk 1.6.0
-Fetching webdrivers 5.3.0
-Installing webdrivers 5.3.0
+Fetching dry-types 1.7.2
+Installing fugit 1.11.1
 Fetching rails-dom-testing 2.2.0
+Installing dry-types 1.7.2
 Installing rails-dom-testing 2.2.0
 Fetching globalid 1.2.1
-Installing globalid 1.2.1
 Fetching activemodel 7.2.2.1
-Installing activemodel 7.2.2.1
+Installing globalid 1.2.1
 Fetching case_transform 0.2
-Installing case_transform 0.2
 Fetching bullet 8.0.0
-Installing bullet 8.0.0
+Installing activemodel 7.2.2.1
+Installing case_transform 0.2
 Fetching factory_bot 6.5.0
-Installing factory_bot 6.5.0
+Installing bullet 8.0.0
 Fetching grape-entity 1.0.1
-Installing grape-entity 1.0.1
+Installing factory_bot 6.5.0
 Fetching pundit 2.4.0
-Installing pundit 2.4.0
-Fetching fugit 1.11.1
-Installing fugit 1.11.1
-Fetching rails-html-sanitizer 1.6.2
-Installing rails-html-sanitizer 1.6.2
-Fetching capybara 3.40.0
-Installing capybara 3.40.0
-Fetching dry-types 1.7.2
-Installing dry-types 1.7.2
 Fetching mail 2.8.1
+Installing grape-entity 1.0.1
+Installing pundit 2.4.0
+Fetching rails-html-sanitizer 1.6.2
+Fetching capybara 3.40.0
 Installing mail 2.8.1
-Fetching prawn-table 0.2.2
-Installing prawn-table 0.2.2
-Fetching anycable 1.5.1
-Installing anycable 1.5.1
+Installing rails-html-sanitizer 1.6.2
+Fetching webdrivers 5.3.0
+Installing capybara 3.40.0
+Installing webdrivers 5.3.0
 Fetching rubocop 1.69.2
-Installing rubocop 1.69.2
 Fetching aws-sdk-kms 1.96.0
 Installing aws-sdk-kms 1.96.0
+Fetching prawn-table 0.2.2
+Installing rubocop 1.69.2
 Fetching faraday 2.12.2
+Installing prawn-table 0.2.2
+Fetching irb 1.14.3
 Installing faraday 2.12.2
+Installing irb 1.14.3
 Fetching guard 2.19.0
 Installing guard 2.19.0
-Fetching irb 1.14.3
-Installing irb 1.14.3
-Fetching mercadopago-sdk 2.2.1
-Installing mercadopago-sdk 2.2.1
 Fetching opentelemetry-instrumentation-active_support 0.5.3
-Installing opentelemetry-instrumentation-active_support 0.5.3
 Fetching opentelemetry-instrumentation-rack 0.24.6
-Installing opentelemetry-instrumentation-rack 0.24.6
+Installing opentelemetry-instrumentation-active_support 0.5.3
 Fetching opentelemetry-instrumentation-active_job 0.7.8
-Installing opentelemetry-instrumentation-active_job 0.7.8
+Installing opentelemetry-instrumentation-rack 0.24.6
 Fetching opentelemetry-instrumentation-active_model_serializers 0.20.2
-Installing opentelemetry-instrumentation-active_model_serializers 0.20.2
+Installing opentelemetry-instrumentation-active_job 0.7.8
 Fetching opentelemetry-instrumentation-active_record 0.7.4
-Installing opentelemetry-instrumentation-active_record 0.7.4
+Installing opentelemetry-instrumentation-active_model_serializers 0.20.2
 Fetching opentelemetry-instrumentation-aws_sdk 0.5.4
-Installing opentelemetry-instrumentation-aws_sdk 0.5.4
+Installing opentelemetry-instrumentation-active_record 0.7.4
 Fetching opentelemetry-instrumentation-bunny 0.21.4
-Installing opentelemetry-instrumentation-bunny 0.21.4
+Installing opentelemetry-instrumentation-aws_sdk 0.5.4
 Fetching opentelemetry-instrumentation-concurrent_ruby 0.21.4
-Installing opentelemetry-instrumentation-concurrent_ruby 0.21.4
+Installing opentelemetry-instrumentation-bunny 0.21.4
 Fetching opentelemetry-instrumentation-dalli 0.25.4
-Installing opentelemetry-instrumentation-dalli 0.25.4
+Installing opentelemetry-instrumentation-concurrent_ruby 0.21.4
 Fetching opentelemetry-instrumentation-delayed_job 0.22.4
-Installing opentelemetry-instrumentation-delayed_job 0.22.4
+Installing opentelemetry-instrumentation-dalli 0.25.4
 Fetching opentelemetry-instrumentation-ethon 0.21.9
-Installing opentelemetry-instrumentation-ethon 0.21.9
+Installing opentelemetry-instrumentation-delayed_job 0.22.4
 Fetching opentelemetry-instrumentation-excon 0.22.5
-Installing opentelemetry-instrumentation-excon 0.22.5
+Installing opentelemetry-instrumentation-ethon 0.21.9
 Fetching opentelemetry-instrumentation-faraday 0.24.8
-Installing opentelemetry-instrumentation-faraday 0.24.8
+Installing opentelemetry-instrumentation-excon 0.22.5
 Fetching opentelemetry-instrumentation-graphql 0.28.4
-Installing opentelemetry-instrumentation-graphql 0.28.4
 Fetching opentelemetry-instrumentation-gruf 0.2.1
-Installing opentelemetry-instrumentation-gruf 0.2.1
+Installing opentelemetry-instrumentation-faraday 0.24.8
 Fetching opentelemetry-instrumentation-http 0.23.5
-Installing opentelemetry-instrumentation-http 0.23.5
+Installing opentelemetry-instrumentation-gruf 0.2.1
+Installing opentelemetry-instrumentation-graphql 0.28.4
 Fetching opentelemetry-instrumentation-http_client 0.22.8
-Installing opentelemetry-instrumentation-http_client 0.22.8
 Fetching opentelemetry-instrumentation-koala 0.20.5
-Installing opentelemetry-instrumentation-koala 0.20.5
+Installing opentelemetry-instrumentation-http 0.23.5
 Fetching opentelemetry-instrumentation-lmdb 0.22.3
-Installing opentelemetry-instrumentation-lmdb 0.22.3
+Installing opentelemetry-instrumentation-http_client 0.22.8
+Installing opentelemetry-instrumentation-koala 0.20.5
 Fetching opentelemetry-instrumentation-mongo 0.22.4
-Installing opentelemetry-instrumentation-mongo 0.22.4
+Installing opentelemetry-instrumentation-lmdb 0.22.3
 Fetching opentelemetry-instrumentation-mysql2 0.27.2
-Installing opentelemetry-instrumentation-mysql2 0.27.2
 Fetching opentelemetry-instrumentation-net_http 0.22.8
+Installing opentelemetry-instrumentation-mysql2 0.27.2
+Installing opentelemetry-instrumentation-mongo 0.22.4
 Installing opentelemetry-instrumentation-net_http 0.22.8
 Fetching opentelemetry-instrumentation-pg 0.27.4
-Installing opentelemetry-instrumentation-pg 0.27.4
 Fetching opentelemetry-instrumentation-que 0.8.4
-Installing opentelemetry-instrumentation-que 0.8.4
 Fetching opentelemetry-instrumentation-racecar 0.3.4
+Installing opentelemetry-instrumentation-pg 0.27.4
+Installing opentelemetry-instrumentation-que 0.8.4
 Installing opentelemetry-instrumentation-racecar 0.3.4
 Fetching opentelemetry-instrumentation-rake 0.2.2
-Installing opentelemetry-instrumentation-rake 0.2.2
 Fetching opentelemetry-instrumentation-rdkafka 0.4.8
-Installing opentelemetry-instrumentation-rdkafka 0.4.8
 Fetching opentelemetry-instrumentation-redis 0.25.7
-Installing opentelemetry-instrumentation-redis 0.25.7
+Installing opentelemetry-instrumentation-rake 0.2.2
 Fetching opentelemetry-instrumentation-resque 0.5.2
-Installing opentelemetry-instrumentation-resque 0.5.2
+Installing opentelemetry-instrumentation-rdkafka 0.4.8
+Installing opentelemetry-instrumentation-redis 0.25.7
 Fetching opentelemetry-instrumentation-restclient 0.22.8
-Installing opentelemetry-instrumentation-restclient 0.22.8
 Fetching opentelemetry-instrumentation-ruby_kafka 0.21.3
-Installing opentelemetry-instrumentation-ruby_kafka 0.21.3
+Installing opentelemetry-instrumentation-resque 0.5.2
 Fetching opentelemetry-instrumentation-sidekiq 0.25.7
-Installing opentelemetry-instrumentation-sidekiq 0.25.7
+Installing opentelemetry-instrumentation-ruby_kafka 0.21.3
+Installing opentelemetry-instrumentation-restclient 0.22.8
 Fetching opentelemetry-instrumentation-trilogy 0.59.3
-Installing opentelemetry-instrumentation-trilogy 0.59.3
+Fetching mercadopago-sdk 2.2.1
+Installing opentelemetry-instrumentation-sidekiq 0.25.7
 Fetching opentelemetry-exporter-otlp 0.26.3
-Installing opentelemetry-exporter-otlp 0.26.3
-Fetching activejob 7.2.2.1
-Installing activejob 7.2.2.1
-Fetching activerecord 7.2.2.1
-Installing activerecord 7.2.2.1
-Fetching credit_card_validations 7.0.0
-Installing credit_card_validations 7.0.0
+Installing opentelemetry-instrumentation-trilogy 0.59.3
 Fetching rufus-scheduler 3.9.2
+Installing mercadopago-sdk 2.2.1
+Installing opentelemetry-exporter-otlp 0.26.3
 Installing rufus-scheduler 3.9.2
+Fetching grape 2.2.0
+Fetching activejob 7.2.2.1
+Fetching anycable 1.5.1
+Installing grape 2.2.0
+Installing activejob 7.2.2.1
+Installing anycable 1.5.1
+Fetching activerecord 7.2.2.1
+Fetching credit_card_validations 7.0.0
+Installing activerecord 7.2.2.1
+Installing credit_card_validations 7.0.0
+Fetching sendgrid-actionmailer 3.2.0
+Fetching valid_email2 7.0.0
+Installing sendgrid-actionmailer 3.2.0
 Fetching actionview 7.2.2.1
 Installing actionview 7.2.2.1
-Fetching grape 2.2.0
-Installing grape 2.2.0
-Fetching sendgrid-actionmailer 3.2.0
-Installing sendgrid-actionmailer 3.2.0
-Fetching valid_email2 7.0.0
 Installing valid_email2 7.0.0
-Fetching rubocop-rails 2.25.0
-Installing rubocop-rails 2.25.0
 Fetching aws-sdk-s3 1.176.1
-Installing aws-sdk-s3 1.176.1
 Fetching google-cloud-env 2.2.1
-Installing google-cloud-env 2.2.1
 Fetching signet 0.19.0
-Installing signet 0.19.0
+Installing google-cloud-env 2.2.1
+Installing aws-sdk-s3 1.176.1
 Fetching oauth2 1.4.11
-Installing oauth2 1.4.11
+Installing signet 0.19.0
 Fetching guard-bundler 3.0.1
-Installing guard-bundler 3.0.1
+Installing oauth2 1.4.11
 Fetching guard-rails 0.8.1
-Installing guard-rails 0.8.1
+Installing guard-bundler 3.0.1
 Fetching guard-rspec 4.7.3
-Installing guard-rspec 4.7.3
+Installing guard-rails 0.8.1
 Fetching opentelemetry-instrumentation-action_mailer 0.1.0
-Installing opentelemetry-instrumentation-action_mailer 0.1.0
 Fetching opentelemetry-instrumentation-action_view 0.7.2
-Installing opentelemetry-instrumentation-action_view 0.7.2
+Installing opentelemetry-instrumentation-action_mailer 0.1.0
+Installing guard-rspec 4.7.3
 Fetching opentelemetry-instrumentation-action_pack 0.9.0
-Installing opentelemetry-instrumentation-action_pack 0.9.0
+Installing opentelemetry-instrumentation-action_view 0.7.2
 Fetching opentelemetry-instrumentation-grape 0.1.8
-Installing opentelemetry-instrumentation-grape 0.1.8
 Fetching opentelemetry-instrumentation-sinatra 0.23.5
-Installing opentelemetry-instrumentation-sinatra 0.23.5
-Fetching active_record_doctor 1.15.0
-Installing active_record_doctor 1.15.0
-Fetching amoeba 3.3.0
-Installing amoeba 3.3.0
-Fetching audited 5.8.0
-Installing audited 5.8.0
-Fetching database_cleaner-active_record 2.2.0
-Installing database_cleaner-active_record 2.2.0
-Fetching kaminari-activerecord 1.2.2
-Installing kaminari-activerecord 1.2.2
-Fetching unread 0.14.0
-Installing unread 0.14.0
+Installing opentelemetry-instrumentation-action_pack 0.9.0
+Fetching rubocop-rails 2.25.0
+Installing opentelemetry-instrumentation-grape 0.1.8
 Fetching sidekiq-scheduler 5.0.6
+Installing opentelemetry-instrumentation-sinatra 0.23.5
+Installing rubocop-rails 2.25.0
+Fetching grape-swagger 2.1.1
 Installing sidekiq-scheduler 5.0.6
 Fetching actionpack 7.2.2.1
-Installing actionpack 7.2.2.1
-Fetching kaminari-actionview 1.2.2
-Installing kaminari-actionview 1.2.2
-Fetching grape-swagger 2.1.1
 Installing grape-swagger 2.1.1
+Fetching kaminari-actionview 1.2.2
+Fetching active_record_doctor 1.15.0
+Installing actionpack 7.2.2.1
+Installing kaminari-actionview 1.2.2
+Fetching amoeba 3.3.0
+Installing active_record_doctor 1.15.0
+Installing amoeba 3.3.0
+Fetching audited 5.8.0
+Fetching database_cleaner-active_record 2.2.0
+Installing audited 5.8.0
+Fetching kaminari-activerecord 1.2.2
+Installing database_cleaner-active_record 2.2.0
+Fetching unread 0.14.0
 Fetching googleauth 1.12.2
-Installing googleauth 1.12.2
+Installing kaminari-activerecord 1.2.2
 Fetching omniauth-oauth2 1.7.3
-Installing omniauth-oauth2 1.7.3
+Installing unread 0.14.0
 Fetching opentelemetry-instrumentation-rails 0.30.2
+Installing omniauth-oauth2 1.7.3
+Installing googleauth 1.12.2
+Fetching grape-swagger-entity 0.5.5
 Installing opentelemetry-instrumentation-rails 0.30.2
+Fetching grape-swagger-representable 0.2.2
+Installing grape-swagger-entity 0.5.5
 Fetching database_cleaner 2.1.0
-Installing database_cleaner 2.1.0
 Fetching actioncable 7.2.2.1
-Installing actioncable 7.2.2.1
+Installing grape-swagger-representable 0.2.2
 Fetching activestorage 7.2.2.1
-Installing activestorage 7.2.2.1
+Installing database_cleaner 2.1.0
 Fetching actionmailer 7.2.2.1
+Installing actioncable 7.2.2.1
+Installing activestorage 7.2.2.1
 Installing actionmailer 7.2.2.1
 Fetching active_model_serializers 0.10.15
-Installing active_model_serializers 0.10.15
 Fetching railties 7.2.2.1
-Installing railties 7.2.2.1
+Installing active_model_serializers 0.10.15
 Fetching omniauth-rails_csrf_protection 0.1.2
-Installing omniauth-rails_csrf_protection 0.1.2
+Installing railties 7.2.2.1
 Fetching rails-controller-testing 1.0.5
-Installing rails-controller-testing 1.0.5
+Installing omniauth-rails_csrf_protection 0.1.2
 Fetching route_translator 14.2.0
+Installing rails-controller-testing 1.0.5
 Installing route_translator 14.2.0
 Fetching sprockets-rails 3.5.2
-Installing sprockets-rails 3.5.2
 Fetching simple_form 5.3.1
-Installing simple_form 5.3.1
+Installing sprockets-rails 3.5.2
 Fetching kaminari 1.2.2
-Installing kaminari 1.2.2
-Fetching grape-swagger-entity 0.5.5
-Installing grape-swagger-entity 0.5.5
-Fetching grape-swagger-representable 0.2.2
-Installing grape-swagger-representable 0.2.2
-Fetching fcm 2.0.1
-Installing fcm 2.0.1
-Fetching google-apis-core 0.15.1
-Installing google-apis-core 0.15.1
+Installing simple_form 5.3.1
 Fetching omniauth-facebook 4.0.0
-Installing omniauth-facebook 4.0.0
 Fetching omniauth-google-oauth2 0.8.2
-Installing omniauth-google-oauth2 0.8.2
+Installing kaminari 1.2.2
 Fetching opentelemetry-instrumentation-all 0.60.0
+Installing omniauth-google-oauth2 0.8.2
+Fetching fcm 2.0.1
 Installing opentelemetry-instrumentation-all 0.60.0
+Fetching google-apis-core 0.15.1
+Installing fcm 2.0.1
+Installing omniauth-facebook 4.0.0
 Fetching anycable-rails-core 1.5.5
-Installing anycable-rails-core 1.5.5
 Fetching actionmailbox 7.2.2.1
-Installing actionmailbox 7.2.2.1
+Installing google-apis-core 0.15.1
 Fetching actiontext 7.2.2.1
-Installing actiontext 7.2.2.1
+Installing anycable-rails-core 1.5.5
+Installing actionmailbox 7.2.2.1
 Fetching grape-active_model_serializers 1.5.2
-Installing grape-active_model_serializers 1.5.2
+Installing actiontext 7.2.2.1
 Fetching datagrid 2.0.0
-Installing datagrid 2.0.0
 Fetching factory_bot_rails 6.4.4
-Installing factory_bot_rails 6.4.4
+Installing grape-active_model_serializers 1.5.2
 Fetching grape-swagger-rails 0.6.0
-Installing grape-swagger-rails 0.6.0
+Installing datagrid 2.0.0
 Fetching importmap-rails 2.1.0
-Installing importmap-rails 2.1.0
+Installing factory_bot_rails 6.4.4
 Fetching rspec-rails 7.1.0
-Installing rspec-rails 7.1.0
+Installing grape-swagger-rails 0.6.0
+Installing importmap-rails 2.1.0
 Fetching stimulus-rails 1.3.4
-Installing stimulus-rails 1.3.4
+Installing rspec-rails 7.1.0
 Fetching turbo-rails 2.0.11
-Installing turbo-rails 2.0.11
+Installing stimulus-rails 1.3.4
 Fetching web-console 4.2.1
-Installing web-console 4.2.1
+Installing turbo-rails 2.0.11
 Fetching google-apis-discovery_v1 0.19.0
-Installing google-apis-discovery_v1 0.19.0
+Installing web-console 4.2.1
 Fetching anycable-rails 1.5.5
-Installing anycable-rails 1.5.5
+Installing google-apis-discovery_v1 0.19.0
 Fetching rails 7.2.2.1
-Installing rails 7.2.2.1
 Fetching google-apis-generator 0.15.1
+Installing anycable-rails 1.5.5
+Installing rails 7.2.2.1
 Installing google-apis-generator 0.15.1
 Fetching google-api-client 0.53.0
 Installing google-api-client 0.53.0
@@ -1699,8 +940,9 @@ to avoid an unexpected breakage when 3.0 is released (e.g. ~> 2.3.0).
 See https://github.com/rubyzip/rubyzip for details. The Changelog also
 lists other enhancements and bugfixes that have been implemented since
 version 2.3.0.
+npm WARN skipping integrity check for git dependency ssh://git@github.com/plentz/jquery-maskmoney.git 
 
-added 269 packages, and audited 270 packages in 3m
+changed 36 packages, and audited 270 packages in 2m
 
 47 packages are looking for funding
   run `npm fund` for details
@@ -1715,21 +957,399 @@ To address all issues (including breaking changes), run:
 
 Run `npm audit` for details.
 [1;33mScript Info: Iniciando container Docker[0m
+ db Pulling 
+ 2c0a233485c3 Pulling fs layer 
+ b746eccf8a0b Pulling fs layer 
+ 570d30cf82c5 Pulling fs layer 
+ c7d84c48f09d Pulling fs layer 
+ e9ecf1ccdd2a Pulling fs layer 
+ 6331406986f7 Pulling fs layer 
+ f93598758d10 Pulling fs layer 
+ 6c136cb242f2 Pulling fs layer 
+ d255d476cd34 Pulling fs layer 
+ dbfe60d9fe24 Pulling fs layer 
+ 9cb9659be67b Pulling fs layer 
+ c7d84c48f09d Waiting 
+ e9ecf1ccdd2a Waiting 
+ 6331406986f7 Waiting 
+ f93598758d10 Waiting 
+ 6c136cb242f2 Waiting 
+ d255d476cd34 Waiting 
+ dbfe60d9fe24 Waiting 
+ 9cb9659be67b Waiting 
+ 2c0a233485c3 Downloading [>                                                  ]  507.1kB/49.1MB
+ b746eccf8a0b Downloading [==================================================>]     884B/884B
+ b746eccf8a0b Verifying Checksum 
+ b746eccf8a0b Download complete 
+ 2c0a233485c3 Downloading [==>                                                ]  2.005MB/49.1MB
+ 2c0a233485c3 Downloading [===>                                               ]  3.496MB/49.1MB
+ 2c0a233485c3 Downloading [=====>                                             ]  4.995MB/49.1MB
+ 570d30cf82c5 Downloading [>                                                  ]  10.95kB/983kB
+ 2c0a233485c3 Downloading [======>                                            ]  6.507MB/49.1MB
+ 570d30cf82c5 Downloading [=======>                                           ]  139.5kB/983kB
+ 2c0a233485c3 Downloading [========>                                          ]  8.002MB/49.1MB
+ 570d30cf82c5 Downloading [=================>                                 ]  344.1kB/983kB
+ 570d30cf82c5 Downloading [=====================================>             ]  737.3kB/983kB
+ 2c0a233485c3 Downloading [=========>                                         ]  8.985MB/49.1MB
+ 570d30cf82c5 Download complete 
+ 2c0a233485c3 Downloading [==========>                                        ]  9.968MB/49.1MB
+ 2c0a233485c3 Downloading [===========>                                       ]  11.45MB/49.1MB
+ 2c0a233485c3 Downloading [=============>                                     ]  12.93MB/49.1MB
+ 2c0a233485c3 Downloading [==============>                                    ]  14.43MB/49.1MB
+ c7d84c48f09d Downloading [>                                                  ]  70.64kB/6.901MB
+ 2c0a233485c3 Downloading [================>                                  ]  15.92MB/49.1MB
+ c7d84c48f09d Downloading [=>                                                 ]  140.4kB/6.901MB
+ e9ecf1ccdd2a Downloading [==============>                                    ]     733B/2.607kB
+ e9ecf1ccdd2a Download complete 
+ 2c0a233485c3 Downloading [=================>                                 ]  17.41MB/49.1MB
+ c7d84c48f09d Downloading [==>                                                ]  373.5kB/6.901MB
+ 2c0a233485c3 Downloading [==================>                                ]   18.4MB/49.1MB
+ c7d84c48f09d Downloading [=====>                                             ]  701.2kB/6.901MB
+ 2c0a233485c3 Downloading [===================>                               ]  19.39MB/49.1MB
+ c7d84c48f09d Downloading [=========>                                         ]  1.258MB/6.901MB
+ c7d84c48f09d Downloading [==============>                                    ]  1.995MB/6.901MB
+ 2c0a233485c3 Downloading [====================>                              ]  20.38MB/49.1MB
+ c7d84c48f09d Downloading [=====================>                             ]  3.028MB/6.901MB
+ c7d84c48f09d Downloading [=============================>                     ]  4.084MB/6.901MB
+ 2c0a233485c3 Downloading [=====================>                             ]  20.87MB/49.1MB
+ c7d84c48f09d Downloading [====================================>              ]  5.043MB/6.901MB
+ 6331406986f7 Downloading [==================================================>]     333B/333B
+ 6331406986f7 Verifying Checksum 
+ 6331406986f7 Download complete 
+ c7d84c48f09d Downloading [===========================================>       ]  6.014MB/6.901MB
+ 2c0a233485c3 Downloading [=====================>                             ]  21.37MB/49.1MB
+ c7d84c48f09d Verifying Checksum 
+ c7d84c48f09d Download complete 
+ 2c0a233485c3 Downloading [======================>                            ]  22.36MB/49.1MB
+ 2c0a233485c3 Downloading [========================>                          ]  23.84MB/49.1MB
+ 2c0a233485c3 Downloading [=========================>                         ]  25.34MB/49.1MB
+ 2c0a233485c3 Downloading [===========================>                       ]  26.82MB/49.1MB
+ 2c0a233485c3 Downloading [============================>                      ]  28.31MB/49.1MB
+ 6c136cb242f2 Downloading [==================================================>]     319B/319B
+ 6c136cb242f2 Verifying Checksum 
+ 6c136cb242f2 Download complete 
+ 2c0a233485c3 Downloading [=============================>                     ]  29.31MB/49.1MB
+ 2c0a233485c3 Downloading [===============================>                   ]   30.8MB/49.1MB
+ f93598758d10 Downloading [>                                                  ]  504.6kB/49.62MB
+ 2c0a233485c3 Downloading [================================>                  ]  31.79MB/49.1MB
+ f93598758d10 Downloading [=>                                                 ]  1.008MB/49.62MB
+ 2c0a233485c3 Downloading [=================================>                 ]  32.77MB/49.1MB
+ f93598758d10 Downloading [==>                                                ]  2.024MB/49.62MB
+ f93598758d10 Downloading [===>                                               ]  3.028MB/49.62MB
+ 2c0a233485c3 Downloading [=================================>                 ]  33.27MB/49.1MB
+ f93598758d10 Downloading [====>                                              ]  4.035MB/49.62MB
+ 2c0a233485c3 Downloading [==================================>                ]  33.77MB/49.1MB
+ d255d476cd34 Downloading [>                                                  ]  540.7kB/64.36MB
+ f93598758d10 Downloading [=====>                                             ]  5.043MB/49.62MB
+ d255d476cd34 Downloading [=>                                                 ]  1.622MB/64.36MB
+ 2c0a233485c3 Downloading [==================================>                ]  34.27MB/49.1MB
+ f93598758d10 Downloading [=====>                                             ]  5.543MB/49.62MB
+ d255d476cd34 Downloading [==>                                                ]  2.695MB/64.36MB
+ d255d476cd34 Downloading [==>                                                ]  3.764MB/64.36MB
+ f93598758d10 Downloading [======>                                            ]  6.055MB/49.62MB
+ 2c0a233485c3 Downloading [===================================>               ]  34.77MB/49.1MB
+ d255d476cd34 Downloading [===>                                               ]  4.846MB/64.36MB
+ f93598758d10 Downloading [======>                                            ]  6.567MB/49.62MB
+ d255d476cd34 Downloading [====>                                              ]  5.915MB/64.36MB
+ d255d476cd34 Downloading [=====>                                             ]  6.992MB/64.36MB
+ 2c0a233485c3 Downloading [===================================>               ]  35.26MB/49.1MB
+ f93598758d10 Downloading [=======>                                           ]  7.066MB/49.62MB
+ d255d476cd34 Downloading [======>                                            ]  8.053MB/64.36MB
+ d255d476cd34 Downloading [=======>                                           ]  9.122MB/64.36MB
+ f93598758d10 Downloading [=======>                                           ]   7.57MB/49.62MB
+ 2c0a233485c3 Downloading [====================================>              ]  35.75MB/49.1MB
+ d255d476cd34 Downloading [=======>                                           ]  10.19MB/64.36MB
+ d255d476cd34 Downloading [========>                                          ]  11.26MB/64.36MB
+ f93598758d10 Downloading [========>                                          ]  8.074MB/49.62MB
+ d255d476cd34 Downloading [=========>                                         ]  12.35MB/64.36MB
+ 2c0a233485c3 Downloading [====================================>              ]  36.24MB/49.1MB
+ d255d476cd34 Downloading [==========>                                        ]  13.42MB/64.36MB
+ d255d476cd34 Downloading [===========>                                       ]   14.5MB/64.36MB
+ f93598758d10 Downloading [========>                                          ]  8.578MB/49.62MB
+ 2c0a233485c3 Downloading [=====================================>             ]  36.74MB/49.1MB
+ d255d476cd34 Downloading [============>                                      ]  15.57MB/64.36MB
+ d255d476cd34 Downloading [============>                                      ]  16.65MB/64.36MB
+ f93598758d10 Downloading [=========>                                         ]  9.086MB/49.62MB
+ d255d476cd34 Downloading [=============>                                     ]  17.72MB/64.36MB
+ 2c0a233485c3 Downloading [=====================================>             ]  37.24MB/49.1MB
+ d255d476cd34 Downloading [==============>                                    ]  18.79MB/64.36MB
+ d255d476cd34 Downloading [===============>                                   ]  19.85MB/64.36MB
+ f93598758d10 Downloading [=========>                                         ]  9.598MB/49.62MB
+ d255d476cd34 Downloading [================>                                  ]  20.93MB/64.36MB
+ 2c0a233485c3 Downloading [======================================>            ]  37.73MB/49.1MB
+ d255d476cd34 Downloading [=================>                                 ]  22.02MB/64.36MB
+ f93598758d10 Downloading [==========>                                        ]   10.1MB/49.62MB
+ d255d476cd34 Downloading [=================>                                 ]   23.1MB/64.36MB
+ d255d476cd34 Downloading [==================>                                ]  24.17MB/64.36MB
+ 2c0a233485c3 Downloading [======================================>            ]  38.23MB/49.1MB
+ f93598758d10 Downloading [==========>                                        ]  10.61MB/49.62MB
+ d255d476cd34 Downloading [===================>                               ]  25.24MB/64.36MB
+ d255d476cd34 Downloading [====================>                              ]  26.31MB/64.36MB
+ 2c0a233485c3 Downloading [=======================================>           ]  38.73MB/49.1MB
+ d255d476cd34 Downloading [=====================>                             ]  27.39MB/64.36MB
+ f93598758d10 Downloading [===========>                                       ]  11.11MB/49.62MB
+ d255d476cd34 Downloading [======================>                            ]  28.44MB/64.36MB
+ d255d476cd34 Downloading [======================>                            ]  29.52MB/64.36MB
+ f93598758d10 Downloading [===========>                                       ]  11.62MB/49.62MB
+ 2c0a233485c3 Downloading [=======================================>           ]  39.22MB/49.1MB
+ d255d476cd34 Downloading [=======================>                           ]  30.58MB/64.36MB
+ d255d476cd34 Downloading [========================>                          ]  31.65MB/64.36MB
+ f93598758d10 Downloading [============>                                      ]  12.13MB/49.62MB
+ 2c0a233485c3 Downloading [========================================>          ]  39.71MB/49.1MB
+ d255d476cd34 Downloading [=========================>                         ]  32.72MB/64.36MB
+ d255d476cd34 Downloading [==========================>                        ]   33.8MB/64.36MB
+ f93598758d10 Downloading [============>                                      ]  12.64MB/49.62MB
+ d255d476cd34 Downloading [===========================>                       ]  34.88MB/64.36MB
+ 2c0a233485c3 Downloading [========================================>          ]   40.2MB/49.1MB
+ d255d476cd34 Downloading [===========================>                       ]  35.95MB/64.36MB
+ f93598758d10 Downloading [=============>                                     ]  13.15MB/49.62MB
+ 2c0a233485c3 Downloading [=========================================>         ]   40.7MB/49.1MB
+ d255d476cd34 Downloading [============================>                      ]  37.02MB/64.36MB
+ f93598758d10 Downloading [=============>                                     ]  13.66MB/49.62MB
+ 2c0a233485c3 Downloading [=========================================>         ]   41.2MB/49.1MB
+ d255d476cd34 Downloading [=============================>                     ]  38.09MB/64.36MB
+ d255d476cd34 Downloading [==============================>                    ]  38.63MB/64.36MB
+ f93598758d10 Downloading [==============>                                    ]  14.17MB/49.62MB
+ 2c0a233485c3 Downloading [==========================================>        ]   41.7MB/49.1MB
+ d255d476cd34 Downloading [==============================>                    ]  39.69MB/64.36MB
+ f93598758d10 Downloading [==============>                                    ]  14.68MB/49.62MB
+ 2c0a233485c3 Downloading [==========================================>        ]   42.2MB/49.1MB
+ d255d476cd34 Downloading [===============================>                   ]  40.76MB/64.36MB
+ f93598758d10 Downloading [===============>                                   ]  15.18MB/49.62MB
+ d255d476cd34 Downloading [================================>                  ]  41.82MB/64.36MB
+ 2c0a233485c3 Downloading [===========================================>       ]  42.69MB/49.1MB
+ f93598758d10 Downloading [===============>                                   ]  15.68MB/49.62MB
+ d255d476cd34 Downloading [=================================>                 ]  42.89MB/64.36MB
+ 2c0a233485c3 Downloading [===========================================>       ]  43.19MB/49.1MB
+ f93598758d10 Downloading [================>                                  ]  16.19MB/49.62MB
+ d255d476cd34 Downloading [==================================>                ]  43.97MB/64.36MB
+ 2c0a233485c3 Downloading [============================================>      ]  43.69MB/49.1MB
+ f93598758d10 Downloading [================>                                  ]  16.69MB/49.62MB
+ d255d476cd34 Downloading [==================================>                ]  45.04MB/64.36MB
+ 2c0a233485c3 Downloading [=============================================>     ]  44.19MB/49.1MB
+ f93598758d10 Downloading [=================>                                 ]   17.2MB/49.62MB
+ d255d476cd34 Downloading [===================================>               ]  46.11MB/64.36MB
+ 2c0a233485c3 Downloading [=============================================>     ]  44.68MB/49.1MB
+ f93598758d10 Downloading [=================>                                 ]  17.71MB/49.62MB
+ d255d476cd34 Downloading [====================================>              ]  47.18MB/64.36MB
+ 2c0a233485c3 Downloading [==============================================>    ]  45.17MB/49.1MB
+ d255d476cd34 Downloading [=====================================>             ]  47.72MB/64.36MB
+ f93598758d10 Downloading [==================>                                ]  18.22MB/49.62MB
+ f93598758d10 Downloading [==================>                                ]  18.73MB/49.62MB
+ d255d476cd34 Downloading [=====================================>             ]  48.26MB/64.36MB
+ 2c0a233485c3 Downloading [==============================================>    ]  45.66MB/49.1MB
+ f93598758d10 Downloading [===================>                               ]  19.23MB/49.62MB
+ d255d476cd34 Downloading [=====================================>             ]   48.8MB/64.36MB
+ 2c0a233485c3 Downloading [===============================================>   ]  46.16MB/49.1MB
+ f93598758d10 Downloading [===================>                               ]  19.74MB/49.62MB
+ d255d476cd34 Downloading [======================================>            ]  49.34MB/64.36MB
+ 2c0a233485c3 Downloading [===============================================>   ]  46.65MB/49.1MB
+ f93598758d10 Downloading [====================>                              ]  20.25MB/49.62MB
+ d255d476cd34 Downloading [======================================>            ]  49.88MB/64.36MB
+ f93598758d10 Downloading [====================>                              ]  20.76MB/49.62MB
+ 2c0a233485c3 Downloading [================================================>  ]  47.15MB/49.1MB
+ d255d476cd34 Downloading [=======================================>           ]  50.41MB/64.36MB
+ f93598758d10 Downloading [=====================>                             ]  21.26MB/49.62MB
+ 2c0a233485c3 Downloading [================================================>  ]  47.66MB/49.1MB
+ d255d476cd34 Downloading [=======================================>           ]  50.94MB/64.36MB
+ f93598758d10 Downloading [=====================>                             ]  21.78MB/49.62MB
+ 2c0a233485c3 Downloading [=================================================> ]  48.15MB/49.1MB
+ d255d476cd34 Downloading [=======================================>           ]  51.47MB/64.36MB
+ f93598758d10 Downloading [======================>                            ]  22.27MB/49.62MB
+ 2c0a233485c3 Downloading [=================================================> ]  48.64MB/49.1MB
+ f93598758d10 Downloading [======================>                            ]  22.77MB/49.62MB
+ d255d476cd34 Downloading [========================================>          ]  52.02MB/64.36MB
+ f93598758d10 Downloading [=======================>                           ]  23.28MB/49.62MB
+ 2c0a233485c3 Verifying Checksum 
+ 2c0a233485c3 Download complete 
+ d255d476cd34 Downloading [========================================>          ]  52.54MB/64.36MB
+ d255d476cd34 Downloading [=========================================>         ]  53.08MB/64.36MB
+ f93598758d10 Downloading [========================>                          ]   24.3MB/49.62MB
+ d255d476cd34 Downloading [=========================================>         ]  53.62MB/64.36MB
+ f93598758d10 Downloading [=========================>                         ]   25.3MB/49.62MB
+ d255d476cd34 Downloading [==========================================>        ]  54.16MB/64.36MB
+ f93598758d10 Downloading [==========================>                        ]  26.32MB/49.62MB
+ d255d476cd34 Downloading [==========================================>        ]  54.69MB/64.36MB
+ 2c0a233485c3 Extracting [>                                                  ]  491.5kB/49.1MB
+ f93598758d10 Downloading [===========================>                       ]  27.34MB/49.62MB
+ d255d476cd34 Downloading [==========================================>        ]  55.23MB/64.36MB
+ dbfe60d9fe24 Downloading [======>                                            ]     733B/5.328kB
+ dbfe60d9fe24 Downloading [==================================================>]  5.328kB/5.328kB
+ dbfe60d9fe24 Verifying Checksum 
+ dbfe60d9fe24 Download complete 
+ d255d476cd34 Downloading [===========================================>       ]  55.77MB/64.36MB
+ f93598758d10 Downloading [============================>                      ]  28.35MB/49.62MB
+ d255d476cd34 Downloading [===========================================>       ]   56.3MB/64.36MB
+ 2c0a233485c3 Extracting [=>                                                 ]    983kB/49.1MB
+ f93598758d10 Downloading [=============================>                     ]  29.36MB/49.62MB
+ d255d476cd34 Downloading [============================================>      ]  56.84MB/64.36MB
+ 2c0a233485c3 Extracting [==>                                                ]  1.966MB/49.1MB
+ f93598758d10 Downloading [==============================>                    ]  30.38MB/49.62MB
+ d255d476cd34 Downloading [============================================>      ]  57.37MB/64.36MB
+ 2c0a233485c3 Extracting [====>                                              ]  4.424MB/49.1MB
+ d255d476cd34 Downloading [============================================>      ]  57.91MB/64.36MB
+ f93598758d10 Downloading [===============================>                   ]  31.38MB/49.62MB
+ 2c0a233485c3 Extracting [======>                                            ]   6.39MB/49.1MB
+ d255d476cd34 Downloading [=============================================>     ]  58.44MB/64.36MB
+ f93598758d10 Downloading [================================>                  ]  32.39MB/49.62MB
+ d255d476cd34 Downloading [=============================================>     ]  58.98MB/64.36MB
+ f93598758d10 Downloading [=================================>                 ]   33.4MB/49.62MB
+ d255d476cd34 Downloading [==============================================>    ]  59.52MB/64.36MB
+ 9cb9659be67b Downloading [==================================================>]     121B/121B
+ 9cb9659be67b Verifying Checksum 
+ 9cb9659be67b Download complete 
+ d255d476cd34 Downloading [==============================================>    ]  60.06MB/64.36MB
+ f93598758d10 Downloading [==================================>                ]  34.42MB/49.62MB
+ 2c0a233485c3 Extracting [=======>                                           ]  7.373MB/49.1MB
+ d255d476cd34 Downloading [===============================================>   ]  60.59MB/64.36MB
+ f93598758d10 Downloading [===================================>               ]  35.42MB/49.62MB
+ 2c0a233485c3 Extracting [=========>                                         ]  9.339MB/49.1MB
+ d255d476cd34 Downloading [===============================================>   ]  61.12MB/64.36MB
+ f93598758d10 Downloading [====================================>              ]  36.44MB/49.62MB
+ 2c0a233485c3 Extracting [============>                                      ]   11.8MB/49.1MB
+ d255d476cd34 Downloading [===============================================>   ]  61.67MB/64.36MB
+ 2c0a233485c3 Extracting [==============>                                    ]  13.76MB/49.1MB
+ f93598758d10 Downloading [=====================================>             ]  37.46MB/49.62MB
+ d255d476cd34 Downloading [================================================>  ]   62.2MB/64.36MB
+ 2c0a233485c3 Extracting [================>                                  ]  15.73MB/49.1MB
+ d255d476cd34 Downloading [================================================>  ]  62.74MB/64.36MB
+ f93598758d10 Downloading [======================================>            ]  38.47MB/49.62MB
+ 2c0a233485c3 Extracting [==================>                                ]  18.19MB/49.1MB
+ d255d476cd34 Downloading [=================================================> ]  63.28MB/64.36MB
+ f93598758d10 Downloading [=======================================>           ]  39.47MB/49.62MB
+ 2c0a233485c3 Extracting [=====================>                             ]  20.64MB/49.1MB
+ d255d476cd34 Downloading [=================================================> ]  63.82MB/64.36MB
+ 2c0a233485c3 Extracting [=======================>                           ]  22.61MB/49.1MB
+ f93598758d10 Downloading [========================================>          ]  40.49MB/49.62MB
+ d255d476cd34 Downloading [=================================================> ]  64.35MB/64.36MB
+ d255d476cd34 Verifying Checksum 
+ d255d476cd34 Download complete 
+ 2c0a233485c3 Extracting [=========================>                         ]  24.58MB/49.1MB
+ f93598758d10 Downloading [=========================================>         ]   41.5MB/49.62MB
+ 2c0a233485c3 Extracting [===========================>                       ]  27.03MB/49.1MB
+ f93598758d10 Downloading [===========================================>       ]  43.02MB/49.62MB
+ 2c0a233485c3 Extracting [==============================>                    ]  29.49MB/49.1MB
+ f93598758d10 Downloading [============================================>      ]  44.53MB/49.62MB
+ 2c0a233485c3 Extracting [===============================>                   ]  30.47MB/49.1MB
+ f93598758d10 Downloading [==============================================>    ]  46.04MB/49.62MB
+ 2c0a233485c3 Extracting [================================>                  ]  31.46MB/49.1MB
+ f93598758d10 Downloading [===============================================>   ]  47.56MB/49.62MB
+ 2c0a233485c3 Extracting [=================================>                 ]  32.44MB/49.1MB
+ f93598758d10 Downloading [=================================================> ]  49.09MB/49.62MB
+ f93598758d10 Download complete 
+ 2c0a233485c3 Extracting [==================================>                ]  33.91MB/49.1MB
+ 2c0a233485c3 Extracting [===========================================>       ]  42.76MB/49.1MB
+ 2c0a233485c3 Extracting [============================================>      ]  43.75MB/49.1MB
+ 2c0a233485c3 Extracting [=============================================>     ]  44.73MB/49.1MB
+ 2c0a233485c3 Extracting [==============================================>    ]  45.71MB/49.1MB
+ 2c0a233485c3 Extracting [===============================================>   ]   46.2MB/49.1MB
+ 2c0a233485c3 Extracting [==================================================>]   49.1MB/49.1MB
+ 2c0a233485c3 Pull complete 
+ b746eccf8a0b Extracting [==================================================>]     884B/884B
+ b746eccf8a0b Extracting [==================================================>]     884B/884B
+ b746eccf8a0b Pull complete 
+ 570d30cf82c5 Extracting [=>                                                 ]  32.77kB/983kB
+ 570d30cf82c5 Extracting [=============>                                     ]  262.1kB/983kB
+ 570d30cf82c5 Extracting [==================================================>]    983kB/983kB
+ 570d30cf82c5 Extracting [==================================================>]    983kB/983kB
+ 570d30cf82c5 Pull complete 
+ c7d84c48f09d Extracting [>                                                  ]   98.3kB/6.901MB
+ c7d84c48f09d Extracting [==>                                                ]  294.9kB/6.901MB
+ c7d84c48f09d Extracting [================>                                  ]  2.261MB/6.901MB
+ c7d84c48f09d Extracting [======================>                            ]  3.146MB/6.901MB
+ c7d84c48f09d Extracting [=============================>                     ]   4.03MB/6.901MB
+ c7d84c48f09d Extracting [==================================================>]  6.901MB/6.901MB
+ c7d84c48f09d Pull complete 
+ e9ecf1ccdd2a Extracting [==================================================>]  2.607kB/2.607kB
+ e9ecf1ccdd2a Extracting [==================================================>]  2.607kB/2.607kB
+ e9ecf1ccdd2a Pull complete 
+ 6331406986f7 Extracting [==================================================>]     333B/333B
+ 6331406986f7 Extracting [==================================================>]     333B/333B
+ 6331406986f7 Pull complete 
+ f93598758d10 Extracting [>                                                  ]  524.3kB/49.62MB
+ f93598758d10 Extracting [===>                                               ]   3.67MB/49.62MB
+ f93598758d10 Extracting [======>                                            ]  6.816MB/49.62MB
+ f93598758d10 Extracting [==========>                                        ]  10.49MB/49.62MB
+ f93598758d10 Extracting [=============>                                     ]  13.63MB/49.62MB
+ f93598758d10 Extracting [================>                                  ]  16.78MB/49.62MB
+ f93598758d10 Extracting [=====================>                             ]  20.97MB/49.62MB
+ f93598758d10 Extracting [=========================>                         ]  25.17MB/49.62MB
+ f93598758d10 Extracting [=============================>                     ]  29.36MB/49.62MB
+ f93598758d10 Extracting [==================================>                ]  34.08MB/49.62MB
+ f93598758d10 Extracting [======================================>            ]  37.75MB/49.62MB
+ f93598758d10 Extracting [=======================================>           ]  39.32MB/49.62MB
+ f93598758d10 Extracting [==========================================>        ]  42.47MB/49.62MB
+ f93598758d10 Extracting [=============================================>     ]  45.09MB/49.62MB
+ f93598758d10 Extracting [================================================>  ]  47.71MB/49.62MB
+ f93598758d10 Extracting [==================================================>]  49.62MB/49.62MB
+ f93598758d10 Pull complete 
+ 6c136cb242f2 Extracting [==================================================>]     319B/319B
+ 6c136cb242f2 Extracting [==================================================>]     319B/319B
+ 6c136cb242f2 Pull complete 
+ d255d476cd34 Extracting [>                                                  ]  557.1kB/64.36MB
+ d255d476cd34 Extracting [===>                                               ]  3.899MB/64.36MB
+ d255d476cd34 Extracting [=====>                                             ]  7.242MB/64.36MB
+ d255d476cd34 Extracting [=========>                                         ]   11.7MB/64.36MB
+ d255d476cd34 Extracting [===========>                                       ]  15.04MB/64.36MB
+ d255d476cd34 Extracting [==============>                                    ]  18.38MB/64.36MB
+ d255d476cd34 Extracting [================>                                  ]  21.17MB/64.36MB
+ d255d476cd34 Extracting [===================>                               ]  24.51MB/64.36MB
+ d255d476cd34 Extracting [===================>                               ]  25.62MB/64.36MB
+ d255d476cd34 Extracting [=====================>                             ]   27.3MB/64.36MB
+ d255d476cd34 Extracting [=====================>                             ]  27.85MB/64.36MB
+ d255d476cd34 Extracting [======================>                            ]  28.41MB/64.36MB
+ d255d476cd34 Extracting [======================>                            ]  28.97MB/64.36MB
+ d255d476cd34 Extracting [======================>                            ]  29.52MB/64.36MB
+ d255d476cd34 Extracting [=======================>                           ]  30.08MB/64.36MB
+ d255d476cd34 Extracting [=======================>                           ]  30.64MB/64.36MB
+ d255d476cd34 Extracting [========================>                          ]   31.2MB/64.36MB
+ d255d476cd34 Extracting [========================>                          ]  31.75MB/64.36MB
+ d255d476cd34 Extracting [=========================>                         ]  32.31MB/64.36MB
+ d255d476cd34 Extracting [=========================>                         ]  32.87MB/64.36MB
+ d255d476cd34 Extracting [=========================>                         ]  33.42MB/64.36MB
+ d255d476cd34 Extracting [==========================>                        ]  33.98MB/64.36MB
+ d255d476cd34 Extracting [==========================>                        ]  34.54MB/64.36MB
+ d255d476cd34 Extracting [===========================>                       ]  35.09MB/64.36MB
+ d255d476cd34 Extracting [===========================>                       ]  35.65MB/64.36MB
+ d255d476cd34 Extracting [============================>                      ]  36.21MB/64.36MB
+ d255d476cd34 Extracting [============================>                      ]  36.77MB/64.36MB
+ d255d476cd34 Extracting [============================>                      ]  37.32MB/64.36MB
+ d255d476cd34 Extracting [=============================>                     ]  37.88MB/64.36MB
+ d255d476cd34 Extracting [=============================>                     ]  38.44MB/64.36MB
+ d255d476cd34 Extracting [==============================>                    ]  38.99MB/64.36MB
+ d255d476cd34 Extracting [==============================>                    ]  39.55MB/64.36MB
+ d255d476cd34 Extracting [===============================>                   ]  40.67MB/64.36MB
+ d255d476cd34 Extracting [================================>                  ]  41.22MB/64.36MB
+ d255d476cd34 Extracting [=================================>                 ]  42.89MB/64.36MB
+ d255d476cd34 Extracting [==================================>                ]  44.01MB/64.36MB
+ d255d476cd34 Extracting [====================================>              ]  46.79MB/64.36MB
+ d255d476cd34 Extracting [=====================================>             ]  47.91MB/64.36MB
+ d255d476cd34 Extracting [======================================>            ]  49.02MB/64.36MB
+ d255d476cd34 Extracting [======================================>            ]  49.58MB/64.36MB
+ d255d476cd34 Extracting [======================================>            ]  50.14MB/64.36MB
+ d255d476cd34 Extracting [=======================================>           ]  51.25MB/64.36MB
+ d255d476cd34 Extracting [=========================================>         ]  52.92MB/64.36MB
+ d255d476cd34 Extracting [=========================================>         ]  54.03MB/64.36MB
+ d255d476cd34 Extracting [==========================================>        ]  55.15MB/64.36MB
+ d255d476cd34 Extracting [=============================================>     ]  57.93MB/64.36MB
+ d255d476cd34 Extracting [================================================>  ]  61.83MB/64.36MB
+ d255d476cd34 Extracting [==================================================>]  64.36MB/64.36MB
+ d255d476cd34 Pull complete 
+ dbfe60d9fe24 Extracting [==================================================>]  5.328kB/5.328kB
+ dbfe60d9fe24 Extracting [==================================================>]  5.328kB/5.328kB
+ dbfe60d9fe24 Pull complete 
+ 9cb9659be67b Extracting [==================================================>]     121B/121B
+ 9cb9659be67b Extracting [==================================================>]     121B/121B
+ 9cb9659be67b Pull complete 
+ db Pulled 
+ Network sistema-mercado-topografico_default  Creating
+ Network sistema-mercado-topografico_default  Created
+ Container sistema-mercado-topografico-db-1  Creating
+ Container sistema-mercado-topografico-db-1  Created
+ Container sistema-mercado-topografico-db-1  Starting
+ Container sistema-mercado-topografico-db-1  Started
 [1;33mScript Info: Iniciando servidor Ruby[0m
-=> Booting Puma
-=> Rails 7.2.2.1 application starting in development 
-=> Run `bin/rails server --help` for more startup options
-Puma starting in single mode...
-* Puma version: 6.5.0 ("Sky's Version")
-* Ruby version: ruby 3.1.4p223 (2023-03-30 revision 957bb7cb81) [x86_64-linux]
-*  Min threads: 5
-*  Max threads: 5
-*  Environment: development
-*          PID: 37388
-* Listening on http://127.0.0.1:3000
-* Listening on http://[::1]:3000
-Use Ctrl-C to stop
-- Gracefully stopping, waiting for requests to finish
-=== puma shutdown: 2024-12-26 14:37:41 +0000 ===
-- Goodbye!
-Exiting
+./prepareEnvironment.sh: line 169: cd: ~/simbiose/code/sistema-mercado-topografico: No such file or directory
+Finishing script...
+Check script log!
+---- Script finished at Fri Dec 27 01:02:41 AM UTC 2024 ----
