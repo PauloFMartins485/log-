@@ -1,1355 +1,367 @@
  
----- Script started at Fri Dec 27 12:54:37 AM UTC 2024 ----
+---- Script started at Mon Dec 30 02:05:21 PM UTC 2024 ----
 Starting script...
-[1;33mScript Info: Instalando pacotes essenciais[0m
-
-WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
-
-Hit:1 https://download.docker.com/linux/ubuntu noble InRelease
-Hit:2 http://archive.ubuntu.com/ubuntu noble InRelease
-Get:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
-Hit:4 http://security.ubuntu.com/ubuntu noble-security InRelease
-Hit:5 http://archive.ubuntu.com/ubuntu noble-backports InRelease
-Fetched 126 kB in 1s (104 kB/s)
-Reading package lists...
-Building dependency tree...
-Reading state information...
-64 packages can be upgraded. Run 'apt list --upgradable' to see them.
-
-WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
-
-Reading package lists...
-Building dependency tree...
-Reading state information...
-git is already the newest version (1:2.43.0-1ubuntu7.1).
-zlib1g-dev is already the newest version (1:1.3.dfsg-3.1ubuntu2.1).
-build-essential is already the newest version (12.10ubuntu1).
-libssl-dev is already the newest version (3.0.13-0ubuntu3.4).
-libreadline-dev is already the newest version (8.2-4build1).
-libyaml-dev is already the newest version (0.2.5-1build1).
-libsqlite3-dev is already the newest version (3.45.1-1ubuntu2).
-sqlite3 is already the newest version (3.45.1-1ubuntu2).
-libxml2-dev is already the newest version (2.9.14+dfsg-1.3ubuntu3).
-libxslt1-dev is already the newest version (1.1.39-0exp1build1).
-libcurl4-openssl-dev is already the newest version (8.5.0-2ubuntu10.6).
-software-properties-common is already the newest version (0.99.49.1).
-software-properties-common set to manually installed.
-libffi-dev is already the newest version (3.4.6-1build1).
-micro is already the newest version (2.0.13-1).
-libmysqlclient-dev is already the newest version (8.0.40-0ubuntu0.24.04.1).
-mysql-client-core-8.0 is already the newest version (8.0.40-0ubuntu0.24.04.1).
-libgtk2.0-0t64 is already the newest version (2.24.33-4ubuntu1.1).
-libgtk-3-0t64 is already the newest version (3.24.41-4ubuntu1.2).
-libgbm-dev is already the newest version (24.0.9-0ubuntu0.3).
-libnotify-dev is already the newest version (0.8.3-1build2).
-libnss3 is already the newest version (2:3.98-1build1).
-libxss1 is already the newest version (1:1.2.3-1build3).
-libxtst6 is already the newest version (2:1.2.3-1.1build1).
-xauth is already the newest version (1:1.1.2-1build1).
-xvfb is already the newest version (2:21.1.12-1ubuntu1.1).
-libbz2-dev is already the newest version (1.0.8-5.1build0.1).
-curl is already the newest version (8.5.0-2ubuntu10.6).
-0 upgraded, 0 newly installed, 0 to remove and 64 not upgraded.
-[1;33mScript Info: Verificando a instalação do compilador C[0m
-[1;32mCompilador C encontrado: gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0[0m
-[1;33mScript Info: Instalando ASDF - package manager[0m
-fatal: destination path '/home/mercado-paulo/.asdf' already exists and is not an empty directory.
-PATH: /home/mercado-paulo/.asdf/shims:/home/mercado-paulo/.asdf/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
-[1;32mASDF foi instalado e carregado com sucesso[0m
-[1;33mScript Info: Instalando plugin Ruby[0m
-updating plugin repository...HEAD is now at 00af419 feat: adding plugin for avalanchego (#1058)
-Plugin named ruby already added
-[1;33mScript Info: Instalando Ruby[0m
-ruby 3.1.4 is already installed
-[1;33mScript Info: Confirmando a versão do Ruby:[0m
-/home/mercado-paulo/.asdf/shims/ruby
-ruby 3.1.4p223 (2023-03-30 revision 957bb7cb81) [x86_64-linux]
-[1;33mScript Info: Instalando plugin Node[0m
-Plugin named nodejs already added
-[1;33mScript Info: Instalando NodeJs[0m
-nodejs 20.9.0 is already installed
-[1;33mScript Info: Confirmando a versão do NodeJS:[0m
-/home/mercado-paulo/.asdf/shims/node
-v20.9.0
-
-changed 14 packages in 5s
-
-24 packages are looking for funding
-  run `npm fund` for details
-Reshimming asdf nodejs...
-
-changed 1 package in 1s
-Reshimming asdf nodejs...
-[1;33mScript Info: Instalando plugin Python[0m
-Plugin named python already added
-[1;33mScript Info: Instalando Python [0m
-python 3.11.0 is already installed
-[1;33mScript Info: Confirmando a versão do Python:[0m
-/home/mercado-paulo/.asdf/shims/python
-Python 3.11.0
-[1;33mScript Info: Instalando Docker[0m
-# Executing docker install script, commit: 4c94a56999e10efcf48c5b8e3f6afea464f9108e
-Warning: the "docker" command appears to already exist on this system.
-
-If you already have Docker installed, this script can cause trouble, which is
-why we're displaying this warning and provide the opportunity to cancel the
-installation.
-
-If you installed the current Docker package using this script and are using it
-again to update Docker, you can ignore this message, but be aware that the
-script resets any custom changes in the deb and rpm repo configuration
-files to match the parameters passed to the script.
-
-You may press Ctrl+C now to abort this script.
-+ sleep 20
-+ sh -c apt-get -qq update >/dev/null
-+ sh -c DEBIAN_FRONTEND=noninteractive apt-get -y -qq install ca-certificates curl >/dev/null
-+ sh -c install -m 0755 -d /etc/apt/keyrings
-+ sh -c curl -fsSL "https://download.docker.com/linux/ubuntu/gpg" -o /etc/apt/keyrings/docker.asc
-+ sh -c chmod a+r /etc/apt/keyrings/docker.asc
-+ sh -c echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu noble stable" > /etc/apt/sources.list.d/docker.list
-+ sh -c apt-get -qq update >/dev/null
-+ sh -c DEBIAN_FRONTEND=noninteractive apt-get -y -qq install docker-ce docker-ce-cli containerd.io docker-compose-plugin docker-ce-rootless-extras docker-buildx-plugin >/dev/null
-+ sh -c docker version
-Client: Docker Engine - Community
- Version:           27.4.1
- API version:       1.47
- Go version:        go1.22.10
- Git commit:        b9d17ea
- Built:             Tue Dec 17 15:45:46 2024
- OS/Arch:           linux/amd64
- Context:           default
-
-Server: Docker Engine - Community
- Engine:
-  Version:          27.4.1
-  API version:      1.47 (minimum version 1.24)
-  Go version:       go1.22.10
-  Git commit:       c710b88
-  Built:            Tue Dec 17 15:45:46 2024
-  OS/Arch:          linux/amd64
-  Experimental:     false
- containerd:
-  Version:          1.7.24
-  GitCommit:        88bf19b2105c8b17560993bee28a01ddc2f97182
- runc:
-  Version:          1.2.2
-  GitCommit:        v1.2.2-0-g7cb3632
- docker-init:
-  Version:          0.19.0
-  GitCommit:        de40ad0
-
-================================================================================
-
-To run Docker as a non-privileged user, consider setting up the
-Docker daemon in rootless mode for your user:
-
-    dockerd-rootless-setuptool.sh install
-
-Visit https://docs.docker.com/go/rootless/ to learn about rootless mode.
-
-
-To run the Docker daemon as a fully privileged service, but granting non-root
-users access, refer to https://docs.docker.com/go/daemon-access/
-
-WARNING: Access to the remote API on a privileged Docker daemon is equivalent
-         to root access on the host. Refer to the 'Docker daemon attack surface'
-         documentation for details: https://docs.docker.com/go/attack-surface/
-
-================================================================================
-
-[1;33mScript Info: Removendo Script de instalação[0m
+[1;33mScript Info: Criando o diretório do projeto...[0m
+Novo diretório: ~/simbiose/code
 [1;33mScript Info: Clonando repositório Mercado Topográfico[0m
-fatal: destination path 'sistema-mercado-topografico' already exists and is not an empty directory.
+Cloning into 'sistema-mercado-topografico'...
+[1;33mScript Info: Copiando arquivo de configuração do Mercado Topográfico[0m
 cp: cannot stat '/home/mercado/projetos/prepare-environment/application.yml': No such file or directory
 [1;33mScript Info: Instalando as Gems[0m
-./prepareEnvironment.sh: line 130: cd: ~/simbiose/code/sistema-mercado-topografico: No such file or directory
+./prepareEnvironment.sh: line 133: cd: ~/simbiose/code/sistema-mercado-topografico: No such file or directory
 Fetching gem metadata from https://rubygems.org/........
-Resolving dependencies...................
-Fetching rake 13.2.1
-Installing rake 13.2.1
-Fetching base64 0.2.0
-Fetching benchmark 0.4.0
-Fetching concurrent-ruby 1.3.4
-Fetching bigdecimal 3.1.9
-Installing base64 0.2.0
-Fetching connection_pool 2.4.1
-Installing benchmark 0.4.0
-Installing bigdecimal 3.1.9 with native extensions
-Fetching drb 2.2.1
-Installing connection_pool 2.4.1
-Fetching logger 1.6.4
-Installing concurrent-ruby 1.3.4
-Installing drb 2.2.1
-Installing logger 1.6.4
-Fetching minitest 5.25.4
-Fetching securerandom 0.4.1
-Installing minitest 5.25.4
-Installing securerandom 0.4.1
-Fetching builder 3.3.0
-Fetching erubi 1.13.1
-Fetching racc 1.8.1
-Installing erubi 1.13.1
-Installing builder 3.3.0
-Fetching crass 1.0.6
-Installing racc 1.8.1 with native extensions
-Fetching rack 2.2.10
-Installing crass 1.0.6
-Fetching useragent 0.16.11
-Installing rack 2.2.10
-Installing useragent 0.16.11
-Fetching nio4r 2.7.4
-Fetching websocket-extensions 0.1.5
-Installing nio4r 2.7.4 with native extensions
-Installing websocket-extensions 0.1.5
-Fetching zeitwerk 2.6.18
-Installing zeitwerk 2.6.18
-Fetching timeout 0.4.3
-Installing timeout 0.4.3
-Fetching marcel 1.0.4
-Installing marcel 1.0.4
-Fetching mini_mime 1.1.5
-Fetching date 3.4.1
-Installing mini_mime 1.1.5
-Fetching jsonapi-renderer 0.2.2
-Installing date 3.4.1 with native extensions
-Installing jsonapi-renderer 0.2.2
-Fetching public_suffix 6.0.1
-Installing public_suffix 6.0.1
-Fetching ruby-next-core 1.0.3
-Installing ruby-next-core 1.0.3
-Fetching google-protobuf 3.25.5 (x86_64-linux)
-Installing google-protobuf 3.25.5 (x86_64-linux)
-Fetching api-pagination 6.0.0
-Installing api-pagination 6.0.0
-Fetching ast 2.4.2
-Installing ast 2.4.2
-Fetching encryptor 3.0.0
-Installing encryptor 3.0.0
-Fetching aws-eventstream 1.3.0
-Installing aws-eventstream 1.3.0
-Fetching aws-partitions 1.1029.0
-Installing aws-partitions 1.1029.0
-Fetching jmespath 1.6.2
-Installing jmespath 1.6.2
-Fetching bcrypt 3.1.20
-Installing bcrypt 3.1.20 with native extensions
-Fetching rouge 4.5.1
-Installing rouge 4.5.1
-Fetching bindex 0.8.1
-Installing bindex 0.8.1 with native extensions
-Fetching debug_inspector 1.2.0
-Installing debug_inspector 1.2.0 with native extensions
-Fetching msgpack 1.7.5
-Installing msgpack 1.7.5 with native extensions
-Fetching uniform_notifier 1.16.0
-Installing uniform_notifier 1.16.0
+Resolving dependencies...........................
+Using rake 13.2.1
+WARN: Unresolved or ambiguous specs during Gem::Specification.reset:
+      stringio (>= 0)
+      Available/installed versions of this gem:
+      - 3.1.2
+      - 3.0.1
+WARN: Clearing out unresolved specs. Try 'gem cleanup <gem>'
+Please report a bug if this causes problems.
+Using base64 0.2.0
+Using benchmark 0.4.0
+Using concurrent-ruby 1.3.4
+Using connection_pool 2.4.1
+Using bigdecimal 3.1.9
+Using logger 1.6.4
+Using minitest 5.25.4
+Using drb 2.2.1
+Using securerandom 0.4.1
+Using erubi 1.13.1
+Using racc 1.8.1
+Using crass 1.0.6
+Using rack 2.2.10
+Using useragent 0.16.11
+Using nio4r 2.7.4
+Using builder 3.3.0
+Using zeitwerk 2.6.18
+Using timeout 0.4.3
+Using marcel 1.0.4
+Using mini_mime 1.1.5
+Using websocket-extensions 0.1.5
+Using jsonapi-renderer 0.2.2
+Using date 3.4.1
+Using ruby-next-core 1.0.3
+Using google-protobuf 3.25.5 (x86_64-linux)
+Using api-pagination 6.0.0
+Using ast 2.4.2
+Using encryptor 3.0.0
+Using public_suffix 6.0.1
+Using aws-partitions 1.1029.0
+Using jmespath 1.6.2
+Using bcrypt 3.1.20
+Using rouge 4.5.1
+Using bindex 0.8.1
+Using debug_inspector 1.2.0
+Using msgpack 1.7.5
+Using uniform_notifier 1.16.0
 Using bundler 2.3.26
-Fetching byebug 11.1.3
-Installing byebug 11.1.3 with native extensions
+Using byebug 11.1.3
 Using matrix 0.4.2
-Fetching regexp_parser 2.10.0
-Installing regexp_parser 2.10.0
-Fetching chartkick 5.1.2
-Installing chartkick 5.1.2
-Fetching chilean-rutify 1.1.0
-Installing chilean-rutify 1.1.0
-Fetching clipboard 2.0.0
-Installing clipboard 2.0.0
-Fetching coderay 1.1.3
-Installing coderay 1.1.3
-Fetching cpf_cnpj 1.0.1
-Installing cpf_cnpj 1.0.1
-Fetching rexml 3.4.0
-Installing rexml 3.4.0
-Fetching database_cleaner-core 2.0.1
-Installing database_cleaner-core 2.0.1
-Fetching stringio 3.1.2
-Installing stringio 3.1.2 with native extensions
-Fetching io-console 0.8.0
-Installing io-console 0.8.0 with native extensions
-Fetching webrick 1.9.1
-Installing webrick 1.9.1
-Fetching thor 1.3.2
-Installing thor 1.3.2
-Fetching declarative 0.0.20
-Installing declarative 0.0.20
-Fetching diff-lcs 1.5.1
-Installing diff-lcs 1.5.1
-Fetching domain_name 0.6.20240107
-Installing domain_name 0.6.20240107
-Fetching dry-inflector 1.1.0
-Installing dry-inflector 1.1.0
-Fetching eventmachine 1.2.7
-Installing eventmachine 1.2.7 with native extensions
-Fetching hiredis 0.6.3
-Installing hiredis 0.6.3 with native extensions
-Fetching error_highlight 0.7.0
-Installing error_highlight 0.7.0
-Fetching execjs 2.10.0
-Installing execjs 2.10.0
-Fetching uri 1.0.2
-Installing uri 1.0.2
-Fetching json 2.9.1
-Installing json 2.9.1 with native extensions
-Fetching sexp_processor 4.17.3
-Installing sexp_processor 4.17.3
-Fetching google-logging-utils 0.1.0
-Installing google-logging-utils 0.1.0
-Fetching multi_json 1.15.0
-Installing multi_json 1.15.0
-Fetching os 1.1.4
-Installing os 1.1.4
-Fetching ffi 1.17.0 (x86_64-linux-gnu)
-Installing ffi 1.17.0 (x86_64-linux-gnu)
-Fetching formatador 1.1.0
-Installing formatador 1.1.0
-Fetching raabro 1.4.0
-Installing raabro 1.4.0
-Fetching gems 1.3.0
-Installing gems 1.3.0
-Fetching httpclient 2.8.3
-Installing httpclient 2.8.3
-Fetching mutex_m 0.3.0
-Installing mutex_m 0.3.0
-Fetching trailblazer-option 0.1.2
-Installing trailblazer-option 0.1.2
-Fetching uber 0.1.0
-Installing uber 0.1.0
-Fetching retriable 2.1.0
-Fetching hurley 0.2
-Installing retriable 2.1.0
+Using aws-eventstream 1.3.0
+Using regexp_parser 2.10.0
+Using chartkick 5.1.2
+Using chilean-rutify 1.1.0
+Using clipboard 2.0.0
+Using coderay 1.1.3
+Using cpf_cnpj 1.0.1
+Using rexml 3.4.0
+Using database_cleaner-core 2.0.1
+Using stringio 3.1.2
+Using io-console 0.8.0
+Using webrick 1.9.1
+Using thor 1.3.2
+Using declarative 0.0.20
+Using diff-lcs 1.5.1
+Using domain_name 0.6.20240107
+Using dry-inflector 1.1.0
+Using eventmachine 1.2.7
+Using hiredis 0.6.3
+Using error_highlight 0.7.0
+Using execjs 2.10.0
+Using uri 1.0.2
+Using json 2.9.1
+Using sexp_processor 4.17.3
+Using google-logging-utils 0.1.0
+Using multi_json 1.15.0
+Using os 1.1.4
+Using ffi 1.17.0 (x86_64-linux-gnu)
+Using formatador 1.1.0
+Using raabro 1.4.0
+Using gems 1.3.0
+Using httpclient 2.8.3
+Using mutex_m 0.3.0
+Using trailblazer-option 0.1.2
+Using uber 0.1.0
+Using retriable 2.1.0
+Using hurley 0.2
 Using ruby2_keywords 0.0.5
-Fetching ostruct 0.6.1
-Installing hurley 0.2
-Fetching gritter 1.2.0
-Installing ostruct 0.6.1
-Fetching rb-fsevent 0.11.2
-Installing rb-fsevent 0.11.2
-Fetching lumberjack 1.2.10
-Installing gritter 1.2.0
-Fetching nenv 0.3.0
-Installing lumberjack 1.2.10
-Fetching shellany 0.0.1
-Installing shellany 0.0.1
-Installing nenv 0.3.0
-Fetching guard-compat 1.2.1
-Fetching method_source 1.1.0
-Fetching rspec-support 3.13.2
-Installing method_source 1.1.0
-Fetching hashdiff 1.1.2
-Installing rspec-support 3.13.2
-Installing guard-compat 1.2.1
-Fetching hashie 5.0.0
-Installing hashdiff 1.1.2
-Fetching http-accept 1.7.0
-Fetching hub 1.12.4
-Installing hashie 5.0.0
-Installing http-accept 1.7.0
-Fetching iconv 1.1.0
-Fetching mini_magick 4.13.2
-Installing iconv 1.1.0 with native extensions
-Installing mini_magick 4.13.2
-Fetching interception 0.5
-Installing hub 1.12.4
-Fetching kaminari-core 1.2.2
-Installing kaminari-core 1.2.2
-Fetching language_filter 0.3.01
-Installing interception 0.5 with native extensions
-Fetching language_server-protocol 3.17.0.3
-Installing language_filter 0.3.01
-Fetching memory_profiler 1.1.0
-Installing language_server-protocol 3.17.0.3
-Installing memory_profiler 1.1.0
-Fetching mime-types-data 3.2024.1203
-Installing mime-types-data 3.2024.1203
-Fetching netrc 0.11.0
-Fetching mysql2 0.5.6
-Installing netrc 0.11.0
-Fetching opentelemetry-api 1.4.0
-Installing mysql2 0.5.6 with native extensions
-Installing opentelemetry-api 1.4.0
-Fetching parallel 1.26.3
-Installing parallel 1.26.3
-Fetching pdf-core 0.10.0
-Installing pdf-core 0.10.0
-Fetching rails_layout 1.0.42
-Installing rails_layout 1.0.42
-Fetching rainbow 3.1.1
-Installing rainbow 3.1.1
-Fetching recaptcha 5.18.0
-Installing recaptcha 5.18.0
-Fetching redcarpet 3.6.0
-Installing redcarpet 3.6.0 with native extensions
-Fetching redis 4.8.1
-Installing redis 4.8.1
-Fetching rubyzip 2.3.2
-Installing rubyzip 2.3.2
-Fetching ruby-progressbar 1.13.0
-Installing ruby-progressbar 1.13.0
-Fetching unicode-emoji 4.0.4
-Installing unicode-emoji 4.0.4
-Fetching ruby-ole 1.2.13.1
-Installing ruby-ole 1.2.13.1
-Fetching ruby_http_client 3.5.5
-Installing ruby_http_client 3.5.5
-Fetching tilt 2.5.0
-Installing tilt 2.5.0
-Fetching websocket 1.2.11
-Installing websocket 1.2.11
-Fetching simpleidn 0.2.3
-Installing simpleidn 0.2.3
-Fetching spring 4.2.1
-Installing spring 4.2.1
-Fetching stackprof 0.2.26
-Installing stackprof 0.2.26 with native extensions
-Fetching statsd-instrument 3.9.8
-Installing statsd-instrument 3.9.8
-Fetching url_regex 0.0.4
-Installing url_regex 0.0.4
-Fetching jwt 2.10.1
-Installing jwt 2.10.1
-Fetching redis-client 0.23.0
-Installing redis-client 0.23.0
-Fetching i18n 1.14.6
-Installing i18n 1.14.6
-Fetching tzinfo 2.0.6
-Installing tzinfo 2.0.6
-Fetching rack-session 1.0.2
-Installing rack-session 1.0.2
-Fetching rack-test 2.2.0
-Installing rack-test 2.2.0
-Fetching rack-attack 6.7.0
-Fetching rack-cors 2.0.2
-Installing rack-attack 6.7.0
-Installing rack-cors 2.0.2
-Fetching rack-mini-profiler 3.3.1
-Fetching sprockets 4.2.1
-Installing sprockets 4.2.1
-Installing rack-mini-profiler 3.3.1
-Fetching websocket-driver 0.7.6
-Fetching dry-core 1.0.2
-Installing dry-core 1.0.2
-Fetching net-protocol 0.2.2
-Installing websocket-driver 0.7.6 with native extensions
-Installing net-protocol 0.2.2
-Fetching nokogiri 1.18.0 (x86_64-linux-gnu)
-Fetching addressable 2.8.7
-Installing nokogiri 1.18.0 (x86_64-linux-gnu)
-Installing addressable 2.8.7
-Fetching anyway_config 2.6.4
-Installing anyway_config 2.6.4
-Fetching googleapis-common-protos-types 1.16.0
-Installing googleapis-common-protos-types 1.16.0
-Fetching parser 3.3.6.0
-Fetching attr_encrypted 4.1.1
-Installing attr_encrypted 4.1.1
-Fetching aws-sigv4 1.10.1
-Installing parser 3.3.6.0
-Installing aws-sigv4 1.10.1
-Fetching better_errors 2.10.1
-Installing better_errors 2.10.1
-Fetching binding_of_caller 1.0.1
-Fetching puma 6.5.0
-Installing binding_of_caller 1.0.1
-Fetching cpf_faker 1.3.0
-Installing puma 6.5.0 with native extensions
-Installing cpf_faker 1.3.0
-Fetching psych 5.2.2
-Installing psych 5.2.2 with native extensions
-Fetching rackup 1.0.1
-Installing rackup 1.0.1
-Fetching figaro 1.2.0
-Installing figaro 1.2.0
-Fetching http-cookie 1.0.8
-Installing http-cookie 1.0.8
-Fetching crack 1.0.0
-Installing crack 1.0.0
-Fetching multi_xml 0.7.1
-Installing multi_xml 0.7.1
-Fetching ttfunk 1.8.0
-Installing ttfunk 1.8.0
-Fetching bootsnap 1.18.4
-Installing bootsnap 1.18.4 with native extensions
-Fetching terser 1.2.4
-Installing terser 1.2.4
-Fetching net-http 0.6.0
-Installing net-http 0.6.0
-Fetching reline 0.6.0
-Installing reline 0.6.0
-Fetching ruby_parser 3.21.1
-Installing ruby_parser 3.21.1
-Fetching rb-inotify 0.11.1
-Installing rb-inotify 0.11.1
-Fetching ruby-vips 2.2.2
-Installing ruby-vips 2.2.2
-Fetching rb-fchange 0.0.6
-Installing rb-fchange 0.0.6
-Fetching sassc 2.4.0
-Installing sassc 2.4.0 with native extensions
-Fetching representable 3.2.0
-Installing representable 3.2.0
-Fetching mustermann 3.0.3
-Installing mustermann 3.0.3
-Fetching google_maps_service 0.4.2
-Installing google_maps_service 0.4.2
-Fetching notiffany 0.1.3
-Installing notiffany 0.1.3
-Fetching pry 0.15.2
-Fetching rspec-core 3.13.2
-Installing pry 0.15.2
-Fetching rspec-expectations 3.13.3
-Installing rspec-core 3.13.2
-Fetching rspec-mocks 3.13.2
-Installing rspec-expectations 3.13.3
-Fetching omniauth 1.9.2
-Installing rspec-mocks 3.13.2
-Installing omniauth 1.9.2
-Fetching mime-types 3.6.0
-Fetching opentelemetry-common 0.21.0
-Installing opentelemetry-common 0.21.0
-Installing mime-types 3.6.0
-Fetching opentelemetry-registry 0.3.1
-Fetching opentelemetry-semantic_conventions 1.10.1
-Installing opentelemetry-registry 0.3.1
-Fetching unicode-display_width 3.1.3
-Installing opentelemetry-semantic_conventions 1.10.1
-Fetching spreadsheet 1.3.3
-Installing unicode-display_width 3.1.3
-Fetching sendgrid-ruby 6.7.0
-Installing spreadsheet 1.3.3
-Installing sendgrid-ruby 6.7.0
-Fetching selenium-webdriver 4.10.0
-Fetching spring-commands-rspec 1.0.4
-Installing spring-commands-rspec 1.0.4
-Fetching statsd-rack-instrument 0.1.0
-Installing statsd-rack-instrument 0.1.0
-Fetching sidekiq 7.3.7
-Fetching validates_email_format_of 1.8.2
-Installing validates_email_format_of 1.8.2
-Installing sidekiq 7.3.7
-Fetching activesupport 7.2.2.1
-Installing activesupport 7.2.2.1
-Fetching et-orbi 1.2.11
-Installing et-orbi 1.2.11
-Fetching dry-logic 1.5.0
-Installing dry-logic 1.5.0
-Fetching net-imap 0.5.4
-Fetching net-pop 0.1.2
-Installing selenium-webdriver 4.10.0
-Installing net-imap 0.5.4
-Installing net-pop 0.1.2
-Fetching net-smtp 0.5.0
-Fetching anycable-core 1.5.1
-Installing net-smtp 0.5.0
-Fetching loofah 2.23.1
-Installing loofah 2.23.1
-Installing anycable-core 1.5.1
-Fetching xpath 3.2.0
-Fetching roo 2.10.1
-Installing xpath 3.2.0
-Fetching grpc 1.68.1 (x86_64-linux)
-Fetching aws-sdk-core 3.214.0
-Installing roo 2.10.1
-Fetching rubocop-ast 1.37.0
-Installing aws-sdk-core 3.214.0
-Installing rubocop-ast 1.37.0
-Fetching webmock 3.24.0
-Fetching prawn 2.5.0
-Installing webmock 3.24.0
-Fetching rdoc 6.10.0
-Installing prawn 2.5.0
-Installing rdoc 6.10.0
-Installing grpc 1.68.1 (x86_64-linux)
-Fetching faraday-net_http 3.4.0
-Installing faraday-net_http 3.4.0
-Fetching fasterer 0.11.0
-Fetching listen 3.9.0
-Installing fasterer 0.11.0
-Installing listen 3.9.0
-Fetching image_processing 1.13.0
-Fetching em-hiredis 0.3.1
-Installing image_processing 1.13.0
-Fetching mustermann-grape 1.1.0
-Installing mustermann-grape 1.1.0
-Fetching pry-rails 0.3.11
-Installing em-hiredis 0.3.1
-Fetching pry-rescue 1.6.0
-Installing pry-rails 0.3.11
-Fetching rspec 3.13.0
-Installing pry-rescue 1.6.0
-Fetching opentelemetry-helpers-mysql 0.1.2
-Installing rspec 3.13.0
-Fetching opentelemetry-helpers-sql-obfuscation 0.2.1
-Installing opentelemetry-helpers-mysql 0.1.2
-Fetching rest-client 2.1.0
-Installing opentelemetry-helpers-sql-obfuscation 0.2.1
-Fetching opentelemetry-instrumentation-base 0.22.6
-Installing opentelemetry-instrumentation-base 0.22.6
-Installing rest-client 2.1.0
-Fetching opentelemetry-sdk 1.6.0
-Fetching fugit 1.11.1
-Installing opentelemetry-sdk 1.6.0
-Fetching dry-types 1.7.2
-Installing fugit 1.11.1
-Fetching rails-dom-testing 2.2.0
-Installing dry-types 1.7.2
-Installing rails-dom-testing 2.2.0
-Fetching globalid 1.2.1
-Fetching activemodel 7.2.2.1
-Installing globalid 1.2.1
-Fetching case_transform 0.2
-Fetching bullet 8.0.0
-Installing activemodel 7.2.2.1
-Installing case_transform 0.2
-Fetching factory_bot 6.5.0
-Installing bullet 8.0.0
-Fetching grape-entity 1.0.1
-Installing factory_bot 6.5.0
-Fetching pundit 2.4.0
-Fetching mail 2.8.1
-Installing grape-entity 1.0.1
-Installing pundit 2.4.0
-Fetching rails-html-sanitizer 1.6.2
-Fetching capybara 3.40.0
-Installing mail 2.8.1
-Installing rails-html-sanitizer 1.6.2
-Fetching webdrivers 5.3.0
-Installing capybara 3.40.0
-Installing webdrivers 5.3.0
-Fetching rubocop 1.69.2
-Fetching aws-sdk-kms 1.96.0
-Installing aws-sdk-kms 1.96.0
-Fetching prawn-table 0.2.2
-Installing rubocop 1.69.2
-Fetching faraday 2.12.2
-Installing prawn-table 0.2.2
-Fetching irb 1.14.3
-Installing faraday 2.12.2
-Installing irb 1.14.3
-Fetching guard 2.19.0
-Installing guard 2.19.0
-Fetching opentelemetry-instrumentation-active_support 0.5.3
-Fetching opentelemetry-instrumentation-rack 0.24.6
-Installing opentelemetry-instrumentation-active_support 0.5.3
-Fetching opentelemetry-instrumentation-active_job 0.7.8
-Installing opentelemetry-instrumentation-rack 0.24.6
-Fetching opentelemetry-instrumentation-active_model_serializers 0.20.2
-Installing opentelemetry-instrumentation-active_job 0.7.8
-Fetching opentelemetry-instrumentation-active_record 0.7.4
-Installing opentelemetry-instrumentation-active_model_serializers 0.20.2
-Fetching opentelemetry-instrumentation-aws_sdk 0.5.4
-Installing opentelemetry-instrumentation-active_record 0.7.4
-Fetching opentelemetry-instrumentation-bunny 0.21.4
-Installing opentelemetry-instrumentation-aws_sdk 0.5.4
-Fetching opentelemetry-instrumentation-concurrent_ruby 0.21.4
-Installing opentelemetry-instrumentation-bunny 0.21.4
-Fetching opentelemetry-instrumentation-dalli 0.25.4
-Installing opentelemetry-instrumentation-concurrent_ruby 0.21.4
-Fetching opentelemetry-instrumentation-delayed_job 0.22.4
-Installing opentelemetry-instrumentation-dalli 0.25.4
-Fetching opentelemetry-instrumentation-ethon 0.21.9
-Installing opentelemetry-instrumentation-delayed_job 0.22.4
-Fetching opentelemetry-instrumentation-excon 0.22.5
-Installing opentelemetry-instrumentation-ethon 0.21.9
-Fetching opentelemetry-instrumentation-faraday 0.24.8
-Installing opentelemetry-instrumentation-excon 0.22.5
-Fetching opentelemetry-instrumentation-graphql 0.28.4
-Fetching opentelemetry-instrumentation-gruf 0.2.1
-Installing opentelemetry-instrumentation-faraday 0.24.8
-Fetching opentelemetry-instrumentation-http 0.23.5
-Installing opentelemetry-instrumentation-gruf 0.2.1
-Installing opentelemetry-instrumentation-graphql 0.28.4
-Fetching opentelemetry-instrumentation-http_client 0.22.8
-Fetching opentelemetry-instrumentation-koala 0.20.5
-Installing opentelemetry-instrumentation-http 0.23.5
-Fetching opentelemetry-instrumentation-lmdb 0.22.3
-Installing opentelemetry-instrumentation-http_client 0.22.8
-Installing opentelemetry-instrumentation-koala 0.20.5
-Fetching opentelemetry-instrumentation-mongo 0.22.4
-Installing opentelemetry-instrumentation-lmdb 0.22.3
-Fetching opentelemetry-instrumentation-mysql2 0.27.2
-Fetching opentelemetry-instrumentation-net_http 0.22.8
-Installing opentelemetry-instrumentation-mysql2 0.27.2
-Installing opentelemetry-instrumentation-mongo 0.22.4
-Installing opentelemetry-instrumentation-net_http 0.22.8
-Fetching opentelemetry-instrumentation-pg 0.27.4
-Fetching opentelemetry-instrumentation-que 0.8.4
-Fetching opentelemetry-instrumentation-racecar 0.3.4
-Installing opentelemetry-instrumentation-pg 0.27.4
-Installing opentelemetry-instrumentation-que 0.8.4
-Installing opentelemetry-instrumentation-racecar 0.3.4
-Fetching opentelemetry-instrumentation-rake 0.2.2
-Fetching opentelemetry-instrumentation-rdkafka 0.4.8
-Fetching opentelemetry-instrumentation-redis 0.25.7
-Installing opentelemetry-instrumentation-rake 0.2.2
-Fetching opentelemetry-instrumentation-resque 0.5.2
-Installing opentelemetry-instrumentation-rdkafka 0.4.8
-Installing opentelemetry-instrumentation-redis 0.25.7
-Fetching opentelemetry-instrumentation-restclient 0.22.8
-Fetching opentelemetry-instrumentation-ruby_kafka 0.21.3
-Installing opentelemetry-instrumentation-resque 0.5.2
-Fetching opentelemetry-instrumentation-sidekiq 0.25.7
-Installing opentelemetry-instrumentation-ruby_kafka 0.21.3
-Installing opentelemetry-instrumentation-restclient 0.22.8
-Fetching opentelemetry-instrumentation-trilogy 0.59.3
-Fetching mercadopago-sdk 2.2.1
-Installing opentelemetry-instrumentation-sidekiq 0.25.7
-Fetching opentelemetry-exporter-otlp 0.26.3
-Installing opentelemetry-instrumentation-trilogy 0.59.3
-Fetching rufus-scheduler 3.9.2
-Installing mercadopago-sdk 2.2.1
-Installing opentelemetry-exporter-otlp 0.26.3
-Installing rufus-scheduler 3.9.2
-Fetching grape 2.2.0
-Fetching activejob 7.2.2.1
-Fetching anycable 1.5.1
-Installing grape 2.2.0
-Installing activejob 7.2.2.1
-Installing anycable 1.5.1
-Fetching activerecord 7.2.2.1
-Fetching credit_card_validations 7.0.0
-Installing activerecord 7.2.2.1
-Installing credit_card_validations 7.0.0
-Fetching sendgrid-actionmailer 3.2.0
-Fetching valid_email2 7.0.0
-Installing sendgrid-actionmailer 3.2.0
-Fetching actionview 7.2.2.1
-Installing actionview 7.2.2.1
-Installing valid_email2 7.0.0
-Fetching aws-sdk-s3 1.176.1
-Fetching google-cloud-env 2.2.1
-Fetching signet 0.19.0
-Installing google-cloud-env 2.2.1
-Installing aws-sdk-s3 1.176.1
-Fetching oauth2 1.4.11
-Installing signet 0.19.0
-Fetching guard-bundler 3.0.1
-Installing oauth2 1.4.11
-Fetching guard-rails 0.8.1
-Installing guard-bundler 3.0.1
-Fetching guard-rspec 4.7.3
-Installing guard-rails 0.8.1
-Fetching opentelemetry-instrumentation-action_mailer 0.1.0
-Fetching opentelemetry-instrumentation-action_view 0.7.2
-Installing opentelemetry-instrumentation-action_mailer 0.1.0
-Installing guard-rspec 4.7.3
-Fetching opentelemetry-instrumentation-action_pack 0.9.0
-Installing opentelemetry-instrumentation-action_view 0.7.2
-Fetching opentelemetry-instrumentation-grape 0.1.8
-Fetching opentelemetry-instrumentation-sinatra 0.23.5
-Installing opentelemetry-instrumentation-action_pack 0.9.0
-Fetching rubocop-rails 2.25.0
-Installing opentelemetry-instrumentation-grape 0.1.8
-Fetching sidekiq-scheduler 5.0.6
-Installing opentelemetry-instrumentation-sinatra 0.23.5
-Installing rubocop-rails 2.25.0
-Fetching grape-swagger 2.1.1
-Installing sidekiq-scheduler 5.0.6
-Fetching actionpack 7.2.2.1
-Installing grape-swagger 2.1.1
-Fetching kaminari-actionview 1.2.2
-Fetching active_record_doctor 1.15.0
-Installing actionpack 7.2.2.1
-Installing kaminari-actionview 1.2.2
-Fetching amoeba 3.3.0
-Installing active_record_doctor 1.15.0
-Installing amoeba 3.3.0
-Fetching audited 5.8.0
-Fetching database_cleaner-active_record 2.2.0
-Installing audited 5.8.0
-Fetching kaminari-activerecord 1.2.2
-Installing database_cleaner-active_record 2.2.0
-Fetching unread 0.14.0
-Fetching googleauth 1.12.2
-Installing kaminari-activerecord 1.2.2
-Fetching omniauth-oauth2 1.7.3
-Installing unread 0.14.0
-Fetching opentelemetry-instrumentation-rails 0.30.2
-Installing omniauth-oauth2 1.7.3
-Installing googleauth 1.12.2
-Fetching grape-swagger-entity 0.5.5
-Installing opentelemetry-instrumentation-rails 0.30.2
-Fetching grape-swagger-representable 0.2.2
-Installing grape-swagger-entity 0.5.5
-Fetching database_cleaner 2.1.0
-Fetching actioncable 7.2.2.1
-Installing grape-swagger-representable 0.2.2
-Fetching activestorage 7.2.2.1
-Installing database_cleaner 2.1.0
-Fetching actionmailer 7.2.2.1
-Installing actioncable 7.2.2.1
-Installing activestorage 7.2.2.1
-Installing actionmailer 7.2.2.1
-Fetching active_model_serializers 0.10.15
-Fetching railties 7.2.2.1
-Installing active_model_serializers 0.10.15
-Fetching omniauth-rails_csrf_protection 0.1.2
-Installing railties 7.2.2.1
-Fetching rails-controller-testing 1.0.5
-Installing omniauth-rails_csrf_protection 0.1.2
-Fetching route_translator 14.2.0
-Installing rails-controller-testing 1.0.5
-Installing route_translator 14.2.0
-Fetching sprockets-rails 3.5.2
-Fetching simple_form 5.3.1
-Installing sprockets-rails 3.5.2
-Fetching kaminari 1.2.2
-Installing simple_form 5.3.1
-Fetching omniauth-facebook 4.0.0
-Fetching omniauth-google-oauth2 0.8.2
-Installing kaminari 1.2.2
-Fetching opentelemetry-instrumentation-all 0.60.0
-Installing omniauth-google-oauth2 0.8.2
-Fetching fcm 2.0.1
-Installing opentelemetry-instrumentation-all 0.60.0
-Fetching google-apis-core 0.15.1
-Installing fcm 2.0.1
-Installing omniauth-facebook 4.0.0
-Fetching anycable-rails-core 1.5.5
-Fetching actionmailbox 7.2.2.1
-Installing google-apis-core 0.15.1
-Fetching actiontext 7.2.2.1
-Installing anycable-rails-core 1.5.5
-Installing actionmailbox 7.2.2.1
-Fetching grape-active_model_serializers 1.5.2
-Installing actiontext 7.2.2.1
-Fetching datagrid 2.0.0
-Fetching factory_bot_rails 6.4.4
-Installing grape-active_model_serializers 1.5.2
-Fetching grape-swagger-rails 0.6.0
-Installing datagrid 2.0.0
-Fetching importmap-rails 2.1.0
-Installing factory_bot_rails 6.4.4
-Fetching rspec-rails 7.1.0
-Installing grape-swagger-rails 0.6.0
-Installing importmap-rails 2.1.0
-Fetching stimulus-rails 1.3.4
-Installing rspec-rails 7.1.0
-Fetching turbo-rails 2.0.11
-Installing stimulus-rails 1.3.4
-Fetching web-console 4.2.1
-Installing turbo-rails 2.0.11
-Fetching google-apis-discovery_v1 0.19.0
-Installing web-console 4.2.1
-Fetching anycable-rails 1.5.5
-Installing google-apis-discovery_v1 0.19.0
-Fetching rails 7.2.2.1
-Fetching google-apis-generator 0.15.1
-Installing anycable-rails 1.5.5
-Installing rails 7.2.2.1
-Installing google-apis-generator 0.15.1
-Fetching google-api-client 0.53.0
-Installing google-api-client 0.53.0
-Fetching sassc-rails 2.1.2
-Installing sassc-rails 2.1.2
-Fetching sass-rails 6.0.0
-Installing sass-rails 6.0.0
+Using ostruct 0.6.1
+Using gritter 1.2.0
+Using rb-fsevent 0.11.2
+Using lumberjack 1.2.10
+Using nenv 0.3.0
+Using shellany 0.0.1
+Using method_source 1.1.0
+Using guard-compat 1.2.1
+Using hashdiff 1.1.2
+Using hashie 5.0.0
+Using http-accept 1.7.0
+Using hub 1.12.4
+Using iconv 1.1.0
+Using mini_magick 4.13.2
+Using interception 0.5
+Using kaminari-core 1.2.2
+Using language_filter 0.3.01
+Using language_server-protocol 3.17.0.3
+Using memory_profiler 1.1.0
+Using mime-types-data 3.2024.1203
+Using netrc 0.11.0
+Using mysql2 0.5.6
+Using opentelemetry-api 1.4.0
+Using parallel 1.26.3
+Using pdf-core 0.10.0
+Using rails_layout 1.0.42
+Using rspec-support 3.13.2
+Using rainbow 3.1.1
+Using recaptcha 5.18.0
+Using redcarpet 3.6.0
+Using redis 4.8.1
+Using rubyzip 2.3.2
+Using ruby-progressbar 1.13.0
+Using unicode-emoji 4.0.4
+Using ruby-ole 1.2.13.1
+Using ruby_http_client 3.5.5
+Using tilt 2.5.0
+Using websocket 1.2.11
+Using simpleidn 0.2.3
+Using spring 4.2.1
+Using stackprof 0.2.26
+Using statsd-instrument 3.9.8
+Using url_regex 0.0.4
+Using i18n 1.14.6
+Using tzinfo 2.0.6
+Using jwt 2.10.1
+Using multi_xml 0.7.1
+Using ttfunk 1.8.0
+Using redis-client 0.23.0
+Using rack-session 1.0.2
+Using rack-test 2.2.0
+Using rack-attack 6.7.0
+Using rack-cors 2.0.2
+Using rack-mini-profiler 3.3.1
+Using sprockets 4.2.1
+Using net-protocol 0.2.2
+Using dry-core 1.0.2
+Using puma 6.5.0
+Using websocket-driver 0.7.6
+Using parser 3.3.6.0
+Using addressable 2.8.7
+Using anyway_config 2.6.4
+Using googleapis-common-protos-types 1.16.0
+Using attr_encrypted 4.1.1
+Using better_errors 2.10.1
+Fetching nokogiri 1.18.1 (x86_64-linux-gnu)
+Using binding_of_caller 1.0.1
+Using bootsnap 1.18.4
+Using aws-sigv4 1.10.1
+Using rb-fchange 0.0.6
+Using sassc 2.4.0
+Using terser 1.2.4
+Using cpf_faker 1.3.0
+Using crack 1.0.0
+Using psych 5.2.2
+Using reline 0.6.0
+Using rackup 1.0.1
+Using em-hiredis 0.3.1
+Using net-http 0.6.0
+Using ruby_parser 3.21.1
+Using figaro 1.2.0
+Using rb-inotify 0.11.1
+Using http-cookie 1.0.8
+Using ruby-vips 2.2.2
+Using representable 3.2.0
+Using google_maps_service 0.4.2
+Using mustermann 3.0.3
+Using notiffany 0.1.3
+Using pry 0.15.2
+Using mime-types 3.6.0
+Using omniauth 1.9.2
+Using opentelemetry-common 0.21.0
+Using opentelemetry-registry 0.3.1
+Using opentelemetry-semantic_conventions 1.10.1
+Using et-orbi 1.2.11
+Using rspec-core 3.13.2
+Using rspec-expectations 3.13.3
+Using rspec-mocks 3.13.2
+Using prawn 2.5.0
+Using unicode-display_width 3.1.3
+Using selenium-webdriver 4.10.0
+Using sendgrid-ruby 6.7.0
+Using sidekiq 7.3.7
+Using spreadsheet 1.3.3
+Using spring-commands-rspec 1.0.4
+Using statsd-rack-instrument 0.1.0
+Using validates_email_format_of 1.8.2
+Using activesupport 7.2.2.1
+Using net-imap 0.5.4
+Using net-pop 0.1.2
+Using net-smtp 0.5.0
+Using dry-logic 1.5.0
+Using rubocop-ast 1.37.0
+Using anycable-core 1.5.1
+Using grpc 1.68.1 (x86_64-linux)
+Fetching aws-sdk-core 3.214.1
+Installing aws-sdk-core 3.214.1
+Using webmock 3.24.0
+Using rdoc 6.10.0
+Using faraday-net_http 3.4.0
+Using fasterer 0.11.0
+Using mustermann-grape 1.1.0
+Using listen 3.9.0
+Using image_processing 1.13.0
+Using rest-client 2.1.0
+Using opentelemetry-helpers-mysql 0.1.2
+Using opentelemetry-helpers-sql-obfuscation 0.2.1
+Using pry-rails 0.3.11
+Using pry-rescue 1.6.0
+Using opentelemetry-instrumentation-base 0.22.6
+Using opentelemetry-sdk 1.6.0
+Using globalid 1.2.1
+Using activemodel 7.2.2.1
+Using case_transform 0.2
+Using bullet 8.0.0
+Using factory_bot 6.5.0
+Using fugit 1.11.1
+Using grape-entity 1.0.1
+Using rspec 3.13.0
+Using prawn-table 0.2.2
+Using pundit 2.4.0
+Using mail 2.8.1
+Using dry-types 1.7.2
+Using rubocop 1.69.2
+Using anycable 1.5.1
+Using aws-sdk-kms 1.96.0
+Using irb 1.14.3
+Using faraday 2.12.2
+Using guard 2.19.0
+Using mercadopago-sdk 2.2.1
+Using opentelemetry-exporter-otlp 0.26.3
+Using opentelemetry-instrumentation-active_support 0.5.3
+Using opentelemetry-instrumentation-rack 0.24.6
+Using opentelemetry-instrumentation-active_job 0.7.8
+Using opentelemetry-instrumentation-active_model_serializers 0.20.2
+Using opentelemetry-instrumentation-active_record 0.7.4
+Using opentelemetry-instrumentation-aws_sdk 0.5.4
+Using opentelemetry-instrumentation-bunny 0.21.4
+Using opentelemetry-instrumentation-concurrent_ruby 0.21.4
+Using opentelemetry-instrumentation-dalli 0.25.4
+Using opentelemetry-instrumentation-delayed_job 0.22.4
+Using opentelemetry-instrumentation-ethon 0.21.9
+Using opentelemetry-instrumentation-excon 0.22.5
+Using opentelemetry-instrumentation-faraday 0.24.8
+Using opentelemetry-instrumentation-graphql 0.28.4
+Using opentelemetry-instrumentation-gruf 0.2.1
+Using opentelemetry-instrumentation-http 0.23.5
+Using opentelemetry-instrumentation-http_client 0.22.8
+Using opentelemetry-instrumentation-koala 0.20.5
+Using opentelemetry-instrumentation-lmdb 0.22.3
+Using opentelemetry-instrumentation-mongo 0.22.4
+Using opentelemetry-instrumentation-mysql2 0.27.2
+Using opentelemetry-instrumentation-net_http 0.22.8
+Using opentelemetry-instrumentation-pg 0.27.4
+Using opentelemetry-instrumentation-que 0.8.4
+Using opentelemetry-instrumentation-racecar 0.3.4
+Using opentelemetry-instrumentation-rake 0.2.2
+Using opentelemetry-instrumentation-rdkafka 0.4.8
+Using opentelemetry-instrumentation-redis 0.25.7
+Using opentelemetry-instrumentation-resque 0.5.2
+Using opentelemetry-instrumentation-restclient 0.22.8
+Using opentelemetry-instrumentation-ruby_kafka 0.21.3
+Using opentelemetry-instrumentation-sidekiq 0.25.7
+Using opentelemetry-instrumentation-trilogy 0.59.3
+Using credit_card_validations 7.0.0
+Using activejob 7.2.2.1
+Using activerecord 7.2.2.1
+Using rufus-scheduler 3.9.2
+Using grape 2.2.0
+Installing nokogiri 1.18.1 (x86_64-linux-gnu)
+Using rubocop-rails 2.25.0
+Using sendgrid-actionmailer 3.2.0
+Using valid_email2 7.0.0
+Using aws-sdk-s3 1.176.1
+Using google-cloud-env 2.2.1
+Using signet 0.19.0
+Using oauth2 1.4.11
+Using guard-bundler 3.0.1
+Using guard-rails 0.8.1
+Using guard-rspec 4.7.3
+Using opentelemetry-instrumentation-action_mailer 0.1.0
+Using opentelemetry-instrumentation-action_pack 0.9.0
+Using opentelemetry-instrumentation-action_view 0.7.2
+Using opentelemetry-instrumentation-grape 0.1.8
+Using opentelemetry-instrumentation-sinatra 0.23.5
+Using active_record_doctor 1.15.0
+Using amoeba 3.3.0
+Using audited 5.8.0
+Using database_cleaner-active_record 2.2.0
+Using grape-swagger 2.1.1
+Using kaminari-activerecord 1.2.2
+Using sidekiq-scheduler 5.0.6
+Using unread 0.14.0
+Using googleauth 1.12.2
+Using omniauth-oauth2 1.7.3
+Using opentelemetry-instrumentation-rails 0.30.2
+Using database_cleaner 2.1.0
+Using grape-swagger-entity 0.5.5
+Using grape-swagger-representable 0.2.2
+Using fcm 2.0.1
+Using google-apis-core 0.15.1
+Using omniauth-facebook 4.0.0
+Using omniauth-google-oauth2 0.8.2
+Using opentelemetry-instrumentation-all 0.60.0
+Using google-apis-discovery_v1 0.19.0
+Using google-apis-generator 0.15.1
+Using google-api-client 0.53.0
+Using rails-dom-testing 2.2.0
+Using loofah 2.23.1
+Using xpath 3.2.0
+Using roo 2.10.1
+Using webdrivers 5.3.0
+Using rails-html-sanitizer 1.6.2
+Using capybara 3.40.0
+Using actionview 7.2.2.1
+Using actionpack 7.2.2.1
+Using kaminari-actionview 1.2.2
+Using activestorage 7.2.2.1
+Using actioncable 7.2.2.1
+Using active_model_serializers 0.10.15
+Using railties 7.2.2.1
+Using kaminari 1.2.2
+Using actionmailer 7.2.2.1
+Using rails-controller-testing 1.0.5
+Using omniauth-rails_csrf_protection 0.1.2
+Using route_translator 14.2.0
+Using sprockets-rails 3.5.2
+Using simple_form 5.3.1
+Using actionmailbox 7.2.2.1
+Using actiontext 7.2.2.1
+Using datagrid 2.0.0
+Using factory_bot_rails 6.4.4
+Using grape-active_model_serializers 1.5.2
+Using grape-swagger-rails 0.6.0
+Using importmap-rails 2.1.0
+Using rspec-rails 7.1.0
+Using stimulus-rails 1.3.4
+Using turbo-rails 2.0.11
+Using web-console 4.2.1
+Using anycable-rails-core 1.5.5
+Using anycable-rails 1.5.5
+Using rails 7.2.2.1
+Using sassc-rails 2.1.2
+Using sass-rails 6.0.0
 Bundle complete! 108 Gemfile dependencies, 341 gems now installed.
 Use `bundle info [gemname]` to see where a bundled gem is installed.
-Post-install message from i18n:
-PSA: I18n will be dropping support for Ruby < 3.2 in the next major release (April 2025), due to Ruby's end of life for 3.1 and below (https://endoflife.date/ruby). Please upgrade to Ruby 3.2 or newer by April 2025 to continue using future versions of this gem.
-Post-install message from encryptor:
-
-
-
-Please be aware that Encryptor v2.0.0 had a major security bug when using AES-*-GCM algorithms.
-
-By default You will not be able to decrypt data that was previously encrypted using an AES-*-GCM algorithm.
-
-Please see the README and https://github.com/attr-encrypted/encryptor/pull/22 for more information.
-
-
-Post-install message from attr_encrypted:
-
-
-
-WARNING: Using `#encrypted_attributes` is no longer supported. Instead, use `#attr_encrypted_encrypted_attributes` to avoid
-  collision with Active Record 7 native encryption.
-
-
-Post-install message from google-api-client:
-*******************************************************************************
-The google-api-client gem is deprecated and will likely not be updated further.
-
-Instead, please install the gem corresponding to the specific service to use.
-For example, to use the Google Drive V3 client, install google-apis-drive_v3.
-For more information, see the FAQ in the OVERVIEW.md file or the YARD docs.
-*******************************************************************************
-Post-install message from hub:
-
-------------------------------------------------------------
-
-                  You there! Wait, I say!
-                  =======================
-
-       If you are a heavy user of `git` on the command
-       line  you  may  want  to  install `hub` the old
-       fashioned way.  Faster  startup  time,  you see.
-
-       Check  out  the  installation  instructions  at
-       https://github.com/github/hub#readme  under the
-       "Standalone" section.
-
-       Cheers,
-       defunkt
-
-------------------------------------------------------------
-
-Post-install message from oauth2:
-
-You have installed oauth2 version 1.4.11, which is EOL.
-No further support is anticipated for the 1.4.x series.
-
-OAuth2 version 2 is released.
-There are BREAKING changes, but most will not encounter them, and upgrading should be easy!
-
-We have made two other major migrations:
-1. master branch renamed to main
-2. Github has been replaced with Gitlab
-
-Please see:
-• https://gitlab.com/oauth-xx/oauth2#what-is-new-for-v20
-• https://gitlab.com/oauth-xx/oauth2/-/blob/main/CHANGELOG.md
-• https://groups.google.com/g/oauth-ruby/c/QA_dtrXWXaE
-
-Please upgrade, report issues, and support the project! Thanks, |7eter l-|. l3oling
-
-Post-install message from opentelemetry-helpers-mysql:
-Ruby 3.0 has reached EoL 2024-04-23. OTel Ruby Contrib gems will no longer accept new features or bug fixes for Ruby 3.0 after 2025-01-15. Please upgrade to Ruby 3.1 or higher to continue receiving updates.
-
-Rails 6.1 has reached EoL 2024-10-01. OTel Ruby Contrib gems will no longer accept new features or bug fixes for Rails 6.1 after 2025-01-15. Please upgrade to Rails 7.0 or higher to continue receiving updates.
-Post-install message from opentelemetry-helpers-sql-obfuscation:
-Ruby 3.0 has reached EoL 2024-04-23. OTel Ruby Contrib gems will no longer accept new features or bug fixes for Ruby 3.0 after 2025-01-15. Please upgrade to Ruby 3.1 or higher to continue receiving updates.
-
-Rails 6.1 has reached EoL 2024-10-01. OTel Ruby Contrib gems will no longer accept new features or bug fixes for Rails 6.1 after 2025-01-15. Please upgrade to Rails 7.0 or higher to continue receiving updates.
-Post-install message from rubyzip:
-RubyZip 3.0 is coming!
-**********************
-
-The public API of some Rubyzip classes has been modernized to use named
-parameters for optional arguments. Please check your usage of the
-following classes:
-  * `Zip::File`
-  * `Zip::Entry`
-  * `Zip::InputStream`
-  * `Zip::OutputStream`
-
-Please ensure that your Gemfiles and .gemspecs are suitably restrictive
-to avoid an unexpected breakage when 3.0 is released (e.g. ~> 2.3.0).
-See https://github.com/rubyzip/rubyzip for details. The Changelog also
-lists other enhancements and bugfixes that have been implemented since
-version 2.3.0.
-npm WARN skipping integrity check for git dependency ssh://git@github.com/plentz/jquery-maskmoney.git 
-
-changed 36 packages, and audited 270 packages in 2m
-
-47 packages are looking for funding
-  run `npm fund` for details
-
-22 vulnerabilities (21 moderate, 1 high)
-
-To address issues that do not require attention, run:
-  npm audit fix
-
-To address all issues (including breaking changes), run:
-  npm audit fix --force
-
-Run `npm audit` for details.
-[1;33mScript Info: Iniciando container Docker[0m
- db Pulling 
- 2c0a233485c3 Pulling fs layer 
- b746eccf8a0b Pulling fs layer 
- 570d30cf82c5 Pulling fs layer 
- c7d84c48f09d Pulling fs layer 
- e9ecf1ccdd2a Pulling fs layer 
- 6331406986f7 Pulling fs layer 
- f93598758d10 Pulling fs layer 
- 6c136cb242f2 Pulling fs layer 
- d255d476cd34 Pulling fs layer 
- dbfe60d9fe24 Pulling fs layer 
- 9cb9659be67b Pulling fs layer 
- c7d84c48f09d Waiting 
- e9ecf1ccdd2a Waiting 
- 6331406986f7 Waiting 
- f93598758d10 Waiting 
- 6c136cb242f2 Waiting 
- d255d476cd34 Waiting 
- dbfe60d9fe24 Waiting 
- 9cb9659be67b Waiting 
- 2c0a233485c3 Downloading [>                                                  ]  507.1kB/49.1MB
- b746eccf8a0b Downloading [==================================================>]     884B/884B
- b746eccf8a0b Verifying Checksum 
- b746eccf8a0b Download complete 
- 2c0a233485c3 Downloading [==>                                                ]  2.005MB/49.1MB
- 2c0a233485c3 Downloading [===>                                               ]  3.496MB/49.1MB
- 2c0a233485c3 Downloading [=====>                                             ]  4.995MB/49.1MB
- 570d30cf82c5 Downloading [>                                                  ]  10.95kB/983kB
- 2c0a233485c3 Downloading [======>                                            ]  6.507MB/49.1MB
- 570d30cf82c5 Downloading [=======>                                           ]  139.5kB/983kB
- 2c0a233485c3 Downloading [========>                                          ]  8.002MB/49.1MB
- 570d30cf82c5 Downloading [=================>                                 ]  344.1kB/983kB
- 570d30cf82c5 Downloading [=====================================>             ]  737.3kB/983kB
- 2c0a233485c3 Downloading [=========>                                         ]  8.985MB/49.1MB
- 570d30cf82c5 Download complete 
- 2c0a233485c3 Downloading [==========>                                        ]  9.968MB/49.1MB
- 2c0a233485c3 Downloading [===========>                                       ]  11.45MB/49.1MB
- 2c0a233485c3 Downloading [=============>                                     ]  12.93MB/49.1MB
- 2c0a233485c3 Downloading [==============>                                    ]  14.43MB/49.1MB
- c7d84c48f09d Downloading [>                                                  ]  70.64kB/6.901MB
- 2c0a233485c3 Downloading [================>                                  ]  15.92MB/49.1MB
- c7d84c48f09d Downloading [=>                                                 ]  140.4kB/6.901MB
- e9ecf1ccdd2a Downloading [==============>                                    ]     733B/2.607kB
- e9ecf1ccdd2a Download complete 
- 2c0a233485c3 Downloading [=================>                                 ]  17.41MB/49.1MB
- c7d84c48f09d Downloading [==>                                                ]  373.5kB/6.901MB
- 2c0a233485c3 Downloading [==================>                                ]   18.4MB/49.1MB
- c7d84c48f09d Downloading [=====>                                             ]  701.2kB/6.901MB
- 2c0a233485c3 Downloading [===================>                               ]  19.39MB/49.1MB
- c7d84c48f09d Downloading [=========>                                         ]  1.258MB/6.901MB
- c7d84c48f09d Downloading [==============>                                    ]  1.995MB/6.901MB
- 2c0a233485c3 Downloading [====================>                              ]  20.38MB/49.1MB
- c7d84c48f09d Downloading [=====================>                             ]  3.028MB/6.901MB
- c7d84c48f09d Downloading [=============================>                     ]  4.084MB/6.901MB
- 2c0a233485c3 Downloading [=====================>                             ]  20.87MB/49.1MB
- c7d84c48f09d Downloading [====================================>              ]  5.043MB/6.901MB
- 6331406986f7 Downloading [==================================================>]     333B/333B
- 6331406986f7 Verifying Checksum 
- 6331406986f7 Download complete 
- c7d84c48f09d Downloading [===========================================>       ]  6.014MB/6.901MB
- 2c0a233485c3 Downloading [=====================>                             ]  21.37MB/49.1MB
- c7d84c48f09d Verifying Checksum 
- c7d84c48f09d Download complete 
- 2c0a233485c3 Downloading [======================>                            ]  22.36MB/49.1MB
- 2c0a233485c3 Downloading [========================>                          ]  23.84MB/49.1MB
- 2c0a233485c3 Downloading [=========================>                         ]  25.34MB/49.1MB
- 2c0a233485c3 Downloading [===========================>                       ]  26.82MB/49.1MB
- 2c0a233485c3 Downloading [============================>                      ]  28.31MB/49.1MB
- 6c136cb242f2 Downloading [==================================================>]     319B/319B
- 6c136cb242f2 Verifying Checksum 
- 6c136cb242f2 Download complete 
- 2c0a233485c3 Downloading [=============================>                     ]  29.31MB/49.1MB
- 2c0a233485c3 Downloading [===============================>                   ]   30.8MB/49.1MB
- f93598758d10 Downloading [>                                                  ]  504.6kB/49.62MB
- 2c0a233485c3 Downloading [================================>                  ]  31.79MB/49.1MB
- f93598758d10 Downloading [=>                                                 ]  1.008MB/49.62MB
- 2c0a233485c3 Downloading [=================================>                 ]  32.77MB/49.1MB
- f93598758d10 Downloading [==>                                                ]  2.024MB/49.62MB
- f93598758d10 Downloading [===>                                               ]  3.028MB/49.62MB
- 2c0a233485c3 Downloading [=================================>                 ]  33.27MB/49.1MB
- f93598758d10 Downloading [====>                                              ]  4.035MB/49.62MB
- 2c0a233485c3 Downloading [==================================>                ]  33.77MB/49.1MB
- d255d476cd34 Downloading [>                                                  ]  540.7kB/64.36MB
- f93598758d10 Downloading [=====>                                             ]  5.043MB/49.62MB
- d255d476cd34 Downloading [=>                                                 ]  1.622MB/64.36MB
- 2c0a233485c3 Downloading [==================================>                ]  34.27MB/49.1MB
- f93598758d10 Downloading [=====>                                             ]  5.543MB/49.62MB
- d255d476cd34 Downloading [==>                                                ]  2.695MB/64.36MB
- d255d476cd34 Downloading [==>                                                ]  3.764MB/64.36MB
- f93598758d10 Downloading [======>                                            ]  6.055MB/49.62MB
- 2c0a233485c3 Downloading [===================================>               ]  34.77MB/49.1MB
- d255d476cd34 Downloading [===>                                               ]  4.846MB/64.36MB
- f93598758d10 Downloading [======>                                            ]  6.567MB/49.62MB
- d255d476cd34 Downloading [====>                                              ]  5.915MB/64.36MB
- d255d476cd34 Downloading [=====>                                             ]  6.992MB/64.36MB
- 2c0a233485c3 Downloading [===================================>               ]  35.26MB/49.1MB
- f93598758d10 Downloading [=======>                                           ]  7.066MB/49.62MB
- d255d476cd34 Downloading [======>                                            ]  8.053MB/64.36MB
- d255d476cd34 Downloading [=======>                                           ]  9.122MB/64.36MB
- f93598758d10 Downloading [=======>                                           ]   7.57MB/49.62MB
- 2c0a233485c3 Downloading [====================================>              ]  35.75MB/49.1MB
- d255d476cd34 Downloading [=======>                                           ]  10.19MB/64.36MB
- d255d476cd34 Downloading [========>                                          ]  11.26MB/64.36MB
- f93598758d10 Downloading [========>                                          ]  8.074MB/49.62MB
- d255d476cd34 Downloading [=========>                                         ]  12.35MB/64.36MB
- 2c0a233485c3 Downloading [====================================>              ]  36.24MB/49.1MB
- d255d476cd34 Downloading [==========>                                        ]  13.42MB/64.36MB
- d255d476cd34 Downloading [===========>                                       ]   14.5MB/64.36MB
- f93598758d10 Downloading [========>                                          ]  8.578MB/49.62MB
- 2c0a233485c3 Downloading [=====================================>             ]  36.74MB/49.1MB
- d255d476cd34 Downloading [============>                                      ]  15.57MB/64.36MB
- d255d476cd34 Downloading [============>                                      ]  16.65MB/64.36MB
- f93598758d10 Downloading [=========>                                         ]  9.086MB/49.62MB
- d255d476cd34 Downloading [=============>                                     ]  17.72MB/64.36MB
- 2c0a233485c3 Downloading [=====================================>             ]  37.24MB/49.1MB
- d255d476cd34 Downloading [==============>                                    ]  18.79MB/64.36MB
- d255d476cd34 Downloading [===============>                                   ]  19.85MB/64.36MB
- f93598758d10 Downloading [=========>                                         ]  9.598MB/49.62MB
- d255d476cd34 Downloading [================>                                  ]  20.93MB/64.36MB
- 2c0a233485c3 Downloading [======================================>            ]  37.73MB/49.1MB
- d255d476cd34 Downloading [=================>                                 ]  22.02MB/64.36MB
- f93598758d10 Downloading [==========>                                        ]   10.1MB/49.62MB
- d255d476cd34 Downloading [=================>                                 ]   23.1MB/64.36MB
- d255d476cd34 Downloading [==================>                                ]  24.17MB/64.36MB
- 2c0a233485c3 Downloading [======================================>            ]  38.23MB/49.1MB
- f93598758d10 Downloading [==========>                                        ]  10.61MB/49.62MB
- d255d476cd34 Downloading [===================>                               ]  25.24MB/64.36MB
- d255d476cd34 Downloading [====================>                              ]  26.31MB/64.36MB
- 2c0a233485c3 Downloading [=======================================>           ]  38.73MB/49.1MB
- d255d476cd34 Downloading [=====================>                             ]  27.39MB/64.36MB
- f93598758d10 Downloading [===========>                                       ]  11.11MB/49.62MB
- d255d476cd34 Downloading [======================>                            ]  28.44MB/64.36MB
- d255d476cd34 Downloading [======================>                            ]  29.52MB/64.36MB
- f93598758d10 Downloading [===========>                                       ]  11.62MB/49.62MB
- 2c0a233485c3 Downloading [=======================================>           ]  39.22MB/49.1MB
- d255d476cd34 Downloading [=======================>                           ]  30.58MB/64.36MB
- d255d476cd34 Downloading [========================>                          ]  31.65MB/64.36MB
- f93598758d10 Downloading [============>                                      ]  12.13MB/49.62MB
- 2c0a233485c3 Downloading [========================================>          ]  39.71MB/49.1MB
- d255d476cd34 Downloading [=========================>                         ]  32.72MB/64.36MB
- d255d476cd34 Downloading [==========================>                        ]   33.8MB/64.36MB
- f93598758d10 Downloading [============>                                      ]  12.64MB/49.62MB
- d255d476cd34 Downloading [===========================>                       ]  34.88MB/64.36MB
- 2c0a233485c3 Downloading [========================================>          ]   40.2MB/49.1MB
- d255d476cd34 Downloading [===========================>                       ]  35.95MB/64.36MB
- f93598758d10 Downloading [=============>                                     ]  13.15MB/49.62MB
- 2c0a233485c3 Downloading [=========================================>         ]   40.7MB/49.1MB
- d255d476cd34 Downloading [============================>                      ]  37.02MB/64.36MB
- f93598758d10 Downloading [=============>                                     ]  13.66MB/49.62MB
- 2c0a233485c3 Downloading [=========================================>         ]   41.2MB/49.1MB
- d255d476cd34 Downloading [=============================>                     ]  38.09MB/64.36MB
- d255d476cd34 Downloading [==============================>                    ]  38.63MB/64.36MB
- f93598758d10 Downloading [==============>                                    ]  14.17MB/49.62MB
- 2c0a233485c3 Downloading [==========================================>        ]   41.7MB/49.1MB
- d255d476cd34 Downloading [==============================>                    ]  39.69MB/64.36MB
- f93598758d10 Downloading [==============>                                    ]  14.68MB/49.62MB
- 2c0a233485c3 Downloading [==========================================>        ]   42.2MB/49.1MB
- d255d476cd34 Downloading [===============================>                   ]  40.76MB/64.36MB
- f93598758d10 Downloading [===============>                                   ]  15.18MB/49.62MB
- d255d476cd34 Downloading [================================>                  ]  41.82MB/64.36MB
- 2c0a233485c3 Downloading [===========================================>       ]  42.69MB/49.1MB
- f93598758d10 Downloading [===============>                                   ]  15.68MB/49.62MB
- d255d476cd34 Downloading [=================================>                 ]  42.89MB/64.36MB
- 2c0a233485c3 Downloading [===========================================>       ]  43.19MB/49.1MB
- f93598758d10 Downloading [================>                                  ]  16.19MB/49.62MB
- d255d476cd34 Downloading [==================================>                ]  43.97MB/64.36MB
- 2c0a233485c3 Downloading [============================================>      ]  43.69MB/49.1MB
- f93598758d10 Downloading [================>                                  ]  16.69MB/49.62MB
- d255d476cd34 Downloading [==================================>                ]  45.04MB/64.36MB
- 2c0a233485c3 Downloading [=============================================>     ]  44.19MB/49.1MB
- f93598758d10 Downloading [=================>                                 ]   17.2MB/49.62MB
- d255d476cd34 Downloading [===================================>               ]  46.11MB/64.36MB
- 2c0a233485c3 Downloading [=============================================>     ]  44.68MB/49.1MB
- f93598758d10 Downloading [=================>                                 ]  17.71MB/49.62MB
- d255d476cd34 Downloading [====================================>              ]  47.18MB/64.36MB
- 2c0a233485c3 Downloading [==============================================>    ]  45.17MB/49.1MB
- d255d476cd34 Downloading [=====================================>             ]  47.72MB/64.36MB
- f93598758d10 Downloading [==================>                                ]  18.22MB/49.62MB
- f93598758d10 Downloading [==================>                                ]  18.73MB/49.62MB
- d255d476cd34 Downloading [=====================================>             ]  48.26MB/64.36MB
- 2c0a233485c3 Downloading [==============================================>    ]  45.66MB/49.1MB
- f93598758d10 Downloading [===================>                               ]  19.23MB/49.62MB
- d255d476cd34 Downloading [=====================================>             ]   48.8MB/64.36MB
- 2c0a233485c3 Downloading [===============================================>   ]  46.16MB/49.1MB
- f93598758d10 Downloading [===================>                               ]  19.74MB/49.62MB
- d255d476cd34 Downloading [======================================>            ]  49.34MB/64.36MB
- 2c0a233485c3 Downloading [===============================================>   ]  46.65MB/49.1MB
- f93598758d10 Downloading [====================>                              ]  20.25MB/49.62MB
- d255d476cd34 Downloading [======================================>            ]  49.88MB/64.36MB
- f93598758d10 Downloading [====================>                              ]  20.76MB/49.62MB
- 2c0a233485c3 Downloading [================================================>  ]  47.15MB/49.1MB
- d255d476cd34 Downloading [=======================================>           ]  50.41MB/64.36MB
- f93598758d10 Downloading [=====================>                             ]  21.26MB/49.62MB
- 2c0a233485c3 Downloading [================================================>  ]  47.66MB/49.1MB
- d255d476cd34 Downloading [=======================================>           ]  50.94MB/64.36MB
- f93598758d10 Downloading [=====================>                             ]  21.78MB/49.62MB
- 2c0a233485c3 Downloading [=================================================> ]  48.15MB/49.1MB
- d255d476cd34 Downloading [=======================================>           ]  51.47MB/64.36MB
- f93598758d10 Downloading [======================>                            ]  22.27MB/49.62MB
- 2c0a233485c3 Downloading [=================================================> ]  48.64MB/49.1MB
- f93598758d10 Downloading [======================>                            ]  22.77MB/49.62MB
- d255d476cd34 Downloading [========================================>          ]  52.02MB/64.36MB
- f93598758d10 Downloading [=======================>                           ]  23.28MB/49.62MB
- 2c0a233485c3 Verifying Checksum 
- 2c0a233485c3 Download complete 
- d255d476cd34 Downloading [========================================>          ]  52.54MB/64.36MB
- d255d476cd34 Downloading [=========================================>         ]  53.08MB/64.36MB
- f93598758d10 Downloading [========================>                          ]   24.3MB/49.62MB
- d255d476cd34 Downloading [=========================================>         ]  53.62MB/64.36MB
- f93598758d10 Downloading [=========================>                         ]   25.3MB/49.62MB
- d255d476cd34 Downloading [==========================================>        ]  54.16MB/64.36MB
- f93598758d10 Downloading [==========================>                        ]  26.32MB/49.62MB
- d255d476cd34 Downloading [==========================================>        ]  54.69MB/64.36MB
- 2c0a233485c3 Extracting [>                                                  ]  491.5kB/49.1MB
- f93598758d10 Downloading [===========================>                       ]  27.34MB/49.62MB
- d255d476cd34 Downloading [==========================================>        ]  55.23MB/64.36MB
- dbfe60d9fe24 Downloading [======>                                            ]     733B/5.328kB
- dbfe60d9fe24 Downloading [==================================================>]  5.328kB/5.328kB
- dbfe60d9fe24 Verifying Checksum 
- dbfe60d9fe24 Download complete 
- d255d476cd34 Downloading [===========================================>       ]  55.77MB/64.36MB
- f93598758d10 Downloading [============================>                      ]  28.35MB/49.62MB
- d255d476cd34 Downloading [===========================================>       ]   56.3MB/64.36MB
- 2c0a233485c3 Extracting [=>                                                 ]    983kB/49.1MB
- f93598758d10 Downloading [=============================>                     ]  29.36MB/49.62MB
- d255d476cd34 Downloading [============================================>      ]  56.84MB/64.36MB
- 2c0a233485c3 Extracting [==>                                                ]  1.966MB/49.1MB
- f93598758d10 Downloading [==============================>                    ]  30.38MB/49.62MB
- d255d476cd34 Downloading [============================================>      ]  57.37MB/64.36MB
- 2c0a233485c3 Extracting [====>                                              ]  4.424MB/49.1MB
- d255d476cd34 Downloading [============================================>      ]  57.91MB/64.36MB
- f93598758d10 Downloading [===============================>                   ]  31.38MB/49.62MB
- 2c0a233485c3 Extracting [======>                                            ]   6.39MB/49.1MB
- d255d476cd34 Downloading [=============================================>     ]  58.44MB/64.36MB
- f93598758d10 Downloading [================================>                  ]  32.39MB/49.62MB
- d255d476cd34 Downloading [=============================================>     ]  58.98MB/64.36MB
- f93598758d10 Downloading [=================================>                 ]   33.4MB/49.62MB
- d255d476cd34 Downloading [==============================================>    ]  59.52MB/64.36MB
- 9cb9659be67b Downloading [==================================================>]     121B/121B
- 9cb9659be67b Verifying Checksum 
- 9cb9659be67b Download complete 
- d255d476cd34 Downloading [==============================================>    ]  60.06MB/64.36MB
- f93598758d10 Downloading [==================================>                ]  34.42MB/49.62MB
- 2c0a233485c3 Extracting [=======>                                           ]  7.373MB/49.1MB
- d255d476cd34 Downloading [===============================================>   ]  60.59MB/64.36MB
- f93598758d10 Downloading [===================================>               ]  35.42MB/49.62MB
- 2c0a233485c3 Extracting [=========>                                         ]  9.339MB/49.1MB
- d255d476cd34 Downloading [===============================================>   ]  61.12MB/64.36MB
- f93598758d10 Downloading [====================================>              ]  36.44MB/49.62MB
- 2c0a233485c3 Extracting [============>                                      ]   11.8MB/49.1MB
- d255d476cd34 Downloading [===============================================>   ]  61.67MB/64.36MB
- 2c0a233485c3 Extracting [==============>                                    ]  13.76MB/49.1MB
- f93598758d10 Downloading [=====================================>             ]  37.46MB/49.62MB
- d255d476cd34 Downloading [================================================>  ]   62.2MB/64.36MB
- 2c0a233485c3 Extracting [================>                                  ]  15.73MB/49.1MB
- d255d476cd34 Downloading [================================================>  ]  62.74MB/64.36MB
- f93598758d10 Downloading [======================================>            ]  38.47MB/49.62MB
- 2c0a233485c3 Extracting [==================>                                ]  18.19MB/49.1MB
- d255d476cd34 Downloading [=================================================> ]  63.28MB/64.36MB
- f93598758d10 Downloading [=======================================>           ]  39.47MB/49.62MB
- 2c0a233485c3 Extracting [=====================>                             ]  20.64MB/49.1MB
- d255d476cd34 Downloading [=================================================> ]  63.82MB/64.36MB
- 2c0a233485c3 Extracting [=======================>                           ]  22.61MB/49.1MB
- f93598758d10 Downloading [========================================>          ]  40.49MB/49.62MB
- d255d476cd34 Downloading [=================================================> ]  64.35MB/64.36MB
- d255d476cd34 Verifying Checksum 
- d255d476cd34 Download complete 
- 2c0a233485c3 Extracting [=========================>                         ]  24.58MB/49.1MB
- f93598758d10 Downloading [=========================================>         ]   41.5MB/49.62MB
- 2c0a233485c3 Extracting [===========================>                       ]  27.03MB/49.1MB
- f93598758d10 Downloading [===========================================>       ]  43.02MB/49.62MB
- 2c0a233485c3 Extracting [==============================>                    ]  29.49MB/49.1MB
- f93598758d10 Downloading [============================================>      ]  44.53MB/49.62MB
- 2c0a233485c3 Extracting [===============================>                   ]  30.47MB/49.1MB
- f93598758d10 Downloading [==============================================>    ]  46.04MB/49.62MB
- 2c0a233485c3 Extracting [================================>                  ]  31.46MB/49.1MB
- f93598758d10 Downloading [===============================================>   ]  47.56MB/49.62MB
- 2c0a233485c3 Extracting [=================================>                 ]  32.44MB/49.1MB
- f93598758d10 Downloading [=================================================> ]  49.09MB/49.62MB
- f93598758d10 Download complete 
- 2c0a233485c3 Extracting [==================================>                ]  33.91MB/49.1MB
- 2c0a233485c3 Extracting [===========================================>       ]  42.76MB/49.1MB
- 2c0a233485c3 Extracting [============================================>      ]  43.75MB/49.1MB
- 2c0a233485c3 Extracting [=============================================>     ]  44.73MB/49.1MB
- 2c0a233485c3 Extracting [==============================================>    ]  45.71MB/49.1MB
- 2c0a233485c3 Extracting [===============================================>   ]   46.2MB/49.1MB
- 2c0a233485c3 Extracting [==================================================>]   49.1MB/49.1MB
- 2c0a233485c3 Pull complete 
- b746eccf8a0b Extracting [==================================================>]     884B/884B
- b746eccf8a0b Extracting [==================================================>]     884B/884B
- b746eccf8a0b Pull complete 
- 570d30cf82c5 Extracting [=>                                                 ]  32.77kB/983kB
- 570d30cf82c5 Extracting [=============>                                     ]  262.1kB/983kB
- 570d30cf82c5 Extracting [==================================================>]    983kB/983kB
- 570d30cf82c5 Extracting [==================================================>]    983kB/983kB
- 570d30cf82c5 Pull complete 
- c7d84c48f09d Extracting [>                                                  ]   98.3kB/6.901MB
- c7d84c48f09d Extracting [==>                                                ]  294.9kB/6.901MB
- c7d84c48f09d Extracting [================>                                  ]  2.261MB/6.901MB
- c7d84c48f09d Extracting [======================>                            ]  3.146MB/6.901MB
- c7d84c48f09d Extracting [=============================>                     ]   4.03MB/6.901MB
- c7d84c48f09d Extracting [==================================================>]  6.901MB/6.901MB
- c7d84c48f09d Pull complete 
- e9ecf1ccdd2a Extracting [==================================================>]  2.607kB/2.607kB
- e9ecf1ccdd2a Extracting [==================================================>]  2.607kB/2.607kB
- e9ecf1ccdd2a Pull complete 
- 6331406986f7 Extracting [==================================================>]     333B/333B
- 6331406986f7 Extracting [==================================================>]     333B/333B
- 6331406986f7 Pull complete 
- f93598758d10 Extracting [>                                                  ]  524.3kB/49.62MB
- f93598758d10 Extracting [===>                                               ]   3.67MB/49.62MB
- f93598758d10 Extracting [======>                                            ]  6.816MB/49.62MB
- f93598758d10 Extracting [==========>                                        ]  10.49MB/49.62MB
- f93598758d10 Extracting [=============>                                     ]  13.63MB/49.62MB
- f93598758d10 Extracting [================>                                  ]  16.78MB/49.62MB
- f93598758d10 Extracting [=====================>                             ]  20.97MB/49.62MB
- f93598758d10 Extracting [=========================>                         ]  25.17MB/49.62MB
- f93598758d10 Extracting [=============================>                     ]  29.36MB/49.62MB
- f93598758d10 Extracting [==================================>                ]  34.08MB/49.62MB
- f93598758d10 Extracting [======================================>            ]  37.75MB/49.62MB
- f93598758d10 Extracting [=======================================>           ]  39.32MB/49.62MB
- f93598758d10 Extracting [==========================================>        ]  42.47MB/49.62MB
- f93598758d10 Extracting [=============================================>     ]  45.09MB/49.62MB
- f93598758d10 Extracting [================================================>  ]  47.71MB/49.62MB
- f93598758d10 Extracting [==================================================>]  49.62MB/49.62MB
- f93598758d10 Pull complete 
- 6c136cb242f2 Extracting [==================================================>]     319B/319B
- 6c136cb242f2 Extracting [==================================================>]     319B/319B
- 6c136cb242f2 Pull complete 
- d255d476cd34 Extracting [>                                                  ]  557.1kB/64.36MB
- d255d476cd34 Extracting [===>                                               ]  3.899MB/64.36MB
- d255d476cd34 Extracting [=====>                                             ]  7.242MB/64.36MB
- d255d476cd34 Extracting [=========>                                         ]   11.7MB/64.36MB
- d255d476cd34 Extracting [===========>                                       ]  15.04MB/64.36MB
- d255d476cd34 Extracting [==============>                                    ]  18.38MB/64.36MB
- d255d476cd34 Extracting [================>                                  ]  21.17MB/64.36MB
- d255d476cd34 Extracting [===================>                               ]  24.51MB/64.36MB
- d255d476cd34 Extracting [===================>                               ]  25.62MB/64.36MB
- d255d476cd34 Extracting [=====================>                             ]   27.3MB/64.36MB
- d255d476cd34 Extracting [=====================>                             ]  27.85MB/64.36MB
- d255d476cd34 Extracting [======================>                            ]  28.41MB/64.36MB
- d255d476cd34 Extracting [======================>                            ]  28.97MB/64.36MB
- d255d476cd34 Extracting [======================>                            ]  29.52MB/64.36MB
- d255d476cd34 Extracting [=======================>                           ]  30.08MB/64.36MB
- d255d476cd34 Extracting [=======================>                           ]  30.64MB/64.36MB
- d255d476cd34 Extracting [========================>                          ]   31.2MB/64.36MB
- d255d476cd34 Extracting [========================>                          ]  31.75MB/64.36MB
- d255d476cd34 Extracting [=========================>                         ]  32.31MB/64.36MB
- d255d476cd34 Extracting [=========================>                         ]  32.87MB/64.36MB
- d255d476cd34 Extracting [=========================>                         ]  33.42MB/64.36MB
- d255d476cd34 Extracting [==========================>                        ]  33.98MB/64.36MB
- d255d476cd34 Extracting [==========================>                        ]  34.54MB/64.36MB
- d255d476cd34 Extracting [===========================>                       ]  35.09MB/64.36MB
- d255d476cd34 Extracting [===========================>                       ]  35.65MB/64.36MB
- d255d476cd34 Extracting [============================>                      ]  36.21MB/64.36MB
- d255d476cd34 Extracting [============================>                      ]  36.77MB/64.36MB
- d255d476cd34 Extracting [============================>                      ]  37.32MB/64.36MB
- d255d476cd34 Extracting [=============================>                     ]  37.88MB/64.36MB
- d255d476cd34 Extracting [=============================>                     ]  38.44MB/64.36MB
- d255d476cd34 Extracting [==============================>                    ]  38.99MB/64.36MB
- d255d476cd34 Extracting [==============================>                    ]  39.55MB/64.36MB
- d255d476cd34 Extracting [===============================>                   ]  40.67MB/64.36MB
- d255d476cd34 Extracting [================================>                  ]  41.22MB/64.36MB
- d255d476cd34 Extracting [=================================>                 ]  42.89MB/64.36MB
- d255d476cd34 Extracting [==================================>                ]  44.01MB/64.36MB
- d255d476cd34 Extracting [====================================>              ]  46.79MB/64.36MB
- d255d476cd34 Extracting [=====================================>             ]  47.91MB/64.36MB
- d255d476cd34 Extracting [======================================>            ]  49.02MB/64.36MB
- d255d476cd34 Extracting [======================================>            ]  49.58MB/64.36MB
- d255d476cd34 Extracting [======================================>            ]  50.14MB/64.36MB
- d255d476cd34 Extracting [=======================================>           ]  51.25MB/64.36MB
- d255d476cd34 Extracting [=========================================>         ]  52.92MB/64.36MB
- d255d476cd34 Extracting [=========================================>         ]  54.03MB/64.36MB
- d255d476cd34 Extracting [==========================================>        ]  55.15MB/64.36MB
- d255d476cd34 Extracting [=============================================>     ]  57.93MB/64.36MB
- d255d476cd34 Extracting [================================================>  ]  61.83MB/64.36MB
- d255d476cd34 Extracting [==================================================>]  64.36MB/64.36MB
- d255d476cd34 Pull complete 
- dbfe60d9fe24 Extracting [==================================================>]  5.328kB/5.328kB
- dbfe60d9fe24 Extracting [==================================================>]  5.328kB/5.328kB
- dbfe60d9fe24 Pull complete 
- 9cb9659be67b Extracting [==================================================>]     121B/121B
- 9cb9659be67b Extracting [==================================================>]     121B/121B
- 9cb9659be67b Pull complete 
- db Pulled 
- Network sistema-mercado-topografico_default  Creating
- Network sistema-mercado-topografico_default  Created
- Container sistema-mercado-topografico-db-1  Creating
- Container sistema-mercado-topografico-db-1  Created
- Container sistema-mercado-topografico-db-1  Starting
- Container sistema-mercado-topografico-db-1  Started
-[1;33mScript Info: Iniciando servidor Ruby[0m
-./prepareEnvironment.sh: line 169: cd: ~/simbiose/code/sistema-mercado-topografico: No such file or directory
-Finishing script...
-Check script log!
----- Script finished at Fri Dec 27 01:02:41 AM UTC 2024 ----
+2 installed gems you directly depend on are looking for funding.
+  Run `bundle fund` for details
